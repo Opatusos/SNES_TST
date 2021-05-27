@@ -1,0 +1,22 @@
+__Previews/
+History/
+Old Documents/
+Output/
+SNES TST Combi/Output/
+Project Logs*/
+Project Outputs for*/
+Step/
+
+*.PrjPCBStructure
+*.SchDocPreview
+*.PcbDocPreview
+__Previews
+*.PrjPcbStructure
+*.PrjPcbVariants
+*.Dat
+*.REP 
+*.TLT
+*.LOG
+*.log
+*.htm
+*.$$$

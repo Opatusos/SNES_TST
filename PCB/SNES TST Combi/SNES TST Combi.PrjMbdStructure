@@ -1,0 +1,8 @@
+Record=DiagramHierarchy|SourceDocument=SNES TST Combi.MbsDoc|Kind=Multi-board Schematic Module|Designator=4|Source=..\SNES TST Adapter.PrjPcb
+Record=SubProject|SourceDocument=SNES TST Combi.MbsDoc|ProjectPath=..\SNES TST Adapter.PrjPcb
+Record=DiagramHierarchy|SourceDocument=SNES TST Combi.MbsDoc|Kind=Multi-board Schematic Module|Designator=2|Source=..\SNES TST Adapter.PrjPcb
+Record=SubProject|SourceDocument=SNES TST Combi.MbsDoc|ProjectPath=..\SNES TST Adapter.PrjPcb
+Record=DiagramHierarchy|SourceDocument=SNES TST Combi.MbsDoc|Kind=Multi-board Schematic Module|Designator=3|Source=..\SNES TST.PrjPcb
+Record=SubProject|SourceDocument=SNES TST Combi.MbsDoc|ProjectPath=..\SNES TST.PrjPcb
+Record=DiagramHierarchy|SourceDocument=SNES TST Combi.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=..\SNES TST.PrjPcb
+Record=SubProject|SourceDocument=SNES TST Combi.MbsDoc|ProjectPath=..\SNES TST.PrjPcb
