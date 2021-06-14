@@ -268,6 +268,7 @@ set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to CONTD
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to CONTC
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name VERILOG_INCLUDE_FILE rtl/include/osd.vh
 set_global_assignment -name QIP_FILE software/snes_tst/mem_init/meminit.qip
 set_global_assignment -name VERILOG_FILE rtl/SNES_TST.v
 set_global_assignment -name VERILOG_FILE rtl/borti/snes_igr_mod.v

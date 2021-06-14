@@ -46,6 +46,8 @@ module SNES_TST(
 	output reg[9:1] BDIG
 );
 
+`include "include/osd.vh"
+
 wire mclk_ntsc = MCLKOSC;
 wire mclk_ntsc_dejitter = mclk_ntsc & gclk_en;
 wire mclk_pal = MCLKSYS;
@@ -117,6 +119,8 @@ reg [15:0]cictest;
 
 reg [1:0]ciccontrol;
 reg cicfail;
+
+reg [1:0] vclk_counter;
 
 //reg [2:0]rgbout;
 //reg vbl;
@@ -286,7 +290,15 @@ end
 
 //always @(negedge daclock) begin
 always @(posedge MCLKO) begin
-	RDIG[9:1] <= TST_R[4:0] *(* multstyle = "dsp" *) brightness;
+
+	if((h_count > OSD_X1) && (h_count <= OSD_X2) && (v_count > OSD_Y1_NTSC) && (v_count <= OSD_Y2_NTSC)) begin
+		osd_brightness <= 2;
+	end
+	else begin
+		osd_brightness <= 0;
+	end
+
+	RDIG[9:1] <= (TST_R[4:0] << osd_brightness) *(* multstyle = "dsp" *) brightness;
 	//RDIG[9:1] <= rgb[8:0];
 	/*if (VBLANK || HBLANK) begin
 		red = 0;
@@ -294,9 +306,27 @@ always @(posedge MCLKO) begin
 	else begin
 		red[9:1] <= 300;//rgb[8:0];
 	end*/
-	GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) brightness;
-	BDIG[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) brightness;
+	GDIG[9:1] <= (TST_G[4:0] << osd_brightness) *(* multstyle = "dsp" *) brightness;
+	BDIG[9:1] <= (TST_B[4:0] << osd_brightness) *(* multstyle = "dsp" *) brightness;
 end
+
+always @(posedge MCLKO) begin
+	vclk_counter <= vclk_counter + 1;
+	if(VBLANK) begin
+		v_count = 0;
+	end
+	else begin
+		if(vclk_counter == 0) v_count <= v_count + 1;
+	end
+	if(HBLANK) begin
+		h_count = 1;
+	end
+	else begin
+		if(vclk_counter == 0) h_count <= h_count + 1;
+	end
+end
+
+
 /*
 always @(negedge daclock) begin
 	RDIG[9:1] <= rgb[8:0];
