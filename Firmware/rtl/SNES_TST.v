@@ -298,7 +298,7 @@ always @(posedge MCLKO) begin
 		osd_brightness <= 0;
 	end
 
-	RDIG[9:1] <= (TST_R[4:0] << osd_brightness) *(* multstyle = "dsp" *) brightness;
+	RDIG[9:1] <= (TST_R[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 	//RDIG[9:1] <= rgb[8:0];
 	/*if (VBLANK || HBLANK) begin
 		red = 0;
@@ -306,8 +306,8 @@ always @(posedge MCLKO) begin
 	else begin
 		red[9:1] <= 300;//rgb[8:0];
 	end*/
-	GDIG[9:1] <= (TST_G[4:0] << osd_brightness) *(* multstyle = "dsp" *) brightness;
-	BDIG[9:1] <= (TST_B[4:0] << osd_brightness) *(* multstyle = "dsp" *) brightness;
+	GDIG[9:1] <= (TST_G[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+	BDIG[9:1] <= (TST_B[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 end
 
 always @(posedge MCLKO) begin
