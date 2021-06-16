@@ -313,16 +313,24 @@ end
 always @(posedge MCLKO) begin
 	vclk_counter <= vclk_counter + 1;
 	if(VBLANK) begin
-		v_count = 0;
+		v_count <= 0;
+		h_count <= 0;
 	end
-	else begin
+	/*else begin
 		if(vclk_counter == 0) v_count <= v_count + 1;
-	end
-	if(HBLANK) begin
+	end*/
+	/*if(HBLANK) begin
 		h_count = 1;
-	end
+	end*/
 	else begin
-		if(vclk_counter == 0) h_count <= h_count + 1;
+		if(h_count >= 337) begin
+			h_count <= 0;
+			v_count <= v_count + 1;
+		end
+		else if(HBLANK && h_count == 0) h_count <= 0;
+		else begin
+			if(vclk_counter == 0) h_count <= h_count + 1;
+		end
 	end
 end
 
