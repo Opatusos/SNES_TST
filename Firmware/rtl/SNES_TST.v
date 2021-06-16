@@ -292,7 +292,7 @@ end
 always @(posedge MCLKO) begin
 
 	if((h_count > OSD_X1) && (h_count <= OSD_X2) && (v_count > OSD_Y1_NTSC) && (v_count <= OSD_Y2_NTSC)) begin
-		osd_brightness <= 2;
+		osd_brightness <= 4;
 	end
 	else begin
 		osd_brightness <= 0;

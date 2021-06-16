@@ -18,6 +18,6 @@ parameter OSD_Y2_PAL = (FONT_HEIGHT * OSD_NUMBER_ROWS) - 1 + OSD_Y1_PAL;
 reg osd_on = 0;
 reg [8:0] v_count; //1..224/239, v_count = 0 when VBLANK is cleared
 reg [8:0] h_count; //22..277, h_count = 1 when HBLANK is cleared
-reg [1:0] osd_brightness;
+reg [2:0] osd_brightness;
 
 `endif
