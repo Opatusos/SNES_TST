@@ -288,17 +288,42 @@ always @(posedge mclk_ntsc) begin
 end
 */
 
+reg [11:0]font_address;
+reg [3:0]font_x_counter;
+wire [7:0]font_data;
+reg font_bit;
+reg [3:0]font_y_counter;
+
+
+font_rom	font_rom_inst (
+	.address ( font_address ),
+	.clock ( MCLKO ),
+	.q ( font_data )
+	);
+
+
 //always @(negedge daclock) begin
 always @(posedge MCLKO) begin
-
+	if(VBLANK)begin
+		font_address[11:0] <= 0;
+		if(font_y_counter[3:0] < 12) font_y_counter[3:0] <= font_y_counter[3:0] + 1;
+		else font_y_counter[3:0] <= 0;
+	end
 	if((h_count > OSD_X1) && (h_count <= OSD_X2) && (v_count > OSD_Y1_NTSC) && (v_count <= OSD_Y2_NTSC)) begin
 		osd_brightness <= 4;
+		font_bit <= font_data[font_x_counter[3:1]];
+		if(!font_x_counter) font_address[11:0] <= font_address[11:0] + 12;
 	end
 	else begin
 		osd_brightness <= 0;
+		font_bit <= 0;
 	end
-
-	RDIG[9:1] <= (TST_R[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+	if(h_count == OSD_X1) font_x_counter = 0;
+	else if((h_count > OSD_X1) && (h_count <= OSD_X2)) begin
+		font_x_counter <= font_x_counter + 1;
+	end
+	
+	RDIG[9:1] <= font_bit ? 465 : (TST_R[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 	//RDIG[9:1] <= rgb[8:0];
 	/*if (VBLANK || HBLANK) begin
 		red = 0;
@@ -306,8 +331,8 @@ always @(posedge MCLKO) begin
 	else begin
 		red[9:1] <= 300;//rgb[8:0];
 	end*/
-	GDIG[9:1] <= (TST_G[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
-	BDIG[9:1] <= (TST_B[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+	GDIG[9:1] <= font_bit ? 465 : (TST_G[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+	BDIG[9:1] <= font_bit ? 465 : (TST_B[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 end
 
 always @(posedge MCLKO) begin
