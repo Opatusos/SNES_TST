@@ -22,9 +22,22 @@
  *      Author: Opatus
  */
 
+#include "alt_types.h"
+
 #ifndef SRC_OSD_H_
 #define SRC_OSD_H_
 
+#define OSD_LINE_LENGTH				46
+
+#define OSDRAM_POSITION_SHIFT		2
+#define OSDRAM_FONT_SHIFT    		(OSDRAM_POSITION_SHIFT + 9)
+#define OSDRAM_WR_BITS				0b01
+
+#define OSDRAM_WR_ENABLE()			IOWR_ALTERA_AVALON_PIO_SET_BITS(OSD_RAM_BASE,OSDRAM_WR_BITS)
+#define OSDRAM_WR_DISABLE()			IOWR_ALTERA_AVALON_PIO_CLEAR_BITS(OSD_RAM_BASE,OSDRAM_WR_BITS)
+
+void print_osd_data(const char* combined_font_data, alt_u16 start_position);
+void print_osd_char(alt_u32 osd_data);
 
 
 #endif /* SRC_OSD_H_ */

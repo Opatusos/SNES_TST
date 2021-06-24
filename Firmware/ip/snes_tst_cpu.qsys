@@ -21,7 +21,7 @@
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "4";
          type = "int";
       }
    }
@@ -29,7 +29,7 @@
    {
       datum baseAddress
       {
-         value = "137280";
+         value = "137248";
          type = "String";
       }
    }
@@ -37,7 +37,7 @@
    {
       datum _sortIndex
       {
-         value = "6";
+         value = "5";
          type = "int";
       }
    }
@@ -45,7 +45,7 @@
    {
       datum baseAddress
       {
-         value = "137312";
+         value = "137280";
          type = "String";
       }
    }
@@ -53,7 +53,7 @@
    {
       datum _sortIndex
       {
-         value = "10";
+         value = "7";
          type = "int";
       }
    }
@@ -61,7 +61,7 @@
    {
       datum baseAddress
       {
-         value = "137440";
+         value = "137344";
          type = "String";
       }
    }
@@ -69,7 +69,7 @@
    {
       datum _sortIndex
       {
-         value = "11";
+         value = "8";
          type = "int";
       }
    }
@@ -137,75 +137,19 @@
          type = "String";
       }
    }
-   element osdram_addr
+   element osd_ram
    {
       datum _sortIndex
       {
-         value = "8";
+         value = "6";
          type = "int";
       }
    }
-   element osdram_addr.s1
+   element osd_ram.s1
    {
       datum baseAddress
       {
-         value = "137376";
-         type = "String";
-      }
-   }
-   element osdram_ctrl
-   {
-      datum _sortIndex
-      {
-         value = "7";
-         type = "int";
-      }
-   }
-   element osdram_ctrl.s1
-   {
-      datum baseAddress
-      {
-         value = "137344";
-         type = "String";
-      }
-   }
-   element osdram_data
-   {
-      datum _sortIndex
-      {
-         value = "9";
-         type = "int";
-      }
-   }
-   element osdram_data.s1
-   {
-      datum baseAddress
-      {
-         value = "137408";
-         type = "String";
-      }
-   }
-   element sync
-   {
-      datum _sortIndex
-      {
-         value = "4";
-         type = "int";
-      }
-   }
-   element sync.reset
-   {
-      datum _tags
-      {
-         value = "";
-         type = "String";
-      }
-   }
-   element sync.s1
-   {
-      datum baseAddress
-      {
-         value = "137248";
+         value = "137312";
          type = "String";
       }
    }
@@ -247,26 +191,11 @@
    type="conduit"
    dir="end" />
  <interface
-   name="osdram_addr"
-   internal="osdram_addr.external_connection"
-   type="conduit"
-   dir="end" />
- <interface
-   name="osdram_ctrl"
-   internal="osdram_ctrl.external_connection"
-   type="conduit"
-   dir="end" />
- <interface
-   name="osdram_data"
-   internal="osdram_data.external_connection"
+   name="osd_ram"
+   internal="osd_ram.external_connection"
    type="conduit"
    dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
- <interface
-   name="sync"
-   internal="sync.external_connection"
-   type="conduit"
-   dir="end" />
  <module name="clk_0" kind="clock_source" version="20.1" enabled="1">
   <parameter name="clockFrequency" value="21477000" />
   <parameter name="clockFrequencyKnown" value="true" />
@@ -297,7 +226,7 @@
    version="20.1"
    enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="true" />
   <parameter name="captureEdge" value="false" />
   <parameter name="clockRate" value="21477000" />
   <parameter name="direction" value="Output" />
@@ -370,7 +299,7 @@
   <parameter name="dataAddrWidth" value="20" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x0' end='0x2000' type='altera_avalon_onchip_memory2.s1' /><slave name='onchip_flash_0.csr' start='0x20000' end='0x20008' type='altera_onchip_flash.csr' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x21000' end='0x21800' type='altera_nios2_gen2.debug_mem_slave' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x21800' end='0x21808' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='sync.s1' start='0x21820' end='0x21830' type='altera_avalon_pio.s1' /><slave name='config_input.s1' start='0x21840' end='0x21850' type='altera_avalon_pio.s1' /><slave name='config_output.s1' start='0x21860' end='0x21870' type='altera_avalon_pio.s1' /><slave name='osdram_ctrl.s1' start='0x21880' end='0x21890' type='altera_avalon_pio.s1' /><slave name='osdram_addr.s1' start='0x218A0' end='0x218B0' type='altera_avalon_pio.s1' /><slave name='osdram_data.s1' start='0x218C0' end='0x218D0' type='altera_avalon_pio.s1' /><slave name='controller_data.s1' start='0x218E0' end='0x218F0' type='altera_avalon_pio.s1' /><slave name='onchip_flash_0.data' start='0x80000' end='0xCA000' type='altera_onchip_flash.data' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x0' end='0x2000' type='altera_avalon_onchip_memory2.s1' /><slave name='onchip_flash_0.csr' start='0x20000' end='0x20008' type='altera_onchip_flash.csr' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x21000' end='0x21800' type='altera_nios2_gen2.debug_mem_slave' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x21800' end='0x21808' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='config_input.s1' start='0x21820' end='0x21830' type='altera_avalon_pio.s1' /><slave name='config_output.s1' start='0x21840' end='0x21860' type='altera_avalon_pio.s1' /><slave name='osd_ram.s1' start='0x21860' end='0x21880' type='altera_avalon_pio.s1' /><slave name='controller_data.s1' start='0x21880' end='0x21890' type='altera_avalon_pio.s1' /><slave name='onchip_flash_0.data' start='0x80000' end='0xCA000' type='altera_onchip_flash.data' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -416,7 +345,7 @@
   <parameter name="instruction_master_high_performance_paddr_size" value="0" />
   <parameter name="instruction_master_paddr_base" value="0" />
   <parameter name="instruction_master_paddr_size" value="0" />
-  <parameter name="internalIrqMaskSystemInfo" value="3" />
+  <parameter name="internalIrqMaskSystemInfo" value="1" />
   <parameter name="io_regionbase" value="0" />
   <parameter name="io_regionsize" value="0" />
   <parameter name="master_addr_map" value="false" />
@@ -581,13 +510,9 @@
   <parameter name="useShallowMemBlocks" value="false" />
   <parameter name="writable" value="true" />
  </module>
- <module
-   name="osdram_addr"
-   kind="altera_avalon_pio"
-   version="20.1"
-   enabled="1">
+ <module name="osd_ram" kind="altera_avalon_pio" version="20.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="true" />
   <parameter name="captureEdge" value="false" />
   <parameter name="clockRate" value="21477000" />
   <parameter name="direction" value="Output" />
@@ -597,57 +522,7 @@
   <parameter name="resetValue" value="0" />
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="9" />
- </module>
- <module
-   name="osdram_ctrl"
-   kind="altera_avalon_pio"
-   version="20.1"
-   enabled="1">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="21477000" />
-  <parameter name="direction" value="Output" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="2" />
- </module>
- <module
-   name="osdram_data"
-   kind="altera_avalon_pio"
-   version="20.1"
-   enabled="1">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="21477000" />
-  <parameter name="direction" value="Output" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="12" />
- </module>
- <module name="sync" kind="altera_avalon_pio" version="20.1" enabled="1">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="true" />
-  <parameter name="clockRate" value="21477000" />
-  <parameter name="direction" value="Input" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="true" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="3" />
+  <parameter name="width" value="23" />
  </module>
  <connection
    kind="avalon"
@@ -698,7 +573,7 @@
    kind="avalon"
    version="20.1"
    start="nios2_gen2_0.data_master"
-   end="sync.s1">
+   end="config_input.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x00021820" />
   <parameter name="defaultConnection" value="false" />
@@ -707,7 +582,7 @@
    kind="avalon"
    version="20.1"
    start="nios2_gen2_0.data_master"
-   end="config_input.s1">
+   end="config_output.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x00021840" />
   <parameter name="defaultConnection" value="false" />
@@ -716,7 +591,7 @@
    kind="avalon"
    version="20.1"
    start="nios2_gen2_0.data_master"
-   end="config_output.s1">
+   end="osd_ram.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x00021860" />
   <parameter name="defaultConnection" value="false" />
@@ -725,36 +600,9 @@
    kind="avalon"
    version="20.1"
    start="nios2_gen2_0.data_master"
-   end="osdram_data.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x000218c0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="20.1"
-   start="nios2_gen2_0.data_master"
-   end="osdram_addr.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x000218a0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="20.1"
-   start="nios2_gen2_0.data_master"
-   end="osdram_ctrl.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021880" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="20.1"
-   start="nios2_gen2_0.data_master"
    end="controller_data.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x000218e0" />
+  <parameter name="baseAddress" value="0x00021880" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -785,7 +633,6 @@
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="clock" version="20.1" start="clk_0.clk" end="jtag_uart_0.clk" />
- <connection kind="clock" version="20.1" start="clk_0.clk" end="sync.clk" />
  <connection kind="clock" version="20.1" start="clk_0.clk" end="config_input.clk" />
  <connection kind="clock" version="20.1" start="clk_0.clk" end="config_output.clk" />
  <connection
@@ -793,9 +640,7 @@
    version="20.1"
    start="clk_0.clk"
    end="onchip_flash_0.clk" />
- <connection kind="clock" version="20.1" start="clk_0.clk" end="osdram_data.clk" />
- <connection kind="clock" version="20.1" start="clk_0.clk" end="osdram_addr.clk" />
- <connection kind="clock" version="20.1" start="clk_0.clk" end="osdram_ctrl.clk" />
+ <connection kind="clock" version="20.1" start="clk_0.clk" end="osd_ram.clk" />
  <connection kind="clock" version="20.1" start="clk_0.clk" end="nios2_gen2_0.clk" />
  <connection
    kind="clock"
@@ -815,13 +660,6 @@
   <parameter name="irqNumber" value="0" />
  </connection>
  <connection
-   kind="interrupt"
-   version="20.1"
-   start="nios2_gen2_0.irq"
-   end="sync.irq">
-  <parameter name="irqNumber" value="1" />
- </connection>
- <connection
    kind="reset"
    version="20.1"
    start="clk_0.clk_reset"
@@ -836,7 +674,6 @@
    version="20.1"
    start="clk_0.clk_reset"
    end="nios2_gen2_0.reset" />
- <connection kind="reset" version="20.1" start="clk_0.clk_reset" end="sync.reset" />
  <connection
    kind="reset"
    version="20.1"
@@ -851,17 +688,7 @@
    kind="reset"
    version="20.1"
    start="clk_0.clk_reset"
-   end="osdram_ctrl.reset" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="clk_0.clk_reset"
-   end="osdram_addr.reset" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="clk_0.clk_reset"
-   end="osdram_data.reset" />
+   end="osd_ram.reset" />
  <connection
    kind="reset"
    version="20.1"
@@ -891,11 +718,6 @@
    kind="reset"
    version="20.1"
    start="nios2_gen2_0.debug_reset_request"
-   end="sync.reset" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="nios2_gen2_0.debug_reset_request"
    end="config_input.reset" />
  <connection
    kind="reset"
@@ -906,17 +728,7 @@
    kind="reset"
    version="20.1"
    start="nios2_gen2_0.debug_reset_request"
-   end="osdram_ctrl.reset" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="nios2_gen2_0.debug_reset_request"
-   end="osdram_addr.reset" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="nios2_gen2_0.debug_reset_request"
-   end="osdram_data.reset" />
+   end="osd_ram.reset" />
  <connection
    kind="reset"
    version="20.1"

@@ -8,11 +8,8 @@ module snes_tst_cpu (
 		input  wire [31:0] config_input_export,  //  config_input.export
 		output wire [31:0] config_output_export, // config_output.export
 		input  wire [15:0] cont_data_export,     //     cont_data.export
-		output wire [8:0]  osdram_addr_export,   //   osdram_addr.export
-		output wire [1:0]  osdram_ctrl_export,   //   osdram_ctrl.export
-		output wire [11:0] osdram_data_export,   //   osdram_data.export
-		input  wire        reset_reset_n,        //         reset.reset_n
-		input  wire [2:0]  sync_export           //          sync.export
+		output wire [22:0] osd_ram_export,       //       osd_ram.export
+		input  wire        reset_reset_n         //         reset.reset_n
 	);
 
 	wire  [31:0] nios2_gen2_0_data_master_readdata;                           // mm_interconnect_0:nios2_gen2_0_data_master_readdata -> nios2_gen2_0:d_readdata
@@ -62,39 +59,23 @@ module snes_tst_cpu (
 	wire         mm_interconnect_0_onchip_memory2_0_s1_write;                 // mm_interconnect_0:onchip_memory2_0_s1_write -> onchip_memory2_0:write
 	wire  [31:0] mm_interconnect_0_onchip_memory2_0_s1_writedata;             // mm_interconnect_0:onchip_memory2_0_s1_writedata -> onchip_memory2_0:writedata
 	wire         mm_interconnect_0_onchip_memory2_0_s1_clken;                 // mm_interconnect_0:onchip_memory2_0_s1_clken -> onchip_memory2_0:clken
-	wire         mm_interconnect_0_sync_s1_chipselect;                        // mm_interconnect_0:sync_s1_chipselect -> sync:chipselect
-	wire  [31:0] mm_interconnect_0_sync_s1_readdata;                          // sync:readdata -> mm_interconnect_0:sync_s1_readdata
-	wire   [1:0] mm_interconnect_0_sync_s1_address;                           // mm_interconnect_0:sync_s1_address -> sync:address
-	wire         mm_interconnect_0_sync_s1_write;                             // mm_interconnect_0:sync_s1_write -> sync:write_n
-	wire  [31:0] mm_interconnect_0_sync_s1_writedata;                         // mm_interconnect_0:sync_s1_writedata -> sync:writedata
 	wire  [31:0] mm_interconnect_0_config_input_s1_readdata;                  // config_input:readdata -> mm_interconnect_0:config_input_s1_readdata
 	wire   [1:0] mm_interconnect_0_config_input_s1_address;                   // mm_interconnect_0:config_input_s1_address -> config_input:address
 	wire         mm_interconnect_0_config_output_s1_chipselect;               // mm_interconnect_0:config_output_s1_chipselect -> config_output:chipselect
 	wire  [31:0] mm_interconnect_0_config_output_s1_readdata;                 // config_output:readdata -> mm_interconnect_0:config_output_s1_readdata
-	wire   [1:0] mm_interconnect_0_config_output_s1_address;                  // mm_interconnect_0:config_output_s1_address -> config_output:address
+	wire   [2:0] mm_interconnect_0_config_output_s1_address;                  // mm_interconnect_0:config_output_s1_address -> config_output:address
 	wire         mm_interconnect_0_config_output_s1_write;                    // mm_interconnect_0:config_output_s1_write -> config_output:write_n
 	wire  [31:0] mm_interconnect_0_config_output_s1_writedata;                // mm_interconnect_0:config_output_s1_writedata -> config_output:writedata
-	wire         mm_interconnect_0_osdram_data_s1_chipselect;                 // mm_interconnect_0:osdram_data_s1_chipselect -> osdram_data:chipselect
-	wire  [31:0] mm_interconnect_0_osdram_data_s1_readdata;                   // osdram_data:readdata -> mm_interconnect_0:osdram_data_s1_readdata
-	wire   [1:0] mm_interconnect_0_osdram_data_s1_address;                    // mm_interconnect_0:osdram_data_s1_address -> osdram_data:address
-	wire         mm_interconnect_0_osdram_data_s1_write;                      // mm_interconnect_0:osdram_data_s1_write -> osdram_data:write_n
-	wire  [31:0] mm_interconnect_0_osdram_data_s1_writedata;                  // mm_interconnect_0:osdram_data_s1_writedata -> osdram_data:writedata
-	wire         mm_interconnect_0_osdram_addr_s1_chipselect;                 // mm_interconnect_0:osdram_addr_s1_chipselect -> osdram_addr:chipselect
-	wire  [31:0] mm_interconnect_0_osdram_addr_s1_readdata;                   // osdram_addr:readdata -> mm_interconnect_0:osdram_addr_s1_readdata
-	wire   [1:0] mm_interconnect_0_osdram_addr_s1_address;                    // mm_interconnect_0:osdram_addr_s1_address -> osdram_addr:address
-	wire         mm_interconnect_0_osdram_addr_s1_write;                      // mm_interconnect_0:osdram_addr_s1_write -> osdram_addr:write_n
-	wire  [31:0] mm_interconnect_0_osdram_addr_s1_writedata;                  // mm_interconnect_0:osdram_addr_s1_writedata -> osdram_addr:writedata
-	wire         mm_interconnect_0_osdram_ctrl_s1_chipselect;                 // mm_interconnect_0:osdram_ctrl_s1_chipselect -> osdram_ctrl:chipselect
-	wire  [31:0] mm_interconnect_0_osdram_ctrl_s1_readdata;                   // osdram_ctrl:readdata -> mm_interconnect_0:osdram_ctrl_s1_readdata
-	wire   [1:0] mm_interconnect_0_osdram_ctrl_s1_address;                    // mm_interconnect_0:osdram_ctrl_s1_address -> osdram_ctrl:address
-	wire         mm_interconnect_0_osdram_ctrl_s1_write;                      // mm_interconnect_0:osdram_ctrl_s1_write -> osdram_ctrl:write_n
-	wire  [31:0] mm_interconnect_0_osdram_ctrl_s1_writedata;                  // mm_interconnect_0:osdram_ctrl_s1_writedata -> osdram_ctrl:writedata
+	wire         mm_interconnect_0_osd_ram_s1_chipselect;                     // mm_interconnect_0:osd_ram_s1_chipselect -> osd_ram:chipselect
+	wire  [31:0] mm_interconnect_0_osd_ram_s1_readdata;                       // osd_ram:readdata -> mm_interconnect_0:osd_ram_s1_readdata
+	wire   [2:0] mm_interconnect_0_osd_ram_s1_address;                        // mm_interconnect_0:osd_ram_s1_address -> osd_ram:address
+	wire         mm_interconnect_0_osd_ram_s1_write;                          // mm_interconnect_0:osd_ram_s1_write -> osd_ram:write_n
+	wire  [31:0] mm_interconnect_0_osd_ram_s1_writedata;                      // mm_interconnect_0:osd_ram_s1_writedata -> osd_ram:writedata
 	wire  [31:0] mm_interconnect_0_controller_data_s1_readdata;               // controller_data:readdata -> mm_interconnect_0:controller_data_s1_readdata
 	wire   [1:0] mm_interconnect_0_controller_data_s1_address;                // mm_interconnect_0:controller_data_s1_address -> controller_data:address
 	wire         irq_mapper_receiver0_irq;                                    // jtag_uart_0:av_irq -> irq_mapper:receiver0_irq
-	wire         irq_mapper_receiver1_irq;                                    // sync:irq -> irq_mapper:receiver1_irq
 	wire  [31:0] nios2_gen2_0_irq_irq;                                        // irq_mapper:sender_irq -> nios2_gen2_0:irq
-	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [config_input:reset_n, config_output:reset_n, controller_data:reset_n, irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, onchip_flash_0:reset_n, onchip_memory2_0:reset, osdram_addr:reset_n, osdram_ctrl:reset_n, osdram_data:reset_n, rst_translator:in_reset, sync:reset_n]
+	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [config_input:reset_n, config_output:reset_n, controller_data:reset_n, irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, onchip_flash_0:reset_n, onchip_memory2_0:reset, osd_ram:reset_n, rst_translator:in_reset]
 	wire         rst_controller_reset_out_reset_req;                          // rst_controller:reset_req -> [nios2_gen2_0:reset_req, onchip_memory2_0:reset_req, rst_translator:reset_req_in]
 	wire         nios2_gen2_0_debug_reset_request_reset;                      // nios2_gen2_0:debug_reset_request -> rst_controller:reset_in1
 
@@ -246,49 +227,15 @@ module snes_tst_cpu (
 		.freeze     (1'b0)                                              // (terminated)
 	);
 
-	snes_tst_cpu_osdram_addr osdram_addr (
-		.clk        (clk_clk),                                     //                 clk.clk
-		.reset_n    (~rst_controller_reset_out_reset),             //               reset.reset_n
-		.address    (mm_interconnect_0_osdram_addr_s1_address),    //                  s1.address
-		.write_n    (~mm_interconnect_0_osdram_addr_s1_write),     //                    .write_n
-		.writedata  (mm_interconnect_0_osdram_addr_s1_writedata),  //                    .writedata
-		.chipselect (mm_interconnect_0_osdram_addr_s1_chipselect), //                    .chipselect
-		.readdata   (mm_interconnect_0_osdram_addr_s1_readdata),   //                    .readdata
-		.out_port   (osdram_addr_export)                           // external_connection.export
-	);
-
-	snes_tst_cpu_osdram_ctrl osdram_ctrl (
-		.clk        (clk_clk),                                     //                 clk.clk
-		.reset_n    (~rst_controller_reset_out_reset),             //               reset.reset_n
-		.address    (mm_interconnect_0_osdram_ctrl_s1_address),    //                  s1.address
-		.write_n    (~mm_interconnect_0_osdram_ctrl_s1_write),     //                    .write_n
-		.writedata  (mm_interconnect_0_osdram_ctrl_s1_writedata),  //                    .writedata
-		.chipselect (mm_interconnect_0_osdram_ctrl_s1_chipselect), //                    .chipselect
-		.readdata   (mm_interconnect_0_osdram_ctrl_s1_readdata),   //                    .readdata
-		.out_port   (osdram_ctrl_export)                           // external_connection.export
-	);
-
-	snes_tst_cpu_osdram_data osdram_data (
-		.clk        (clk_clk),                                     //                 clk.clk
-		.reset_n    (~rst_controller_reset_out_reset),             //               reset.reset_n
-		.address    (mm_interconnect_0_osdram_data_s1_address),    //                  s1.address
-		.write_n    (~mm_interconnect_0_osdram_data_s1_write),     //                    .write_n
-		.writedata  (mm_interconnect_0_osdram_data_s1_writedata),  //                    .writedata
-		.chipselect (mm_interconnect_0_osdram_data_s1_chipselect), //                    .chipselect
-		.readdata   (mm_interconnect_0_osdram_data_s1_readdata),   //                    .readdata
-		.out_port   (osdram_data_export)                           // external_connection.export
-	);
-
-	snes_tst_cpu_sync sync (
-		.clk        (clk_clk),                              //                 clk.clk
-		.reset_n    (~rst_controller_reset_out_reset),      //               reset.reset_n
-		.address    (mm_interconnect_0_sync_s1_address),    //                  s1.address
-		.write_n    (~mm_interconnect_0_sync_s1_write),     //                    .write_n
-		.writedata  (mm_interconnect_0_sync_s1_writedata),  //                    .writedata
-		.chipselect (mm_interconnect_0_sync_s1_chipselect), //                    .chipselect
-		.readdata   (mm_interconnect_0_sync_s1_readdata),   //                    .readdata
-		.in_port    (sync_export),                          // external_connection.export
-		.irq        (irq_mapper_receiver1_irq)              //                 irq.irq
+	snes_tst_cpu_osd_ram osd_ram (
+		.clk        (clk_clk),                                 //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),         //               reset.reset_n
+		.address    (mm_interconnect_0_osd_ram_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_osd_ram_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_osd_ram_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_osd_ram_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_osd_ram_s1_readdata),   //                    .readdata
+		.out_port   (osd_ram_export)                           // external_connection.export
 	);
 
 	snes_tst_cpu_mm_interconnect_0 mm_interconnect_0 (
@@ -350,33 +297,17 @@ module snes_tst_cpu (
 		.onchip_memory2_0_s1_byteenable                 (mm_interconnect_0_onchip_memory2_0_s1_byteenable),            //                                         .byteenable
 		.onchip_memory2_0_s1_chipselect                 (mm_interconnect_0_onchip_memory2_0_s1_chipselect),            //                                         .chipselect
 		.onchip_memory2_0_s1_clken                      (mm_interconnect_0_onchip_memory2_0_s1_clken),                 //                                         .clken
-		.osdram_addr_s1_address                         (mm_interconnect_0_osdram_addr_s1_address),                    //                           osdram_addr_s1.address
-		.osdram_addr_s1_write                           (mm_interconnect_0_osdram_addr_s1_write),                      //                                         .write
-		.osdram_addr_s1_readdata                        (mm_interconnect_0_osdram_addr_s1_readdata),                   //                                         .readdata
-		.osdram_addr_s1_writedata                       (mm_interconnect_0_osdram_addr_s1_writedata),                  //                                         .writedata
-		.osdram_addr_s1_chipselect                      (mm_interconnect_0_osdram_addr_s1_chipselect),                 //                                         .chipselect
-		.osdram_ctrl_s1_address                         (mm_interconnect_0_osdram_ctrl_s1_address),                    //                           osdram_ctrl_s1.address
-		.osdram_ctrl_s1_write                           (mm_interconnect_0_osdram_ctrl_s1_write),                      //                                         .write
-		.osdram_ctrl_s1_readdata                        (mm_interconnect_0_osdram_ctrl_s1_readdata),                   //                                         .readdata
-		.osdram_ctrl_s1_writedata                       (mm_interconnect_0_osdram_ctrl_s1_writedata),                  //                                         .writedata
-		.osdram_ctrl_s1_chipselect                      (mm_interconnect_0_osdram_ctrl_s1_chipselect),                 //                                         .chipselect
-		.osdram_data_s1_address                         (mm_interconnect_0_osdram_data_s1_address),                    //                           osdram_data_s1.address
-		.osdram_data_s1_write                           (mm_interconnect_0_osdram_data_s1_write),                      //                                         .write
-		.osdram_data_s1_readdata                        (mm_interconnect_0_osdram_data_s1_readdata),                   //                                         .readdata
-		.osdram_data_s1_writedata                       (mm_interconnect_0_osdram_data_s1_writedata),                  //                                         .writedata
-		.osdram_data_s1_chipselect                      (mm_interconnect_0_osdram_data_s1_chipselect),                 //                                         .chipselect
-		.sync_s1_address                                (mm_interconnect_0_sync_s1_address),                           //                                  sync_s1.address
-		.sync_s1_write                                  (mm_interconnect_0_sync_s1_write),                             //                                         .write
-		.sync_s1_readdata                               (mm_interconnect_0_sync_s1_readdata),                          //                                         .readdata
-		.sync_s1_writedata                              (mm_interconnect_0_sync_s1_writedata),                         //                                         .writedata
-		.sync_s1_chipselect                             (mm_interconnect_0_sync_s1_chipselect)                         //                                         .chipselect
+		.osd_ram_s1_address                             (mm_interconnect_0_osd_ram_s1_address),                        //                               osd_ram_s1.address
+		.osd_ram_s1_write                               (mm_interconnect_0_osd_ram_s1_write),                          //                                         .write
+		.osd_ram_s1_readdata                            (mm_interconnect_0_osd_ram_s1_readdata),                       //                                         .readdata
+		.osd_ram_s1_writedata                           (mm_interconnect_0_osd_ram_s1_writedata),                      //                                         .writedata
+		.osd_ram_s1_chipselect                          (mm_interconnect_0_osd_ram_s1_chipselect)                      //                                         .chipselect
 	);
 
 	snes_tst_cpu_irq_mapper irq_mapper (
 		.clk           (clk_clk),                        //       clk.clk
 		.reset         (rst_controller_reset_out_reset), // clk_reset.reset
 		.receiver0_irq (irq_mapper_receiver0_irq),       // receiver0.irq
-		.receiver1_irq (irq_mapper_receiver1_irq),       // receiver1.irq
 		.sender_irq    (nios2_gen2_0_irq_irq)            //    sender.irq
 	);
 

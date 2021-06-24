@@ -72,7 +72,7 @@ endmodule
 // Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
 // Retrieval info: PRIVATE: MIFfilename STRING "./rtl/mif/font.mif"
 // Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "3072"
-// Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "2"
+// Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 // Retrieval info: PRIVATE: RegAddr NUMERIC "1"
 // Retrieval info: PRIVATE: RegOutput NUMERIC "1"
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
@@ -93,7 +93,6 @@ endmodule
 // Retrieval info: CONSTANT: OPERATION_MODE STRING "ROM"
 // Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "NONE"
 // Retrieval info: CONSTANT: OUTDATA_REG_A STRING "CLOCK0"
-// Retrieval info: CONSTANT: RAM_BLOCK_TYPE STRING "M9K"
 // Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "12"
 // Retrieval info: CONSTANT: WIDTH_A NUMERIC "8"
 // Retrieval info: CONSTANT: WIDTH_BYTEENA_A NUMERIC "1"
@@ -107,6 +106,6 @@ endmodule
 // Retrieval info: GEN_FILE: TYPE_NORMAL font_rom.inc FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL font_rom.cmp FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL font_rom.bsf FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL font_rom_inst.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL font_rom_inst.v FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL font_rom_bb.v TRUE
 // Retrieval info: LIB_FILE: altera_mf

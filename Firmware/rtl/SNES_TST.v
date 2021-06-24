@@ -159,7 +159,6 @@ snes_tst_cpu snes_tst_logic_controller (
 	.reset_reset_n ( RESETO ),
 	.clk_clk ( MCLKO ),
 	.config_output_export (testoutput),
-	.sync_export (sync),
 	.cont_data_export (contdata)
 	);
 

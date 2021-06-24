@@ -22,6 +22,32 @@
  *      Author: Opatus
  */
 
+#include "osd.h"
+#include "system.h"
+#include "alt_types.h"
+#include "altera_avalon_pio_regs.h"
 
+void print_osd_data(const char* combined_font_data, alt_u16 start_position){
+	alt_u8 i = 0;
+	alt_u8 char_position = start_position;
+	alt_u32 osd_data;
+	alt_u16 x_position = start_position % OSD_LINE_LENGTH;
+
+	//OSDRAM_WR_ENABLE();
+	while(combined_font_data[i]){
+		if((x_position + i) > OSD_LINE_LENGTH) break;
+		osd_data = OSDRAM_WR_BITS + (char_position << OSDRAM_POSITION_SHIFT) + (combined_font_data[i] << OSDRAM_FONT_SHIFT);
+		print_osd_char(osd_data);
+		i++;
+		char_position++;
+
+
+	}
+	OSDRAM_WR_DISABLE();
+}
+
+void print_osd_char(alt_u32 osd_data){
+	IOWR_ALTERA_AVALON_PIO_DATA(OSD_RAM_BASE, osd_data);
+}
 
 

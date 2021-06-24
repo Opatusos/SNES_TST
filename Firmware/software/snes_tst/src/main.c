@@ -25,6 +25,7 @@
 #include "config.h"
 #include "system.h"
 #include "alt_types.h"
+#include "osd.h"
 
 int main() {
 	alt_u32 controller;
@@ -40,6 +41,7 @@ int main() {
 	*/
 	/* Event loop never exits. */
 	while (1){
+
 
 		controller = IORD_ALTERA_AVALON_PIO_DATA(CONTROLLER_DATA_BASE);
 		IOWR_ALTERA_AVALON_PIO_DATA(CONFIG_OUTPUT_BASE, controller);

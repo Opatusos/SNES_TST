@@ -18,22 +18,22 @@
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module snes_tst_cpu_config_output (
-                                    // inputs:
-                                     address,
-                                     chipselect,
-                                     clk,
-                                     reset_n,
-                                     write_n,
-                                     writedata,
+module snes_tst_cpu_osd_ram (
+                              // inputs:
+                               address,
+                               chipselect,
+                               clk,
+                               reset_n,
+                               write_n,
+                               writedata,
 
-                                    // outputs:
-                                     out_port,
-                                     readdata
-                                  )
+                              // outputs:
+                               out_port,
+                               readdata
+                            )
 ;
 
-  output  [ 31: 0] out_port;
+  output  [ 22: 0] out_port;
   output  [ 31: 0] readdata;
   input   [  2: 0] address;
   input            chipselect;
@@ -44,14 +44,14 @@ module snes_tst_cpu_config_output (
 
 
 wire             clk_en;
-reg     [ 31: 0] data_out;
-wire    [ 31: 0] out_port;
-wire    [ 31: 0] read_mux_out;
+reg     [ 22: 0] data_out;
+wire    [ 22: 0] out_port;
+wire    [ 22: 0] read_mux_out;
 wire    [ 31: 0] readdata;
 wire             wr_strobe;
   assign clk_en = 1;
   //s1, which is an e_avalon_slave
-  assign read_mux_out = {32 {(address == 0)}} & data_out;
+  assign read_mux_out = {23 {(address == 0)}} & data_out;
   assign wr_strobe = chipselect && ~write_n;
   always @(posedge clk or negedge reset_n)
     begin
@@ -59,7 +59,7 @@ wire             wr_strobe;
           data_out <= 0;
       else if (clk_en)
           if (wr_strobe)
-              data_out <= (address == 5)? data_out & ~writedata[31 : 0]: (address == 4)? data_out | writedata[31 : 0]: (address == 0)? writedata[31 : 0]: data_out;
+              data_out <= (address == 5)? data_out & ~writedata[22 : 0]: (address == 4)? data_out | writedata[22 : 0]: (address == 0)? writedata[22 : 0]: data_out;
     end
 
 
