@@ -305,21 +305,29 @@ font_rom	font_rom_inst (
 always @(posedge MCLKO) begin
 	if(VBLANK)begin
 		font_address[11:0] <= 0;
-		if(font_y_counter[3:0] < 12) font_y_counter[3:0] <= font_y_counter[3:0] + 1;
-		else font_y_counter[3:0] <= 0;
+		/*if(font_y_counter[3:0] < 12) font_y_counter[3:0] <= font_y_counter[3:0] + 1;
+		else font_y_counter[3:0] <= 0;*/
 	end
 	if((h_count > OSD_X1) && (h_count <= OSD_X2) && (v_count > OSD_Y1_NTSC) && (v_count <= OSD_Y2_NTSC)) begin
 		osd_brightness <= 4;
-		font_bit <= font_data[font_x_counter[3:1]];
-		if(!font_x_counter) font_address[11:0] <= font_address[11:0] + 12;
+		//font_bit <= font_data[font_x_counter[3:1] +:1];
+		font_bit <= (font_data & (8'b1 << font_x_counter[3:1])) ? 1'b1 : 1'b0;
+		if(!font_x_counter && h_count > (OSD_X1 + 3)) font_address[11:0] <= font_address[11:0] + 12;
 	end
 	else begin
 		osd_brightness <= 0;
 		font_bit <= 0;
 	end
-	if(h_count == OSD_X1) font_x_counter = 0;
+	if(h_count == OSD_X1) begin
+		font_x_counter = 0;
+		font_address[11:0] = {9'b0_0000_0000, font_y_counter[3:1]};
+	end
 	else if((h_count > OSD_X1) && (h_count <= OSD_X2)) begin
 		font_x_counter <= font_x_counter + 1;
+	end
+	else if (h_count == (OSD_X2 + 1)) begin
+		if(font_y_counter[3:0] < 12) font_y_counter[3:0] <= font_y_counter[3:0] + 1;
+		else font_y_counter[3:0] <= 0;
 	end
 	
 	RDIG[9:1] <= font_bit ? 465 : (TST_R[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
