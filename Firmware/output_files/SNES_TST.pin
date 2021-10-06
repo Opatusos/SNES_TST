@@ -85,11 +85,11 @@ DACCLK                       : 12        : output : 3.3-V LVTTL       :         
 BDIG[9]                      : 13        : output : 3.3-V LVTTL       :         : 1A        : Y              
 BDIG[8]                      : 14        : output : 3.3-V LVTTL       :         : 1A        : Y              
 BDIG[7]                      : 15        : output : 3.3-V LVTTL       :         : 1B        : Y              
-altera_reserved_tms          : 16        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+~ALTERA_TMS~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 16        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
 BDIG[6]                      : 17        : output : 3.3-V LVTTL       :         : 1B        : Y              
-altera_reserved_tck          : 18        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
-altera_reserved_tdi          : 19        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
-altera_reserved_tdo          : 20        : output : 3.3-V LVTTL       :         : 1B        : N              
+~ALTERA_TCK~ / RESERVED_INPUT : 18        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+~ALTERA_TDI~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 19        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+~ALTERA_TDO~                 : 20        : output : 3.3-V LVTTL       :         : 1B        : N              
 BDIG[5]                      : 21        : output : 3.3-V LVTTL       :         : 1B        : Y              
 BDIG[4]                      : 22        : output : 3.3-V LVTTL       :         : 1B        : Y              
 VCCIO1B                      : 23        : power  :                   : 3.3V    : 1B        :                

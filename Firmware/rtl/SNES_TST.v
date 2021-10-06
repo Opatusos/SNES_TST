@@ -154,14 +154,14 @@ assign sync[2] = CSYNCI;
 //assign RDIG[9:1] = HBLANK ? 0 : rgb[8:0];
 //assign GDIG[8:0] = rgb[17:9];
 //assign BDIG[8:0] = rgb[26:18];
-
+/*
 snes_tst_cpu snes_tst_logic_controller (
 	.reset_reset_n ( RESETO ),
 	.clk_clk ( MCLKO ),
 	.config_output_export (testoutput),
 	.cont_data_export (contdata)
 	);
-
+*/
 pll	snes_tst_pll (
 	.inclk0 ( MCLKOSC ),
 	.c0 ( mclock ),
@@ -287,11 +287,12 @@ always @(posedge mclk_ntsc) begin
 end
 */
 
-reg [11:0]font_address;
+reg [10:0]font_address;
 reg [3:0]font_x_counter;
 wire [7:0]font_data;
 reg font_bit;
 reg [3:0]font_y_counter;
+reg y_helper;
 
 
 font_rom	font_rom_inst (
@@ -304,32 +305,50 @@ font_rom	font_rom_inst (
 //always @(negedge daclock) begin
 always @(posedge MCLKO) begin
 	if(VBLANK)begin
-		font_address[11:0] <= 0;
+		font_address[10:0] <= 0;
+		font_x_counter <= 0;
+		font_y_counter <= 0;
 		/*if(font_y_counter[3:0] < 12) font_y_counter[3:0] <= font_y_counter[3:0] + 1;
 		else font_y_counter[3:0] <= 0;*/
 	end
+	if(HBLANK) y_helper <= 0;
 	if((h_count > OSD_X1) && (h_count <= OSD_X2) && (v_count > OSD_Y1_NTSC) && (v_count <= OSD_Y2_NTSC)) begin
 		osd_brightness <= 4;
 		//font_bit <= font_data[font_x_counter[3:1] +:1];
 		font_bit <= (font_data & (8'b1 << font_x_counter[3:1])) ? 1'b1 : 1'b0;
-		if(!font_x_counter && h_count > (OSD_X1 + 3)) font_address[11:0] <= font_address[11:0] + 12;
+		//font_bit <= (8'b10100110 & (8'b1 << font_x_counter[3:1])) ? 1'b1 : 1'b0;
+		//font_bit <= font_data[3] ? 1'b1 : 1'b0;
+		//font_bit <= (font_data & 8'b00000100) ? 1'b1 : 1'b0;
+		//font_bit <= font_data ? 1'b1 : 1'b0;
+		if(font_x_counter==13 && h_count > (OSD_X1 + 3)) font_address[10:0] <= font_address[10:0] + 4'b1100;
 	end
 	else begin
 		osd_brightness <= 0;
 		font_bit <= 0;
 	end
 	if(h_count == OSD_X1) begin
-		font_x_counter = 0;
-		font_address[11:0] = {9'b0_0000_0000, font_y_counter[3:1]};
+		font_x_counter <= 0;
+		font_address[10:0] <= {7'b000_0000, font_y_counter[3:0]};
 	end
 	else if((h_count > OSD_X1) && (h_count <= OSD_X2)) begin
 		font_x_counter <= font_x_counter + 1;
 	end
-	else if (h_count == (OSD_X2 + 1)) begin
-		if(font_y_counter[3:0] < 12) font_y_counter[3:0] <= font_y_counter[3:0] + 1;
-		else font_y_counter[3:0] <= 0;
+	else if (h_count == (OSD_X2 + 1) && y_helper == 0) begin
+		y_helper <= 1;
+		if(font_y_counter < 4'd11) font_y_counter <= font_y_counter + 1'b1;
+		else font_y_counter <= 0;
 	end
-	
+	/*if(font_bit) begin
+		RDIG[9:1] <= 465;
+		GDIG[9:1] <= 465;
+		BDIG[9:1] <= 465;
+	end
+	else begin
+		RDIG[9:1] <= (TST_R[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+		GDIG[9:1] <= (TST_G[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+		BDIG[9:1] <= (TST_B[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+	end*/
+	//GDIG[9:1] <= (font_x_counter[3:0] ) *(* multstyle = "dsp" *) brightness;
 	RDIG[9:1] <= font_bit ? 465 : (TST_R[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 	//RDIG[9:1] <= rgb[8:0];
 	/*if (VBLANK || HBLANK) begin
