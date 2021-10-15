@@ -18,4 +18,6 @@ __Previews
 *.LOG
 *.log
 *.htm
+*.html
+*.drc
 *.$$$
