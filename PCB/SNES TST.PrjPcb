@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=Project Outputs for SNES TST
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -283,10 +283,6 @@ Variation2=Designator=R9|UniqueId=\RDPECNNU|Kind=1|AlternatePart=
 Variation3=Designator=IC4|UniqueId=\CSATIVHQ|Kind=1|AlternatePart= 
 ParamVariationCount=3
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for SNES TST\Design Rule Check - SNES TST.html
-DItemRevisionGUID=
-
 [Parameter1]
 Name=Revision
 Value=Rev 0
@@ -336,6 +332,7 @@ DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=SNES TST Assembly.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
+LocalReleaseTarget=Assembly\NTSC System
 
 [Configuration5]
 Name=Assembly PAL System
@@ -348,6 +345,7 @@ DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=SNES TST Assembly.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
+LocalReleaseTarget=Assembly\PAL System
 
 [Configuration6]
 Name=Documentation for NTSC System
@@ -360,7 +358,7 @@ DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=SNES TST Documentation.OutJob
 ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
 ConfigurationType=Custom
-LocalReleaseTarget=Documentation NTSC System
+LocalReleaseTarget=Documentation\NTSC System
 
 [Configuration7]
 Name=Documentation for PAL System
@@ -373,10 +371,10 @@ DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=SNES TST Documentation.OutJob
 ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
 ConfigurationType=Custom
-LocalReleaseTarget=Documentation PAL System
+LocalReleaseTarget=Documentation\PAL System
 
 [Generic_EDE]
-OutputDir=Project Outputs for SNES TST
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -502,7 +500,7 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP7740A3 (HP OfficeJet Pro 7740 series)
+TargetPrinter=Canon MG4200 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
