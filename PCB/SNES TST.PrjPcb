@@ -254,7 +254,7 @@ UniqueID=B299EE89-3270-4BC2-B1D4-559FA1E1D8CF
 Description=NTSC System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=37
+VariationCount=3
 Variation1=Designator=IC2|UniqueId=\NCLPXQOP|Kind=0|AlternatePart=17.734475 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=17.734475 MHz
 ParamDesignator1=IC2
@@ -262,42 +262,8 @@ ParamVariation2=ParameterName=Comment|VariantValue=17.734475 MHz
 ParamDesignator2=IC2
 ParamVariation3=ParameterName=Manufacturer_Part_Number|VariantValue=LFSPXO020648Bulk
 ParamDesignator3=IC2
-Variation2=Designator=Fid1|UniqueId=\HRCYYIRV|Kind=1|AlternatePart= 
-Variation3=Designator=Fid2|UniqueId=\LOLKFGES|Kind=1|AlternatePart= 
-Variation4=Designator=Fid4|UniqueId=\FBKCLJXA|Kind=1|AlternatePart= 
-Variation5=Designator=Fid3|UniqueId=\PHRSPGYA|Kind=1|AlternatePart= 
-Variation6=Designator=Fid5|UniqueId=\SORYKWTX|Kind=1|AlternatePart= 
-Variation7=Designator=Fid6|UniqueId=\GBURUJZQ|Kind=1|AlternatePart= 
-Variation8=Designator=JP2|UniqueId=\TKQRUYSU|Kind=1|AlternatePart= 
-Variation9=Designator=JP5|UniqueId=\LHZGPMSV|Kind=1|AlternatePart= 
-Variation10=Designator=JP4|UniqueId=\HMPRICNF|Kind=1|AlternatePart= 
-Variation11=Designator=JP3|UniqueId=\KAXNLRKH|Kind=1|AlternatePart= 
-Variation12=Designator=JP1|UniqueId=\KEGYBRQC|Kind=1|AlternatePart= 
-Variation13=Designator=TP11|UniqueId=\NANAZVLB|Kind=1|AlternatePart= 
-Variation14=Designator=TP10|UniqueId=\YUULFFCO|Kind=1|AlternatePart= 
-Variation15=Designator=TP9|UniqueId=\FZUUSTLR|Kind=1|AlternatePart= 
-Variation16=Designator=TP8|UniqueId=\QGOINAOY|Kind=1|AlternatePart= 
-Variation17=Designator=TP7|UniqueId=\LJWMMPUQ|Kind=1|AlternatePart= 
-Variation18=Designator=TP6|UniqueId=\KMCLCKUC|Kind=1|AlternatePart= 
-Variation19=Designator=TP5|UniqueId=\DYKTTBWT|Kind=1|AlternatePart= 
-Variation20=Designator=TP4|UniqueId=\SGBEALET|Kind=1|AlternatePart= 
-Variation21=Designator=TP3|UniqueId=\TCFZILLT|Kind=1|AlternatePart= 
-Variation22=Designator=TP2|UniqueId=\HRKCZGHK|Kind=1|AlternatePart= 
-Variation23=Designator=TP1|UniqueId=\IAXEZFFL|Kind=1|AlternatePart= 
-Variation24=Designator=TP17|UniqueId=\DXPGOUXW|Kind=1|AlternatePart= 
-Variation25=Designator=TP16|UniqueId=\YWQJAEFV|Kind=1|AlternatePart= 
-Variation26=Designator=TP15|UniqueId=\MCJWMPFD|Kind=1|AlternatePart= 
-Variation27=Designator=TP14|UniqueId=\LMBWSMGH|Kind=1|AlternatePart= 
-Variation28=Designator=TP13|UniqueId=\ECEYIYCK|Kind=1|AlternatePart= 
-Variation29=Designator=TP12|UniqueId=\DJJPYWLT|Kind=1|AlternatePart= 
-Variation30=Designator=J1|UniqueId=\AFKJWMUS|Kind=1|AlternatePart= 
-Variation31=Designator=R10|UniqueId=\USDAVUMX|Kind=1|AlternatePart= 
-Variation32=Designator=IC4|UniqueId=\CSATIVHQ|Kind=1|AlternatePart= 
-Variation33=Designator=TP18|UniqueId=\XJEDMCSS|Kind=1|AlternatePart= 
-Variation34=Designator=TP19|UniqueId=\GJLKFCVE|Kind=1|AlternatePart= 
-Variation35=Designator=TP20|UniqueId=\MIBSPASW|Kind=1|AlternatePart= 
-Variation36=Designator=TP21|UniqueId=\IIFJSTMU|Kind=1|AlternatePart= 
-Variation37=Designator=JP6|UniqueId=\PBLCKSBU|Kind=1|AlternatePart= 
+Variation2=Designator=R10|UniqueId=\USDAVUMX|Kind=1|AlternatePart= 
+Variation3=Designator=IC4|UniqueId=\CSATIVHQ|Kind=1|AlternatePart= 
 ParamVariationCount=3
 
 [ProjectVariant2]
@@ -305,7 +271,7 @@ UniqueID=6E92B0DB-A3B6-43EE-A7B9-E82C659B15D8
 Description=PAL System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=37
+VariationCount=3
 Variation1=Designator=IC2|UniqueId=\NCLPXQOP|Kind=0|AlternatePart=14.318180 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=14.318180 MHz
 ParamDesignator1=IC2
@@ -313,42 +279,8 @@ ParamVariation2=ParameterName=Manufacturer_Part_Number|VariantValue=LFSPXO018538
 ParamDesignator2=IC2
 ParamVariation3=ParameterName=Comment|VariantValue=14.318180 MHz
 ParamDesignator3=IC2
-Variation2=Designator=Fid1|UniqueId=\HRCYYIRV|Kind=1|AlternatePart= 
-Variation3=Designator=Fid2|UniqueId=\LOLKFGES|Kind=1|AlternatePart= 
-Variation4=Designator=Fid4|UniqueId=\FBKCLJXA|Kind=1|AlternatePart= 
-Variation5=Designator=Fid3|UniqueId=\PHRSPGYA|Kind=1|AlternatePart= 
-Variation6=Designator=Fid5|UniqueId=\SORYKWTX|Kind=1|AlternatePart= 
-Variation7=Designator=Fid6|UniqueId=\GBURUJZQ|Kind=1|AlternatePart= 
-Variation8=Designator=JP2|UniqueId=\TKQRUYSU|Kind=1|AlternatePart= 
-Variation9=Designator=JP5|UniqueId=\LHZGPMSV|Kind=1|AlternatePart= 
-Variation10=Designator=JP4|UniqueId=\HMPRICNF|Kind=1|AlternatePart= 
-Variation11=Designator=JP3|UniqueId=\KAXNLRKH|Kind=1|AlternatePart= 
-Variation12=Designator=JP1|UniqueId=\KEGYBRQC|Kind=1|AlternatePart= 
-Variation13=Designator=TP11|UniqueId=\NANAZVLB|Kind=1|AlternatePart= 
-Variation14=Designator=TP10|UniqueId=\YUULFFCO|Kind=1|AlternatePart= 
-Variation15=Designator=TP9|UniqueId=\FZUUSTLR|Kind=1|AlternatePart= 
-Variation16=Designator=TP8|UniqueId=\QGOINAOY|Kind=1|AlternatePart= 
-Variation17=Designator=TP7|UniqueId=\LJWMMPUQ|Kind=1|AlternatePart= 
-Variation18=Designator=TP6|UniqueId=\KMCLCKUC|Kind=1|AlternatePart= 
-Variation19=Designator=TP5|UniqueId=\DYKTTBWT|Kind=1|AlternatePart= 
-Variation20=Designator=TP4|UniqueId=\SGBEALET|Kind=1|AlternatePart= 
-Variation21=Designator=TP3|UniqueId=\TCFZILLT|Kind=1|AlternatePart= 
-Variation22=Designator=TP2|UniqueId=\HRKCZGHK|Kind=1|AlternatePart= 
-Variation23=Designator=TP1|UniqueId=\IAXEZFFL|Kind=1|AlternatePart= 
-Variation24=Designator=TP17|UniqueId=\DXPGOUXW|Kind=1|AlternatePart= 
-Variation25=Designator=TP16|UniqueId=\YWQJAEFV|Kind=1|AlternatePart= 
-Variation26=Designator=TP15|UniqueId=\MCJWMPFD|Kind=1|AlternatePart= 
-Variation27=Designator=TP14|UniqueId=\LMBWSMGH|Kind=1|AlternatePart= 
-Variation28=Designator=TP13|UniqueId=\ECEYIYCK|Kind=1|AlternatePart= 
-Variation29=Designator=TP12|UniqueId=\DJJPYWLT|Kind=1|AlternatePart= 
-Variation30=Designator=J1|UniqueId=\AFKJWMUS|Kind=1|AlternatePart= 
-Variation31=Designator=R9|UniqueId=\RDPECNNU|Kind=1|AlternatePart= 
-Variation32=Designator=IC4|UniqueId=\CSATIVHQ|Kind=1|AlternatePart= 
-Variation33=Designator=TP18|UniqueId=\XJEDMCSS|Kind=1|AlternatePart= 
-Variation34=Designator=TP19|UniqueId=\GJLKFCVE|Kind=1|AlternatePart= 
-Variation35=Designator=TP20|UniqueId=\MIBSPASW|Kind=1|AlternatePart= 
-Variation36=Designator=TP21|UniqueId=\IIFJSTMU|Kind=1|AlternatePart= 
-Variation37=Designator=JP6|UniqueId=\PBLCKSBU|Kind=1|AlternatePart= 
+Variation2=Designator=R9|UniqueId=\RDPECNNU|Kind=1|AlternatePart= 
+Variation3=Designator=IC4|UniqueId=\CSATIVHQ|Kind=1|AlternatePart= 
 ParamVariationCount=3
 
 [GeneratedDocument1]
@@ -418,7 +350,7 @@ ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
 
 [Configuration6]
-Name=Documentation
+Name=Documentation for NTSC System
 ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
@@ -428,6 +360,20 @@ DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=SNES TST Documentation.OutJob
 ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
 ConfigurationType=Custom
+LocalReleaseTarget=Documentation NTSC System
+
+[Configuration7]
+Name=Documentation for PAL System
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=SNES TST Documentation.OutJob
+ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
+ConfigurationType=Custom
+LocalReleaseTarget=Documentation PAL System
 
 [Generic_EDE]
 OutputDir=Project Outputs for SNES TST

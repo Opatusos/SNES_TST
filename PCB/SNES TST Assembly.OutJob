@@ -15,13 +15,13 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=SNES TST Assembly.OutJob
+Name=
 Description=
-TargetOutputMedium=Assembly Drawings
+TargetOutputMedium=Assembly NTSC
 VariantName=[No Variations]
-VariantScope=0
+VariantScope=2
 CurrentConfigurationName=Assembly
-TargetPrinter=Virtual Printer
+TargetPrinter=HP7740A3 (HP OfficeJet Pro 7740 series)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -42,7 +42,7 @@ OutputName1=Assembly Drawings
 OutputCategory1=Assembly
 OutputDocumentPath1=SNES TST.PcbDoc
 OutputVariantName1=
-OutputEnabled1=1
+OutputEnabled1=0
 OutputEnabled1_OutputMedium1=0
 OutputEnabled1_OutputMedium2=1
 OutputEnabled1_OutputMedium3=0
@@ -165,7 +165,7 @@ OutputName4=Bill of Materials NTSC
 OutputCategory4=Report
 OutputDocumentPath4=SNES TST.BomDoc
 OutputVariantName4=NTSC System
-OutputEnabled4=0
+OutputEnabled4=1
 OutputEnabled4_OutputMedium1=0
 OutputEnabled4_OutputMedium2=0
 OutputEnabled4_OutputMedium3=0
@@ -189,7 +189,7 @@ OutputName5=Generates pick and place files NTSC
 OutputCategory5=Assembly
 OutputDocumentPath5=SNES TST.PcbDoc
 OutputVariantName5=NTSC System
-OutputEnabled5=0
+OutputEnabled5=1
 OutputEnabled5_OutputMedium1=0
 OutputEnabled5_OutputMedium2=0
 OutputEnabled5_OutputMedium3=0
@@ -198,7 +198,7 @@ OutputEnabled5_OutputMedium5=1
 OutputEnabled5_OutputMedium6=0
 OutputDefault5=0
 Configuration5_Name1=OutputConfigurationParameter1
-Configuration5_Item1=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=False|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|Filter= |FilterActive=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:ARTNR,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#18=Name:Value,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|DocumentPath=Power.PcbDoc
+Configuration5_Item1=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=False|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=True|Filter=(Comment <> 'Pin Connector') AND (Comment <> 'Conn 6P') AND (Comment <> 'Jumper')|FilterActive=True|YFlip=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:Ascending,SortIndex:0,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:Value,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#18=Name:Manufacturer_Part_Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21|Column#19=Name:Vendor,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27|Column#20=Name:Dielectric,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19|Column#21=Name:Nominal Voltage,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22|Column#22=Name:Type,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26|Column#23=Name:RefDes,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23|Column#24=Name:Copyright,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18|Column#25=Name:Built_By,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|Column#26=Name:SourceLibrary,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24|Column#27=Name:Tolerance,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25|Column#28=Name:Frequency,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20|DocumentPath=D:\Adatok\ElektroProjektek\SNES_TST\PCB\SNES TST.PcbDoc
 OutputType6=PCBDrawing
 OutputName6=Draftsman NTSC
 OutputCategory6=Documentation
@@ -241,7 +241,7 @@ OutputEnabled8_OutputMedium5=0
 OutputEnabled8_OutputMedium6=1
 OutputDefault8=0
 Configuration8_Name1=OutputConfigurationParameter1
-Configuration8_Item1=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=False|GenerateTextFormat=True|ShowUnits=False|Separator= |ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=True|Filter= |FilterActive=False|YFlip=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|DocumentPath=D:\Adatok\ElektroProjektek\SNES_TST\PCB\SNES TST.PcbDoc
+Configuration8_Item1=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=False|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=True|Filter=(Comment <> 'Pin Connector') AND (Comment <> 'Conn 6P') AND (Comment <> 'Jumper')|FilterActive=True|YFlip=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:Ascending,SortIndex:0,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:26|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:27|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:13|Column#17=Name:Manufacturer_Part_Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18|Column#18=Name:Vendor,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25|Column#19=Name:Dielectric,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#20=Name:Nominal Voltage,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19|Column#21=Name:Type,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23|Column#22=Name:RefDes,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20|Column#23=Name:Copyright,Fixed:False,Metric:False,Visible:False,Sort:None,Position:15|Column#24=Name:Built_By,Fixed:False,Metric:False,Visible:False,Sort:None,Position:14|Column#25=Name:SourceLibrary,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21|Column#26=Name:Tolerance,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22|Column#27=Name:Frequency,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|Column#28=Name:Value,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24|DocumentPath=D:\Adatok\ElektroProjektek\SNES_TST\PCB\SNES TST.PcbDoc
 OutputType9=BOM_PartType
 OutputName9=Bill of Materials PAL
 OutputCategory9=Report
@@ -295,10 +295,10 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\Assembly NTSC.PDF
+OutputFilePath3=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\SNES TST Assembly Drawings NTSC.PDF
 ReleaseManaged3=1
 OutputBasePath3=
-OutputPathMedia3==VariantName
+OutputPathMedia3=
 OutputPathMediaValue3==VariantName
 OutputPathOutputer3=[Output Type]
 OutputPathOutputerPrefix3=
@@ -322,10 +322,10 @@ ShowComponentParameters3=1
 GlobalBookmarks3=0
 PDFACompliance3=Disabled
 PDFVersion3=Default
-OutputFilePath4=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\Assembly NTSC.PDF
+OutputFilePath4=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\SNES TST Assembly Drawings PAL.PDF
 ReleaseManaged4=1
 OutputBasePath4=
-OutputPathMedia4==VariantName
+OutputPathMedia4=
 OutputPathMediaValue4==VariantName
 OutputPathOutputer4=[Output Type]
 OutputPathOutputerPrefix4=
@@ -349,10 +349,10 @@ ShowComponentParameters4=1
 GlobalBookmarks4=0
 PDFACompliance4=Disabled
 PDFVersion4=Default
-OutputFilePath5=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\
+OutputFilePath5=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\
 ReleaseManaged5=1
 OutputBasePath5=
-OutputPathMedia5==VariantName
+OutputPathMedia5=
 OutputPathMediaValue5==VariantName
 OutputPathOutputer5=
 OutputPathOutputerPrefix5=
@@ -365,7 +365,7 @@ OpenOutput5=1
 OutputFilePath6=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\
 ReleaseManaged6=1
 OutputBasePath6=
-OutputPathMedia6==VariantName
+OutputPathMedia6=
 OutputPathMediaValue6==VariantName
 OutputPathOutputer6=
 OutputPathOutputerPrefix6=
@@ -379,11 +379,11 @@ OpenOutput6=1
 [GeneratedFilesSettings]
 RelativeOutputPath2=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\SNES TST Assembly.PDF
 OpenOutputs2=1
-RelativeOutputPath3=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\Assembly NTSC.PDF
+RelativeOutputPath3=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\SNES TST Assembly Drawings NTSC.PDF
 OpenOutputs3=1
-RelativeOutputPath4=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\Assembly NTSC.PDF
+RelativeOutputPath4=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\SNES TST Assembly Drawings PAL.PDF
 OpenOutputs4=1
-RelativeOutputPath5=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\
+RelativeOutputPath5=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\
 OpenOutputs5=1
 AddToProject5=1
 TimestampFolder5=0
