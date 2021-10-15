@@ -275,6 +275,7 @@ DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=SNES TST Adapter Assembly.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
+LocalReleaseTarget=Assembly
 
 [Configuration4]
 Name=Assembly
@@ -287,6 +288,7 @@ DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=SNES TST Adapter Assembly.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
+LocalReleaseTarget=Assembly NOT
 
 [Configuration5]
 Name=Documentation
