@@ -12,7 +12,6 @@ Step/
 *.PcbDocPreview
 __Previews
 *.PrjPcbStructure
-*.PrjPcbVariants
 *.Dat
 *.REP 
 *.TLT
