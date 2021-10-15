@@ -16,7 +16,7 @@ AllowPortNetNames=0
 AllowSheetEntryNetNames=1
 AppendSheetNumberToLocalNets=0
 NetlistSinglePinNets=0
-DefaultConfiguration=Default Configuration
+DefaultConfiguration=
 UserID=0xFFFFFFFF
 DefaultPcbProtel=1
 DefaultPcbPcad=0
@@ -40,6 +40,11 @@ IncludeDesignInRelease=0
 PrefsVaultGUID=
 PrefsRevisionGUID=
 
+[Release]
+ReleaseTarget=1
+ReleaseFolderPath=[OutputPath]\[Title]\[Revision]
+ReleaseZipPath=[OutputPath][ProjectName].zip
+
 [Document1]
 DocumentPath=SNES TST Adapter Sheet1.SchDoc
 AnnotationEnabled=1
@@ -58,7 +63,7 @@ GenerateClassCluster=0
 DocumentUniqueId=FJUMPAAE
 
 [Document2]
-DocumentPath=SNES TST Adapter.PcbDoc
+DocumentPath=SNES TST Adapter Type A.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -75,7 +80,7 @@ GenerateClassCluster=0
 DocumentUniqueId=QMIGIMRB
 
 [Document3]
-DocumentPath=SNES TST Adapter GPM RGB APU.PcbDoc
+DocumentPath=SNES TST Adapter Type B.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -92,7 +97,7 @@ GenerateClassCluster=0
 DocumentUniqueId=CMATLLNG
 
 [Document4]
-DocumentPath=..\..\Library\PCB.PcbLib
+DocumentPath=SNES TST Adapter Type A.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -106,10 +111,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=ITBXMMKD
+DocumentUniqueId=
 
 [Document5]
-DocumentPath=..\..\Library\PCB.SchLib
+DocumentPath=SNES TST Adapter Type B.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -126,7 +131,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document6]
-DocumentPath=SNES TST Adapter.PCBDwf
+DocumentPath=SNES TST Adapter.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -143,7 +148,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document7]
-DocumentPath=SNES TST Adapter GPM RGB APU.PCBDwf
+DocumentPath=SNES TST Adapter.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -159,8 +164,78 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document8]
+DocumentPath=SNES TST Adapter Assembly.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document9]
+DocumentPath=SNES TST Adapter Documentation.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document10]
+DocumentPath=SNES TST Adapter Fabrication.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[ProjectVariant1]
+UniqueID=98913AC4-11BB-4A69-B195-619B905EB899
+Description=SNES TST Adapter
+AllowFabrication=0
+ParameterCount=0
+VariationCount=3
+Variation1=Designator=Fid1|UniqueId=\XMFPTTAN|Kind=1|AlternatePart= 
+Variation2=Designator=Fid2|UniqueId=\KPKTATHB|Kind=1|AlternatePart= 
+Variation3=Designator=IC1|UniqueId=\XWJBSNUD|Kind=1|AlternatePart= 
+ParamVariationCount=0
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for SNES TST Adapter\Design Rule Check - SNES TST Adapter.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for SNES TST Adapter\Design Rule Check - SNES TST Adapter Type A.html
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for SNES TST Adapter\Design Rule Check - SNES TST Adapter Type B.html
 DItemRevisionGUID=
 
 [Parameter1]
@@ -168,14 +243,62 @@ Name=Revision
 Value=Rev 0
 
 [Configuration1]
-Name=Default Configuration
+Name=Sources
 ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
 OutputJobsCount=0
-ContentTypeGUID=
-ConfigurationType=
+ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
+ConfigurationType=Source
+
+[Configuration2]
+Name=Fabrication
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=SNES TST Adapter Fabrication.OutJob
+ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Fabrication
+
+[Configuration3]
+Name=Assembly SNES TST Adapter
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=SNES TST Adapter
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=SNES TST Adapter Assembly.OutJob
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
+
+[Configuration4]
+Name=Assembly
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=SNES TST Adapter Assembly.OutJob
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
+
+[Configuration5]
+Name=Documentation
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=SNES TST Adapter Documentation.OutJob
+ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
+ConfigurationType=Custom
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -301,7 +424,7 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Canon MG4200 series Printer
+TargetPrinter=HP7740A3 (HP OfficeJet Pro 7740 series)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
@@ -764,36 +887,6 @@ OutputName11=Specctra Design PCB
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
-OutputType12=Ansoft Neutral
-OutputName12=Ansoft Neutral (AutoPCB)
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-OutputType13=HyperLynx
-OutputName13=HyperLynx (AutoPCB)
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=Orcad v7 Capture Design
-OutputName14=Orcad v7 Capture Design (AutoSCH)
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=P-CAD ASCII
-OutputName15=P-CAD ASCII (AutoPCB)
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-OutputType16=P-CAD V16 Schematic Design
-OutputName16=P-CAD V16 Schematic Design (AutoSCH)
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-OutputType17=SiSoft
-OutputName17=SiSoft (AutoPCB)
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
 
 [OutputGroup10]
 Name=PostProcess Outputs

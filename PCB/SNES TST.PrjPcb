@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=
+OutputPath=Project Outputs for SNES TST
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -42,7 +42,7 @@ PrefsRevisionGUID=
 
 [Release]
 ReleaseTarget=1
-ReleaseFolderPath=[OutputPath]
+ReleaseFolderPath=[OutputPath]\[Title]\[Revision]
 ReleaseZipPath=[OutputPath][ProjectName].zip
 
 [Document1]
@@ -148,23 +148,6 @@ GenerateClassCluster=0
 DocumentUniqueId=RWRKEWNG
 
 [Document7]
-DocumentPath=SNES TST.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document8]
 DocumentPath=SNES TST.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -181,7 +164,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document8]
 DocumentPath=SNES TST.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -198,8 +181,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
-DocumentPath=..\..\Library\PCB.PcbLib
+[Document9]
+DocumentPath=SNES TST Assembly.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -213,10 +196,27 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=ITBXMMKD
+DocumentUniqueId=
+
+[Document10]
+DocumentPath=SNES TST Documentation.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [Document11]
-DocumentPath=..\..\Library\PCB.SchLib
+DocumentPath=SNES TST Fabrication.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -230,7 +230,24 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=ACMPLYCW
+DocumentUniqueId=
+
+[Document12]
+DocumentPath=SNES TST.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [ProjectVariant1]
 UniqueID=B299EE89-3270-4BC2-B1D4-559FA1E1D8CF
@@ -358,7 +375,9 @@ ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
-OutputJobsCount=0
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=SNES TST Fabrication.OutJob
 ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Fabrication
 
@@ -368,32 +387,50 @@ ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
-OutputJobsCount=0
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=SNES TST Assembly.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
 
 [Configuration4]
-Name=Assembly NTSC
+Name=Assembly NTSC System
 ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
-Variant=NTSC
-OutputJobsCount=0
+Variant=NTSC System
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=SNES TST Assembly.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
 
 [Configuration5]
-Name=Assembly PAL
+Name=Assembly PAL System
 ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
-Variant=PAL
-OutputJobsCount=0
+Variant=PAL System
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=SNES TST Assembly.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
 
+[Configuration6]
+Name=Documentation
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=SNES TST Documentation.OutJob
+ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
+ConfigurationType=Custom
+
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for SNES TST
 
 [OutputGroup1]
 Name=Netlist Outputs
