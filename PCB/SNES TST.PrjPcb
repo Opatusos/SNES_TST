@@ -254,7 +254,7 @@ UniqueID=B299EE89-3270-4BC2-B1D4-559FA1E1D8CF
 Description=NTSC System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=3
+VariationCount=2
 Variation1=Designator=IC2|UniqueId=\NCLPXQOP|Kind=0|AlternatePart=17.734475 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=17.734475 MHz
 ParamDesignator1=IC2
@@ -263,7 +263,6 @@ ParamDesignator2=IC2
 ParamVariation3=ParameterName=Manufacturer_Part_Number|VariantValue=LFSPXO020648Bulk
 ParamDesignator3=IC2
 Variation2=Designator=R10|UniqueId=\USDAVUMX|Kind=1|AlternatePart= 
-Variation3=Designator=IC4|UniqueId=\CSATIVHQ|Kind=1|AlternatePart= 
 ParamVariationCount=3
 
 [ProjectVariant2]
@@ -271,7 +270,7 @@ UniqueID=6E92B0DB-A3B6-43EE-A7B9-E82C659B15D8
 Description=PAL System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=3
+VariationCount=2
 Variation1=Designator=IC2|UniqueId=\NCLPXQOP|Kind=0|AlternatePart=14.318180 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=14.318180 MHz
 ParamDesignator1=IC2
@@ -280,7 +279,6 @@ ParamDesignator2=IC2
 ParamVariation3=ParameterName=Comment|VariantValue=14.318180 MHz
 ParamDesignator3=IC2
 Variation2=Designator=R9|UniqueId=\RDPECNNU|Kind=1|AlternatePart= 
-Variation3=Designator=IC4|UniqueId=\CSATIVHQ|Kind=1|AlternatePart= 
 ParamVariationCount=3
 
 [GeneratedDocument1]
