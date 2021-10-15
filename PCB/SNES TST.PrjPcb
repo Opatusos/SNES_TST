@@ -283,6 +283,10 @@ Variation2=Designator=R9|UniqueId=\RDPECNNU|Kind=1|AlternatePart=
 Variation3=Designator=IC4|UniqueId=\CSATIVHQ|Kind=1|AlternatePart= 
 ParamVariationCount=3
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for SNES TST\Design Rule Check - SNES TST.html
+DItemRevisionGUID=
+
 [Parameter1]
 Name=Revision
 Value=Rev 0
@@ -332,7 +336,6 @@ DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=SNES TST Assembly.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
-LocalReleaseTarget=Assembly\NTSC System
 
 [Configuration5]
 Name=Assembly PAL System
@@ -345,33 +348,30 @@ DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=SNES TST Assembly.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
-LocalReleaseTarget=Assembly\PAL System
 
 [Configuration6]
-Name=Documentation for NTSC System
+Name=Documentation NTSC System
 ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
-Variant=[No Variations]
+Variant=NTSC System
 OutputJobsCount=1
 DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=SNES TST Documentation.OutJob
 ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
 ConfigurationType=Custom
-LocalReleaseTarget=Documentation\NTSC System
 
 [Configuration7]
-Name=Documentation for PAL System
+Name=Documentation PAL System
 ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
-Variant=[No Variations]
+Variant=PAL System
 OutputJobsCount=1
 DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=SNES TST Documentation.OutJob
 ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
 ConfigurationType=Custom
-LocalReleaseTarget=Documentation\PAL System
 
 [Generic_EDE]
 OutputDir=
