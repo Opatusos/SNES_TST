@@ -1,0 +1,14 @@
+Altium Designer Pick and Place Locations
+C:\Users\ft\AppData\Local\TempReleases\Snapshot\2\Assembly SNES TST Adapter\Type A\Pick Place for SNES TST Adapter Type A(SNES TST Adapter).txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       15.10.21
+Time:       17:29
+Revision:   Not in VersionControl
+Variant:    SNES TST Adapter
+Units used: mm
+
+Designator Comment            Layer    Footprint  Rotation Description        Ref-X(mm) Ref-Y(mm) 
+J1         "80Pole Connector" TopLayer DF40C-80DS 270      "80Pole Connector" 9.4000    12.5000   
