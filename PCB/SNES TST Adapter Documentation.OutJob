@@ -15,11 +15,11 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=SNES TST Adapter Documentation.OutJob
+Name=
 Description=
 TargetOutputMedium=Drawings Type A
-VariantName=SNES TST Adapter
-VariantScope=2
+VariantName=[No Variations]
+VariantScope=0
 CurrentConfigurationName=Documentation
 TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1

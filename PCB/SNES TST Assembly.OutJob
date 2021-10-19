@@ -15,12 +15,12 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=SNES TST Assembly.OutJob
+Name=
 Description=
 TargetOutputMedium=Assembly Drawings
 VariantName=[No Variations]
 VariantScope=2
-CurrentConfigurationName=Assembly PAL System
+CurrentConfigurationName=Assembly
 TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
@@ -364,7 +364,7 @@ OutputFileNameSpecial5=
 OpenOutput5=1
 OutputFilePath6=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\VariantName\
 ReleaseManaged6=1
-OutputBasePath6=
+OutputBasePath6=Project Outputs for SNES TST
 OutputPathMedia6=
 OutputPathMediaValue6==VariantName
 OutputPathOutputer6=

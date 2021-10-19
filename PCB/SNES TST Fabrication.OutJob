@@ -15,11 +15,11 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=SNES TST Fabrication.OutJob
+Name=
 Description=
 TargetOutputMedium=Fabrication
 VariantName=[No Variations]
-VariantScope=2
+VariantScope=0
 CurrentConfigurationName=Fabrication
 TargetPrinter=HP7740A3 (HP OfficeJet Pro 7740 series)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
