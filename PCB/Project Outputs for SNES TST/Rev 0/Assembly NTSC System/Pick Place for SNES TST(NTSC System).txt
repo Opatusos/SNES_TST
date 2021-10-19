@@ -1,11 +1,11 @@
 Altium Designer Pick and Place Locations
-C:\Users\feren\AppData\Local\TempReleases\Snapshot\7\Assembly NTSC System\Pick Place for SNES TST(NTSC System).txt
+C:\Users\ft\AppData\Local\TempReleases\Snapshot\3\Assembly NTSC System\Pick Place for SNES TST(NTSC System).txt
 
 ========================================================================================================================
 File Design Information:
 
-Date:       15/10/21
-Time:       22:22
+Date:       19-10-21
+Time:       11:51
 Revision:   Not in VersionControl
 Variant:    NTSC System
 Units used: mm

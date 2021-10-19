@@ -19,7 +19,7 @@ Name=SNES TST Adapter Assembly.OutJob
 Description=
 TargetOutputMedium=Assembly Type B
 VariantName=[No Variations]
-VariantScope=0
+VariantScope=2
 CurrentConfigurationName=
 TargetPrinter=HP7740A3 (HP OfficeJet Pro 7740 series)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
@@ -191,7 +191,7 @@ OutputEnabled7_OutputMedium4=0
 OutputEnabled7_OutputMedium5=2
 OutputDefault7=0
 Configuration7_Name1=OutputConfigurationParameter1
-Configuration7_Item1=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=False|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=True|Filter=(Comment <> 'PPU2100Pin')|FilterActive=True|YFlip=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:Manufacturer_Part_Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#18=Name:Vendor,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18|Column#19=Name:System,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|DocumentPath=D:\Adatok\ElektroProjektek\SNES_TST\PCB\SNES TST Adapter Type B.PcbDoc
+Configuration7_Item1=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=False|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=True|Filter=(Comment <> 'PPU2100Pin')|FilterActive=True|YFlip=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:Manufacturer_Part_Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#18=Name:Vendor,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18|Column#19=Name:System,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|DocumentPath=D:\Adatok\ElektroProjektek\SNES_TST\PCB\SNES TST Adapter Type B.PcbDoc
 
 [PublishSettings]
 OutputFilePath2=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST Adapter\SNES TST Adapter Type A Assembly Drawings.PDF
@@ -250,7 +250,7 @@ PDFACompliance3=Disabled
 PDFVersion3=Default
 OutputFilePath4=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST Adapter\Type A\
 ReleaseManaged4=1
-OutputBasePath4=Project Outputs for SNES TST Adapter
+OutputBasePath4=
 OutputPathMedia4=Type A
 OutputPathMediaValue4=Type A
 OutputPathOutputer4=

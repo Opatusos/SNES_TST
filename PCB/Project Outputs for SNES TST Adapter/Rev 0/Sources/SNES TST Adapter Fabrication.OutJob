@@ -18,9 +18,9 @@ RevisionNamingSchemeGUID=
 Name=
 Description=
 TargetOutputMedium=Fabrication Type B
-VariantName=SNES TST Adapter
-VariantScope=1
-CurrentConfigurationName=
+VariantName=[No Variations]
+VariantScope=0
+CurrentConfigurationName=Fabrication
 TargetPrinter=HP7740A3 (HP OfficeJet Pro 7740 series)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
@@ -83,7 +83,7 @@ Configuration4_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|Ge
 [PublishSettings]
 OutputFilePath2=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST Adapter\Type A\
 ReleaseManaged2=1
-OutputBasePath2=Project Outputs for SNES TST Adapter
+OutputBasePath2=
 OutputPathMedia2=Type A
 OutputPathMediaValue2=Type A
 OutputPathOutputer2=
@@ -96,7 +96,7 @@ OutputFileNameSpecial2=
 OpenOutput2=1
 OutputFilePath3=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST Adapter\Type B\
 ReleaseManaged3=1
-OutputBasePath3=Project Outputs for SNES TST Adapter
+OutputBasePath3=
 OutputPathMedia3=Type B
 OutputPathMediaValue3=Type B
 OutputPathOutputer3=

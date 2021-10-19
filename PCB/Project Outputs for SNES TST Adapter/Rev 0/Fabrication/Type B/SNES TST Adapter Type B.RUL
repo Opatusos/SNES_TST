@@ -1,4 +1,4 @@
-DRC Rules Export File for PCB: C:\Users\ft\AppData\Local\TempReleases\Snapshot\2\SNES TST Adapter Type B.PcbDoc
+DRC Rules Export File for PCB: C:\Users\ft\AppData\Local\TempReleases\Snapshot\3\SNES TST Adapter Type B.PcbDoc
 RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
 RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=5.91
 RuleKind=Width|RuleName=Width|Scope=Board|Minimum=5.91
