@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=
+OutputPath=Project Outputs for SNES TST
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -254,7 +254,7 @@ UniqueID=B299EE89-3270-4BC2-B1D4-559FA1E1D8CF
 Description=NTSC System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=2
+VariationCount=15
 Variation1=Designator=IC2|UniqueId=\NCLPXQOP|Kind=0|AlternatePart=17.734475 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=17.734475 MHz
 ParamDesignator1=IC2
@@ -263,14 +263,63 @@ ParamDesignator2=IC2
 ParamVariation3=ParameterName=Manufacturer_Part_Number|VariantValue=LFSPXO020648Bulk
 ParamDesignator3=IC2
 Variation2=Designator=R10|UniqueId=\USDAVUMX|Kind=1|AlternatePart= 
-ParamVariationCount=3
+Variation3=Designator=IC17|UniqueId=\ZBMFKAWT|Kind=1|AlternatePart= 
+Variation4=Designator=R64|UniqueId=\XZFDKSOB|Kind=0|AlternatePart==Value
+ParamVariation4=ParameterName=Tolerance|VariantValue= 
+ParamDesignator4=R64
+ParamVariation5=ParameterName=Value|VariantValue=0R
+ParamDesignator5=R64
+ParamVariation6=ParameterName=Comment|VariantValue==Value
+ParamDesignator6=R64
+Variation5=Designator=R65|UniqueId=\GXLPHWKW|Kind=0|AlternatePart==Value
+ParamVariation7=ParameterName=Value|VariantValue=0R
+ParamDesignator7=R65
+ParamVariation8=ParameterName=Comment|VariantValue==Value
+ParamDesignator8=R65
+ParamVariation9=ParameterName=Tolerance|VariantValue= 
+ParamDesignator9=R65
+Variation6=Designator=R66|UniqueId=\IOZGNXSR|Kind=0|AlternatePart==Value
+ParamVariation10=ParameterName=Tolerance|VariantValue= 
+ParamDesignator10=R66
+ParamVariation11=ParameterName=Value|VariantValue=0R
+ParamDesignator11=R66
+ParamVariation12=ParameterName=Comment|VariantValue==Value
+ParamDesignator12=R66
+Variation7=Designator=R74|UniqueId=\SUCAENGW|Kind=1|AlternatePart= 
+Variation8=Designator=R75|UniqueId=\ESAKOQFW|Kind=1|AlternatePart= 
+Variation9=Designator=R76|UniqueId=\WTARQKYM|Kind=1|AlternatePart= 
+Variation10=Designator=R67|UniqueId=\VBIUQRLL|Kind=1|AlternatePart= 
+Variation11=Designator=R69|UniqueId=\QCYQQFRM|Kind=1|AlternatePart= 
+Variation12=Designator=R77|UniqueId=\MUTIJWNA|Kind=1|AlternatePart= 
+Variation13=Designator=R68|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==Value
+ParamVariation13=ParameterName=Tolerance|VariantValue= 
+ParamDesignator13=R68
+ParamVariation14=ParameterName=Value|VariantValue=0R
+ParamDesignator14=R68
+ParamVariation15=ParameterName=Comment|VariantValue==Value
+ParamDesignator15=R68
+Variation14=Designator=R70|UniqueId=\HQCWANRX|Kind=0|AlternatePart==Value
+ParamVariation16=ParameterName=Tolerance|VariantValue= 
+ParamDesignator16=R70
+ParamVariation17=ParameterName=Value|VariantValue=0R
+ParamDesignator17=R70
+ParamVariation18=ParameterName=Comment|VariantValue==Value
+ParamDesignator18=R70
+Variation15=Designator=R79|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==Value
+ParamVariation19=ParameterName=Tolerance|VariantValue= 
+ParamDesignator19=R79
+ParamVariation20=ParameterName=Value|VariantValue=0R
+ParamDesignator20=R79
+ParamVariation21=ParameterName=Comment|VariantValue==Value
+ParamDesignator21=R79
+ParamVariationCount=21
 
 [ProjectVariant2]
 UniqueID=6E92B0DB-A3B6-43EE-A7B9-E82C659B15D8
 Description=PAL System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=2
+VariationCount=12
 Variation1=Designator=IC2|UniqueId=\NCLPXQOP|Kind=0|AlternatePart=14.318180 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=14.318180 MHz
 ParamDesignator1=IC2
@@ -279,7 +328,33 @@ ParamDesignator2=IC2
 ParamVariation3=ParameterName=Comment|VariantValue=14.318180 MHz
 ParamDesignator3=IC2
 Variation2=Designator=R9|UniqueId=\RDPECNNU|Kind=1|AlternatePart= 
-ParamVariationCount=3
+Variation3=Designator=R65|UniqueId=\GXLPHWKW|Kind=0|AlternatePart==Value
+ParamVariation4=ParameterName=Value|VariantValue=37.4R
+ParamDesignator4=R65
+ParamVariation5=ParameterName=Comment|VariantValue==Value
+ParamDesignator5=R65
+Variation4=Designator=R63|UniqueId=\ERIGCERN|Kind=1|AlternatePart= 
+Variation5=Designator=R64|UniqueId=\XZFDKSOB|Kind=1|AlternatePart= 
+Variation6=Designator=R66|UniqueId=\IOZGNXSR|Kind=1|AlternatePart= 
+Variation7=Designator=R67|UniqueId=\VBIUQRLL|Kind=1|AlternatePart= 
+Variation8=Designator=R69|UniqueId=\QCYQQFRM|Kind=1|AlternatePart= 
+Variation9=Designator=R77|UniqueId=\MUTIJWNA|Kind=1|AlternatePart= 
+Variation10=Designator=R68|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==Value
+ParamVariation6=ParameterName=Value|VariantValue=37.4
+ParamDesignator6=R68
+ParamVariation7=ParameterName=Comment|VariantValue==Value
+ParamDesignator7=R68
+Variation11=Designator=R70|UniqueId=\HQCWANRX|Kind=0|AlternatePart==Value
+ParamVariation8=ParameterName=Value|VariantValue=37.4
+ParamDesignator8=R70
+ParamVariation9=ParameterName=Comment|VariantValue==Value
+ParamDesignator9=R70
+Variation12=Designator=R79|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==Value
+ParamVariation10=ParameterName=Value|VariantValue=37.4
+ParamDesignator10=R79
+ParamVariation11=ParameterName=Comment|VariantValue==Value
+ParamDesignator11=R79
+ParamVariationCount=11
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for SNES TST\Design Rule Check - SNES TST.html
@@ -372,7 +447,7 @@ ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
 ConfigurationType=Custom
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for SNES TST
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -979,36 +1054,6 @@ OutputName11=Specctra Design PCB
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
-OutputType12=Ansoft Neutral
-OutputName12=Ansoft Neutral (AutoPCB)
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-OutputType13=HyperLynx
-OutputName13=HyperLynx (AutoPCB)
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=Orcad v7 Capture Design
-OutputName14=Orcad v7 Capture Design (AutoSCH)
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=P-CAD ASCII
-OutputName15=P-CAD ASCII (AutoPCB)
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-OutputType16=P-CAD V16 Schematic Design
-OutputName16=P-CAD V16 Schematic Design (AutoSCH)
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-OutputType17=SiSoft
-OutputName17=SiSoft (AutoPCB)
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
