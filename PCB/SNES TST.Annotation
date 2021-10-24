@@ -1,0 +1,22 @@
+[DesignatorManager]
+
+[SheetNumberManager]
+SheetNumberOrder=Display Order
+SheetNumberMethod=Increasing
+DocumentName0=SNES TST Sheet1.SchDoc
+UniqueIDPath0=
+SheetNumber0=1
+DocumentName1=SNES TST Sheet2.SchDoc
+UniqueIDPath1=
+SheetNumber1=2
+DocumentName2=SNES TST Sheet3.SchDoc
+UniqueIDPath2=
+SheetNumber2=3
+DocumentName3=SNES TST Sheet4.SchDoc
+UniqueIDPath3=
+SheetNumber3=4
+DocumentName4=SNES TST Sheet5.SchDoc
+UniqueIDPath4=
+SheetNumber4=5
+
+
