@@ -216,23 +216,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document11]
-DocumentPath=SNES TST.IntLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document12]
 DocumentPath=SNES TST.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -249,8 +232,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document12]
 DocumentPath=SNES TST.BomDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document13]
+DocumentPath=SNES TST.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -302,26 +302,26 @@ Variation9=Designator=R77|UniqueId=\WTARQKYM|Kind=1|AlternatePart=
 Variation10=Designator=R67|UniqueId=\VBIUQRLL|Kind=1|AlternatePart= 
 Variation11=Designator=R69|UniqueId=\QCYQQFRM|Kind=1|AlternatePart= 
 Variation12=Designator=R71|UniqueId=\MUTIJWNA|Kind=1|AlternatePart= 
-Variation13=Designator=R68|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==PartType+' '+Value+Tolerance+' '+ChipSize
+Variation13=Designator=R68|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation10=ParameterName=Tolerance|VariantValue= 
 ParamDesignator10=R68
 ParamVariation11=ParameterName=Value|VariantValue=0R
 ParamDesignator11=R68
-ParamVariation12=ParameterName=Comment|VariantValue==PartType+' '+Value+Tolerance+' '+ChipSize
+ParamVariation12=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamDesignator12=R68
-Variation14=Designator=R70|UniqueId=\HQCWANRX|Kind=0|AlternatePart==PartType+' '+Value+Tolerance+' '+ChipSize
+Variation14=Designator=R70|UniqueId=\HQCWANRX|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation13=ParameterName=Tolerance|VariantValue= 
 ParamDesignator13=R70
 ParamVariation14=ParameterName=Value|VariantValue=0R
 ParamDesignator14=R70
-ParamVariation15=ParameterName=Comment|VariantValue==PartType+' '+Value+Tolerance+' '+ChipSize
+ParamVariation15=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamDesignator15=R70
-Variation15=Designator=R79|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==PartType+' '+Value+Tolerance+' '+ChipSize
+Variation15=Designator=R79|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation16=ParameterName=Tolerance|VariantValue= 
 ParamDesignator16=R79
 ParamVariation17=ParameterName=Value|VariantValue=0R
 ParamDesignator17=R79
-ParamVariation18=ParameterName=Comment|VariantValue==PartType+' '+Value+Tolerance+' '+ChipSize
+ParamVariation18=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamDesignator18=R79
 Variation16=Designator=C34|UniqueId=\ETLRSXYA|Kind=1|AlternatePart= 
 Variation17=Designator=C35|UniqueId=\MZPEIOYP|Kind=1|AlternatePart= 
@@ -348,20 +348,20 @@ ParamDesignator4=R65
 Variation4=Designator=R67|UniqueId=\VBIUQRLL|Kind=1|AlternatePart= 
 Variation5=Designator=R69|UniqueId=\QCYQQFRM|Kind=1|AlternatePart= 
 Variation6=Designator=R71|UniqueId=\MUTIJWNA|Kind=1|AlternatePart= 
-Variation7=Designator=R68|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==PartType+' '+Value+Tolerance+' '+ChipSize
+Variation7=Designator=R68|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation5=ParameterName=Value|VariantValue=37.4R
 ParamDesignator5=R68
-ParamVariation6=ParameterName=Comment|VariantValue==PartType+' '+Value+Tolerance+' '+ChipSize
+ParamVariation6=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamDesignator6=R68
-Variation8=Designator=R70|UniqueId=\HQCWANRX|Kind=0|AlternatePart==PartType+' '+Value+Tolerance+' '+ChipSize
+Variation8=Designator=R70|UniqueId=\HQCWANRX|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation7=ParameterName=Value|VariantValue=37.4R
 ParamDesignator7=R70
-ParamVariation8=ParameterName=Comment|VariantValue==PartType+' '+Value+Tolerance+' '+ChipSize
+ParamVariation8=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamDesignator8=R70
-Variation9=Designator=R79|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==PartType+' '+Value+Tolerance+' '+ChipSize
+Variation9=Designator=R79|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation9=ParameterName=Value|VariantValue=37.4R
 ParamDesignator9=R79
-ParamVariation10=ParameterName=Comment|VariantValue==PartType+' '+Value+Tolerance+' '+ChipSize
+ParamVariation10=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamDesignator10=R79
 Variation10=Designator=R80|UniqueId=\BJEZKQML|Kind=1|AlternatePart= 
 Variation11=Designator=R63|UniqueId=\ERIGCERN|Kind=1|AlternatePart= 
@@ -1067,6 +1067,36 @@ OutputName11=Specctra Design PCB
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
+OutputType12=Ansoft Neutral
+OutputName12=Ansoft Neutral (AutoPCB)
+OutputDocumentPath12=
+OutputVariantName12=
+OutputDefault12=0
+OutputType13=HyperLynx
+OutputName13=HyperLynx (AutoPCB)
+OutputDocumentPath13=
+OutputVariantName13=
+OutputDefault13=0
+OutputType14=Orcad v7 Capture Design
+OutputName14=Orcad v7 Capture Design (AutoSCH)
+OutputDocumentPath14=
+OutputVariantName14=
+OutputDefault14=0
+OutputType15=P-CAD ASCII
+OutputName15=P-CAD ASCII (AutoPCB)
+OutputDocumentPath15=
+OutputVariantName15=
+OutputDefault15=0
+OutputType16=P-CAD V16 Schematic Design
+OutputName16=P-CAD V16 Schematic Design (AutoSCH)
+OutputDocumentPath16=
+OutputVariantName16=
+OutputDefault16=0
+OutputType17=SiSoft
+OutputName17=SiSoft (AutoPCB)
+OutputDocumentPath17=
+OutputVariantName17=
+OutputDefault17=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
@@ -1438,130 +1468,16 @@ NetClassManualEnabled=1
 NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
-SelectedOnly=0
+SelectedOnly=1
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=PCB.SchLib
-ComponentDesignItemID0=10M08SAE144C8G
-ComponentSymbolReference0=10M08SAE144C8G
-ComponentUpdate0=0
+ComponentDesignItemID0=Mosfet N
+ComponentSymbolReference0=Mosfet N
+ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
-ComponentLibIdentifierKind1=Library Name And Type
-ComponentLibraryIdentifier1=PCB.SchLib
-ComponentDesignItemID1=ADV7123KSTZ140
-ComponentSymbolReference1=ADV7123KSTZ140
-ComponentUpdate1=0
-ComponentIsDeviceSheet1=0
-ComponentLibIdentifierKind2=Library Name And Type
-ComponentLibraryIdentifier2=PCB.SchLib
-ComponentDesignItemID2=Capacitor
-ComponentSymbolReference2=Capacitor
-ComponentUpdate2=1
-ComponentIsDeviceSheet2=0
-ComponentLibIdentifierKind3=Library Name And Type
-ComponentLibraryIdentifier3=PCB.SchLib
-ComponentDesignItemID3=Conn 6P
-ComponentSymbolReference3=Conn 6P
-ComponentUpdate3=0
-ComponentIsDeviceSheet3=0
-ComponentLibIdentifierKind4=Library Name And Type
-ComponentLibraryIdentifier4=PCB.SchLib
-ComponentDesignItemID4=Conn 80P
-ComponentSymbolReference4=Conn 80P
-ComponentUpdate4=0
-ComponentIsDeviceSheet4=0
-ComponentLibIdentifierKind5=Library Name And Type
-ComponentLibraryIdentifier5=PCB.SchLib
-ComponentDesignItemID5=Ferrite Bead
-ComponentSymbolReference5=Ferrite Bead
-ComponentUpdate5=0
-ComponentIsDeviceSheet5=0
-ComponentLibIdentifierKind6=Library Name And Type
-ComponentLibraryIdentifier6=PCB.SchLib
-ComponentDesignItemID6=Jumper
-ComponentSymbolReference6=Jumper
-ComponentUpdate6=0
-ComponentIsDeviceSheet6=0
-ComponentLibIdentifierKind7=Library Name And Type
-ComponentLibraryIdentifier7=PCB.SchLib
-ComponentDesignItemID7=LSF0108DCUR
-ComponentSymbolReference7=LSF0108DCUR
-ComponentUpdate7=0
-ComponentIsDeviceSheet7=0
-ComponentLibIdentifierKind8=Library Name And Type
-ComponentLibraryIdentifier8=PCB.SchLib
-ComponentDesignItemID8=MCP1703 SOT223
-ComponentSymbolReference8=MCP1703 SOT223
-ComponentUpdate8=0
-ComponentIsDeviceSheet8=0
-ComponentLibIdentifierKind9=Library Name And Type
-ComponentLibraryIdentifier9=PCB.SchLib
-ComponentDesignItemID9=OPA2356
-ComponentSymbolReference9=OPA2356
-ComponentUpdate9=0
-ComponentIsDeviceSheet9=0
-ComponentLibIdentifierKind10=Library Name And Type
-ComponentLibraryIdentifier10=PCB.SchLib
-ComponentDesignItemID10=Oscillator
-ComponentSymbolReference10=Oscillator
-ComponentUpdate10=0
-ComponentIsDeviceSheet10=0
-ComponentLibIdentifierKind11=Library Name And Type
-ComponentLibraryIdentifier11=PCB.SchLib
-ComponentDesignItemID11=Pin Connector
-ComponentSymbolReference11=Pin Connector
-ComponentUpdate11=0
-ComponentIsDeviceSheet11=0
-ComponentLibIdentifierKind12=Library Name And Type
-ComponentLibraryIdentifier12=PCB.SchLib
-ComponentDesignItemID12=PPU2100Pin
-ComponentSymbolReference12=PPU2100Pin
-ComponentUpdate12=0
-ComponentIsDeviceSheet12=0
-ComponentLibIdentifierKind13=Library Name And Type
-ComponentLibraryIdentifier13=PCB.SchLib
-ComponentDesignItemID13=R
-ComponentSymbolReference13=R
-ComponentUpdate13=1
-ComponentIsDeviceSheet13=0
-ComponentLibIdentifierKind14=Library Name And Type
-ComponentLibraryIdentifier14=PCB.SchLib
-ComponentDesignItemID14=RNetwork
-ComponentSymbolReference14=RNetwork
-ComponentUpdate14=0
-ComponentIsDeviceSheet14=0
-ComponentLibIdentifierKind15=Library Name And Type
-ComponentLibraryIdentifier15=PCB.SchLib
-ComponentDesignItemID15=Schottky Diode
-ComponentSymbolReference15=Schottky Diode
-ComponentUpdate15=0
-ComponentIsDeviceSheet15=0
-ComponentLibIdentifierKind16=Library Name And Type
-ComponentLibraryIdentifier16=PCB.SchLib
-ComponentDesignItemID16=SN74HCT541
-ComponentSymbolReference16=SN74HCT541
-ComponentUpdate16=0
-ComponentIsDeviceSheet16=0
-ComponentLibIdentifierKind17=Library Name And Type
-ComponentLibraryIdentifier17=PCB.SchLib
-ComponentDesignItemID17=THS7374
-ComponentSymbolReference17=THS7374
-ComponentUpdate17=0
-ComponentIsDeviceSheet17=0
-ComponentLibIdentifierKind18=Library Name And Type
-ComponentLibraryIdentifier18=PCB.SchLib
-ComponentDesignItemID18=TMUX1219
-ComponentSymbolReference18=TMUX1219
-ComponentUpdate18=0
-ComponentIsDeviceSheet18=0
-ComponentLibIdentifierKind19=Library Name And Type
-ComponentLibraryIdentifier19=PCB.SchLib
-ComponentDesignItemID19=TMUX1574
-ComponentSymbolReference19=TMUX1574
-ComponentUpdate19=0
-ComponentIsDeviceSheet19=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1575,163 +1491,23 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
-ParameterName0=Built_By
+ParameterName0=Comment
 ParameterUpdate0=1
-ParameterName1=Comment
+ParameterName1=Component Kind
 ParameterUpdate1=1
-ParameterName2=Component Kind
+ParameterName2=Description
 ParameterUpdate2=1
-ParameterName3=Copyright
+ParameterName3=Library Reference
 ParameterUpdate3=1
-ParameterName4=Description
+ParameterName4=Manufacturer_Part_Number
 ParameterUpdate4=1
-ParameterName5=Dielectric
+ParameterName5=Vendor
 ParameterUpdate5=1
-ParameterName6=Frequency
-ParameterUpdate6=1
-ParameterName7=Library Reference
-ParameterUpdate7=1
-ParameterName8=Manufacturer_Part_Number
-ParameterUpdate8=1
-ParameterName9=Nominal Voltage
-ParameterUpdate9=1
-ParameterName10=RefDes
-ParameterUpdate10=1
-ParameterName11=Size
-ParameterUpdate11=1
-ParameterName12=SourceLibrary
-ParameterUpdate12=1
-ParameterName13=Tolerance
-ParameterUpdate13=1
-ParameterName14=Type
-ParameterUpdate14=1
-ParameterName15=Vendor
-ParameterUpdate15=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=0201_Chip
+ModelName0=SOT23_FET
 ModelUpdate0=1
-ModelType1=PCBLIB
-ModelName1=0402_Chip_RF
-ModelUpdate1=1
-ModelType2=PCBLIB
-ModelName2=0603_Chip
-ModelUpdate2=1
-ModelType3=PCBLIB
-ModelName3=0603_Chip Plated Via
-ModelUpdate3=1
-ModelType4=PCBLIB
-ModelName4=0805_Chip
-ModelUpdate4=1
-ModelType5=PCBLIB
-ModelName5=1206_Array_Chip
-ModelUpdate5=1
-ModelType6=PCBLIB
-ModelName6=1206_Chip
-ModelUpdate6=1
-ModelType7=PCBLIB
-ModelName7=1210_Chip
-ModelUpdate7=1
-ModelType8=PCBLIB
-ModelName8=1812_CHIP
-ModelUpdate8=1
-ModelType9=PCBLIB
-ModelName9=2220_CHIP
-ModelUpdate9=1
-ModelType10=PCBLIB
-ModelName10=2512_CHIP
-ModelUpdate10=1
-ModelType11=PCBLIB
-ModelName11=Cap_0402_Chip
-ModelUpdate11=1
-ModelType12=PCBLIB
-ModelName12=Cap_0603_Chip
-ModelUpdate12=1
-ModelType13=PCBLIB
-ModelName13=Cap_0805_Chip
-ModelUpdate13=1
-ModelType14=PCBLIB
-ModelName14=Cap_1206_Chip
-ModelUpdate14=1
-ModelType15=PCBLIB
-ModelName15=Con6P
-ModelUpdate15=1
-ModelType16=PCBLIB
-ModelName16=DF40C-80DP
-ModelUpdate16=1
-ModelType17=PCBLIB
-ModelName17=DF40C-80DS
-ModelUpdate17=1
-ModelType18=PCBLIB
-ModelName18=EQFP-144_A:1P65_
-ModelUpdate18=1
-ModelType19=PCBLIB
-ModelName19=Ind_0402_Chip
-ModelUpdate19=1
-ModelType20=PCBLIB
-ModelName20=Jumper
-ModelUpdate20=1
-ModelType21=PCBLIB
-ModelName21=Jumper Big
-ModelUpdate21=1
-ModelType22=PCBLIB
-ModelName22=MSOP8
-ModelUpdate22=1
-ModelType23=PCBLIB
-ModelName23=Pin Connector
-ModelUpdate23=1
-ModelType24=PCBLIB
-ModelName24=Pin Connector Only Hole
-ModelUpdate24=1
-ModelType25=PCBLIB
-ModelName25=Pin Connector Small
-ModelUpdate25=1
-ModelType26=PCBLIB
-ModelName26=Pin Connector With Hole
-ModelUpdate26=1
-ModelType27=PCBLIB
-ModelName27=PPU100Pin
-ModelUpdate27=1
-ModelType28=PCBLIB
-ModelName28=PPU100Pin_Bottom_TOP_View
-ModelUpdate28=1
-ModelType29=PCBLIB
-ModelName29=Quarz 7.5mm
-ModelUpdate29=1
-ModelType30=PCBLIB
-ModelName30=Res_0402_Chip
-ModelUpdate30=1
-ModelType31=PCBLIB
-ModelName31=Res_0603_Chip
-ModelUpdate31=1
-ModelType32=PCBLIB
-ModelName32=SOD323
-ModelUpdate32=1
-ModelType33=PCBLIB
-ModelName33=SOT223-3
-ModelUpdate33=1
-ModelType34=PCBLIB
-ModelName34=SOT23
-ModelUpdate34=1
-ModelType35=PCBLIB
-ModelName35=SOT23-6
-ModelUpdate35=1
-ModelType36=PCBLIB
-ModelName36=SOT-23THIN16
-ModelUpdate36=1
-ModelType37=PCBLIB
-ModelName37=ST_48_ADI
-ModelUpdate37=1
-ModelType38=PCBLIB
-ModelName38=TSSOP14
-ModelUpdate38=1
-ModelType39=PCBLIB
-ModelName39=TSSOP20 Narrow
-ModelUpdate39=1
-ModelType40=PCBLIB
-ModelName40=VQFN20
-ModelUpdate40=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
