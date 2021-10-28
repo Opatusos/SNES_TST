@@ -19,8 +19,8 @@ Name=SNES TST Documentation.OutJob
 Description=
 TargetOutputMedium=Drawings
 VariantName=[No Variations]
-VariantScope=0
-CurrentConfigurationName=
+VariantScope=2
+CurrentConfigurationName=Documentation NTSC System
 TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
@@ -75,7 +75,7 @@ PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 Configuration3_Name1=ColumnNameFormat
 Configuration3_Item1=CaptionAsName
 Configuration3_Name2=General
-Configuration3_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1200|FormHeight=710|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=BOM Export
+Configuration3_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=C:\Users\Public\Documents\Altium\AD21\Templates\BOM Modified.xlsx|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1200|FormHeight=710|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=BOM Export
 Configuration3_Name3=GroupOrder
 Configuration3_Item3=Comment=True|Footprint=True
 Configuration3_Name4=VisibleOrder
@@ -102,7 +102,7 @@ PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 [PublishSettings]
 OutputFilePath2=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\SNES TST Schematics.PDF
 ReleaseManaged2=1
-OutputBasePath2=Project Outputs for SNES TST
+OutputBasePath2=
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
@@ -129,7 +129,7 @@ PDFACompliance2=Disabled
 PDFVersion2=Default
 OutputFilePath3=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\SNES TST Documentation NTSC.PDF
 ReleaseManaged3=1
-OutputBasePath3=Project Outputs for SNES TST
+OutputBasePath3=
 OutputPathMedia3=
 OutputPathMediaValue3==VariantName
 OutputPathOutputer3=[Output Type]
@@ -156,7 +156,7 @@ PDFACompliance3=Disabled
 PDFVersion3=Default
 OutputFilePath4=D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST\
 ReleaseManaged4=1
-OutputBasePath4=Project Outputs for SNES TST
+OutputBasePath4=
 OutputPathMedia4=
 OutputPathMediaValue4==VariantName
 OutputPathOutputer4=

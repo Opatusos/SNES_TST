@@ -15,11 +15,11 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=
+Name=SNES TST Adapter Documentation.OutJob
 Description=
 TargetOutputMedium=Drawings Type A
 VariantName=[No Variations]
-VariantScope=0
+VariantScope=2
 CurrentConfigurationName=Documentation
 TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
@@ -90,13 +90,17 @@ PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 Configuration3_Name1=ColumnNameFormat
 Configuration3_Item1=CaptionAsName
 Configuration3_Name2=General
-Configuration3_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1200|FormHeight=710|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration3_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=C:\Users\Public\Documents\Altium\AD21\Templates\BOM Modified.xlsx|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1200|FormHeight=710|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=BOM Export
 Configuration3_Name3=GroupOrder
 Configuration3_Item3=Comment=True|Footprint=True
-Configuration3_Name4=SortOrder
-Configuration3_Item4=Designator=Up|Comment=Up|Footprint=Up
-Configuration3_Name5=VisibleOrder
-Configuration3_Item5=Comment=120|Description=120|Designator=120|Footprint=120|LibRef=120|Quantity=120
+Configuration3_Name4=VisibleOrder
+Configuration3_Item4=Line #=53|Designator=120|Quantity=120|Comment=120|Footprint=120|Vendor=114|Manufacturer_Part_Number=134|Supplier 1=75|Supplier Part Number 1=142
+Configuration3_Name5=VisibleOrder_Base
+Configuration3_Item5=Line #=53|Designator=120|Quantity=120|Comment=120|Footprint=120|Vendor=114|Manufacturer_Part_Number=134|Supplier 1=75|Supplier Part Number 1=142
+Configuration3_Name6=VisibleOrder_Consolidated
+Configuration3_Item6=Line #=53|Comment=139|Description=79|Designator=77|Quantity=67|Manufacturer 1=99|Manufacturer Part Number 1=166|Manufacturer Lifecycle 1=143|Supplier 1=72|Supplier Part Number 1=139|Supplier Unit Price 1=123|Supplier Subtotal 1=116|Quantity@NTSC=79|Price@NTSC=84|Quantity@PAL=71|Price@PAL=76|Quantity@NTSC System=115|Price@NTSC System=122|Quantity@PAL System=105|Price@PAL System=112|Quantity@SNES TST Adapter=100|Price@SNES TST Adapter=100
+Configuration3_Name7=VisibleOrder_Flat
+Configuration3_Item7=Line #=53|Comment=143|Description=79|Designator=77|Manufacturer 1=99|Manufacturer Part Number 1=166|Manufacturer Lifecycle 1=143|Supplier 1=72|Supplier Part Number 1=139|Supplier Unit Price 1=123|Supplier Subtotal 1=116
 OutputType4=PCBDrawing
 OutputName4=Draftsman Type A
 OutputCategory4=Documentation

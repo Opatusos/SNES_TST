@@ -105,7 +105,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=24e5f17e-7772-46de-b243-240c4f5c8a21
+DocumentUniqueId=e944c70a-eefd-4f4c-8a65-2627087cf5dd
 
 [OutputGroup1]
 Name=Netlist Outputs
