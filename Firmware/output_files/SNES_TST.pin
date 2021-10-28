@@ -117,7 +117,7 @@ GDIG[3]                      : 44        : output : 3.3-V LVTTL       :         
 GDIG[2]                      : 45        : output : 3.3-V LVTTL       :         : 3         : Y              
 GDIG[1]                      : 46        : output : 3.3-V LVTTL       :         : 3         : Y              
 CONTL                        : 47        : input  : 3.3-V LVTTL       :         : 3         : Y              
-CONTD                        : 48        : input  : 3.3-V LVTTL       :         : 3         : Y              
+CONTDOUT                     : 48        : output : 3.3-V LVTTL       :         : 3         : Y              
 VCCIO3                       : 49        : power  :                   : 3.3V    : 3         :                
 CONTC                        : 50        : input  : 3.3-V LVTTL       :         : 3         : Y              
 VCC_ONE                      : 51        : power  :                   : 3.0V/3.3V :           :                
@@ -166,8 +166,8 @@ PARD                         : 93        : input  : 3.3-V LVTTL       :         
 VCCIO6                       : 94        : power  :                   : 3.3V    : 6         :                
 GND                          : 95        : gnd    :                   :         :           :                
 PAWR                         : 96        : input  : 3.3-V LVTTL       :         : 6         : Y              
-PED                          : 97        : input  : 3.3-V LVTTL       :         : 6         : Y              
-BURST                        : 98        : input  : 3.3-V LVTTL       :         : 6         : Y              
+TOUMEI                       : 97        : input  : 3.3-V LVTTL       :         : 6         : Y              
+FIELD                        : 98        : input  : 3.3-V LVTTL       :         : 6         : Y              
 REGPAT                       : 99        : output : 3.3-V LVTTL       :         : 6         : Y              
 CSYNCI                       : 100       : input  : 3.3-V LVTTL       :         : 6         : Y              
 RGBSEL                       : 101       : output : 3.3-V LVTTL       :         : 6         : Y              
@@ -195,19 +195,19 @@ TST_B[2]                     : 122       : input  : 3.3-V LVTTL       :         
 TST_B[3]                     : 123       : input  : 3.3-V LVTTL       :         : 8         : Y              
 TST_B[4]                     : 124       : input  : 3.3-V LVTTL       :         : 8         : Y              
 GND                          : 125       : gnd    :                   :         :           :                
-TST15                        : 126       : output : 3.3-V LVTTL       :         : 8         : Y              
+LED[3]                       : 126       : output : 3.3-V LVTTL       :         : 8         : Y              
 TST_B[1]                     : 127       : input  : 3.3-V LVTTL       :         : 8         : Y              
 VCCIO8                       : 128       : power  :                   : 3.3V    : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 129       :        :                   :         : 8         :                
+CONTD                        : 129       : input  : 3.3-V LVTTL       :         : 8         : Y              
 TST_B[0]                     : 130       : input  : 3.3-V LVTTL       :         : 8         : Y              
 TST_G[4]                     : 131       : input  : 3.3-V LVTTL       :         : 8         : Y              
 TST_G[3]                     : 132       : input  : 3.3-V LVTTL       :         : 8         : Y              
 GND                          : 133       : gnd    :                   :         :           :                
 TST_G[2]                     : 134       : input  : 3.3-V LVTTL       :         : 8         : Y              
 TST_G[1]                     : 135       : input  : 3.3-V LVTTL       :         : 8         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 136       :        :                   :         : 8         :                
+PPURESET                     : 136       : output : 3.3-V LVTTL       :         : 8         : Y              
 GND                          : 137       : gnd    :                   :         :           :                
-LED[3]                       : 138       : output : 3.3-V LVTTL       :         : 8         : Y              
+TST15                        : 138       : output : 3.3-V LVTTL       :         : 8         : Y              
 VCCIO8                       : 139       : power  :                   : 3.3V    : 8         :                
 TST_G[0]                     : 140       : input  : 3.3-V LVTTL       :         : 8         : Y              
 TST_R[4]                     : 141       : input  : 3.3-V LVTTL       :         : 8         : Y              
