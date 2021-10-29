@@ -15,7 +15,7 @@ module SNES_TST(
 	input MCLKOSC,
 	output REGPSEL,
 	output REGPAT,
-	input SYSREG,
+	input SYSREG,	//identifies the system region; 0: NTSC; 1: PAL
 	output MD7PAT,
 	input OVER1,
 	output OVERPAT,
@@ -23,24 +23,24 @@ module SNES_TST(
 	input SUBCAR,
 	input RESETI,
 	output RESETO,
-	output REGION,
-	inout [3:0] CIC,
-	input CONTL,
-	input CONTD,
-	output CONTDOUT,
-	input CONTC,
+	output REGION,	 //sets the region; 0: NTSC; 1: PAL
+	inout [3:0] CIC,//Cic signals
+	input CONTL,	 //input controller latch
+	input CONTD,	 //input controller data
+	output CONTDOUT,//output controller data
+	input CONTC,	 //input controller clock
 	output [3:1] LED,
-	output RGBSEL,
-	output AMPFILT,
+	output RGBSEL,	 //0: PPU RGB; 1: FPGA RGB
+	output AMPFILT, //0: THS7374 filter is on; 1: filter is off
 	output DACCLK,
-	output CSYNCDAC,
-	output BLANKDAC,
-	output PPURESET,
+	output CSYNCDAC,//0: sync on green off
+	output BLANKDAC,//0: drives ADV7123 to blanking
+	output PPURESET,//0: PPU2 is off; 1: PPU2 is on
 	
 	input [4:0] TST_R,
 	input [4:0] TST_G,
 	input [4:0] TST_B,
-	output TST15,
+	output TST15,	 //0: PPU2 Test Mode off; 1: PPU2 Test Mode On
 
 	//output reg[9:1] RDIG,
 	output reg[9:1] RDIG,

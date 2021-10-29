@@ -271,7 +271,7 @@ UniqueID=B299EE89-3270-4BC2-B1D4-559FA1E1D8CF
 Description=NTSC System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=18
+VariationCount=24
 Variation1=Designator=IC2|UniqueId=\KUMMCJAU|Kind=0|AlternatePart=17.734475 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=17.734475 MHz
 ParamDesignator1=IC2
@@ -326,7 +326,37 @@ ParamDesignator18=R79
 Variation16=Designator=C34|UniqueId=\ETLRSXYA|Kind=1|AlternatePart= 
 Variation17=Designator=C35|UniqueId=\MZPEIOYP|Kind=1|AlternatePart= 
 Variation18=Designator=R78|UniqueId=\DNJTMFKX|Kind=1|AlternatePart= 
-ParamVariationCount=18
+Variation19=Designator=R45|UniqueId=\OMUAKADJ|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation19=ParameterName=Value|VariantValue=49.9k
+ParamDesignator19=R45
+ParamVariation20=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator20=R45
+Variation20=Designator=R50|UniqueId=\AWSKRJXX|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation21=ParameterName=Value|VariantValue=49.9k
+ParamDesignator21=R50
+ParamVariation22=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator22=R50
+Variation21=Designator=R55|UniqueId=\IXIOSQEI|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation23=ParameterName=Value|VariantValue=49.9k
+ParamDesignator23=R55
+ParamVariation24=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator24=R55
+Variation22=Designator=R59|UniqueId=\WSDUSMBI|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation25=ParameterName=Value|VariantValue=768R
+ParamDesignator25=R59
+ParamVariation26=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator26=R59
+Variation23=Designator=R53|UniqueId=\NCRFUWKG|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation27=ParameterName=Value|VariantValue=768R
+ParamDesignator27=R53
+ParamVariation28=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator28=R53
+Variation24=Designator=R48|UniqueId=\RHTGXJLD|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation29=ParameterName=Value|VariantValue=768R
+ParamDesignator29=R48
+ParamVariation30=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator30=R48
+ParamVariationCount=30
 
 [ProjectVariant2]
 UniqueID=6E92B0DB-A3B6-43EE-A7B9-E82C659B15D8
