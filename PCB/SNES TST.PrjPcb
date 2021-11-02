@@ -599,7 +599,7 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP7740A3 (HP OfficeJet Pro 7740 series)
+TargetPrinter=Canon MG4200 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
@@ -1457,8 +1457,8 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=PCB.SchLib
-ComponentDesignItemID0=Mosfet N
-ComponentSymbolReference0=Mosfet N
+ComponentDesignItemID0=MCP1703 SOT223
+ComponentSymbolReference0=MCP1703 SOT223
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 FullReplace=1
@@ -1482,14 +1482,10 @@ ParameterName2=Description
 ParameterUpdate2=1
 ParameterName3=Library Reference
 ParameterUpdate3=1
-ParameterName4=Manufacturer_Part_Number
-ParameterUpdate4=1
-ParameterName5=Vendor
-ParameterUpdate5=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=SOT23_FET
+ModelName0=SOT223-3
 ModelUpdate0=1
 
 [DatabaseUpdateOptions]
