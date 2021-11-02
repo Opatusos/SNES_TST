@@ -46,7 +46,7 @@ ReleaseFolderPath=[OutputPath]\[Title]\[Revision]
 ReleaseZipPath=[OutputPath][ProjectName].zip
 
 [Document1]
-DocumentPath=SNES TST Sheet1.SchDoc
+DocumentPath=CPLD.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -63,7 +63,7 @@ GenerateClassCluster=0
 DocumentUniqueId=ZBIWVEIK
 
 [Document2]
-DocumentPath=SNES TST Sheet2.SchDoc
+DocumentPath=PPU2 And Connector.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -80,7 +80,7 @@ GenerateClassCluster=0
 DocumentUniqueId=HEFTUPSM
 
 [Document3]
-DocumentPath=SNES TST Sheet3.SchDoc
+DocumentPath=Power And Voltage Shifters.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -97,7 +97,7 @@ GenerateClassCluster=0
 DocumentUniqueId=KXUBEYWA
 
 [Document4]
-DocumentPath=SNES TST Sheet4.SchDoc
+DocumentPath=RGB Video Output.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -114,23 +114,6 @@ GenerateClassCluster=0
 DocumentUniqueId=RSKSVWAZ
 
 [Document5]
-DocumentPath=SNES TST Sheet5.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=5
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=IPTDWWLI
-
-[Document6]
 DocumentPath=SNES TST.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -147,7 +130,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RWRKEWNG
 
-[Document7]
+[Document6]
 DocumentPath=SNES TST.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -164,7 +147,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document7]
 DocumentPath=SNES TST Assembly.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -181,7 +164,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document8]
 DocumentPath=SNES TST Documentation.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -198,7 +181,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document9]
 DocumentPath=SNES TST Fabrication.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -215,7 +198,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=SNES TST.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -232,7 +215,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document11]
 DocumentPath=SNES TST.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -249,7 +232,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document12]
 DocumentPath=SNES TST.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
