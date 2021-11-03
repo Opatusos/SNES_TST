@@ -1,0 +1,16 @@
+Altium Designer Pick and Place Locations
+D:\Adatok\ElektroProjektek\SNES_TST\PCB\Project Outputs for SNES TST Adapter\Type B\Pick Place for SNES TST Adapter Type B.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       19-10-21
+Time:       12:15
+Revision:   92ea259c6940eeb438d964290cedce3123d41c31
+Variant:    No variations
+Units used: mm
+
+Designator Comment            Layer    Footprint       Rotation Description        Ref-X(mm) Ref-Y(mm) 
+Fid2       Fiducial           TopLayer Fiducial_1_side 270      ""                 17.3000   1.5000    
+Fid1       Fiducial           TopLayer Fiducial_1_side 90       ""                 1.5000    23.5000   
+J1         "80Pole Connector" TopLayer DF40C-80DS      90       "80Pole Connector" 9.4000    10.0000   
