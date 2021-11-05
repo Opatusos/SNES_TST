@@ -271,7 +271,7 @@ UniqueID=B299EE89-3270-4BC2-B1D4-559FA1E1D8CF
 Description=NTSC System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=24
+VariationCount=25
 Variation1=Designator=IC2|UniqueId=\KUMMCJAU|Kind=0|AlternatePart=17.734475 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=17.734475 MHz
 ParamDesignator1=IC2
@@ -356,6 +356,7 @@ ParamVariation29=ParameterName=Value|VariantValue=768R
 ParamDesignator29=R52
 ParamVariation30=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamDesignator30=R52
+Variation25=Designator=R17|UniqueId=\ENGVLWJU|Kind=1|AlternatePart= 
 ParamVariationCount=30
 
 [ProjectVariant2]
@@ -363,7 +364,7 @@ UniqueID=6E92B0DB-A3B6-43EE-A7B9-E82C659B15D8
 Description=PAL System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=13
+VariationCount=16
 Variation1=Designator=IC2|UniqueId=\KUMMCJAU|Kind=0|AlternatePart=14.318180 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=14.318180 MHz
 ParamDesignator1=IC2
@@ -397,6 +398,9 @@ Variation10=Designator=R84|UniqueId=\BJEZKQML|Kind=1|AlternatePart=
 Variation11=Designator=R67|UniqueId=\ERIGCERN|Kind=1|AlternatePart= 
 Variation12=Designator=R68|UniqueId=\ZUPAGMQW|Kind=1|AlternatePart= 
 Variation13=Designator=R70|UniqueId=\VDQZKXSR|Kind=1|AlternatePart= 
+Variation14=Designator=IC101|UniqueId=\USHNTQLQ|Kind=1|AlternatePart= 
+Variation15=Designator=R16|UniqueId=\YSRQWIGR|Kind=1|AlternatePart= 
+Variation16=Designator=R17|UniqueId=\ENGVLWJU|Kind=1|AlternatePart= 
 ParamVariationCount=10
 
 [GeneratedDocument1]
