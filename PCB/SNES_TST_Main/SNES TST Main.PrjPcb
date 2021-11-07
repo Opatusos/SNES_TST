@@ -46,40 +46,6 @@ ReleaseFolderPath=[OutputPath]\[Title]\[Revision]
 ReleaseZipPath=[OutputPath][ProjectName].zip
 
 [Document1]
-DocumentPath=..\..\..\Library\PCB.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=ACMPLYCW
-
-[Document2]
-DocumentPath=..\..\..\Library\PCB.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=ITBXMMKD
-
-[Document3]
 DocumentPath=CPLD.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -96,7 +62,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ZBIWVEIK
 
-[Document4]
+[Document2]
 DocumentPath=PPU2 And Connector.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -113,7 +79,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HEFTUPSM
 
-[Document5]
+[Document3]
 DocumentPath=Power And Voltage Shifters.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -130,7 +96,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KXUBEYWA
 
-[Document6]
+[Document4]
 DocumentPath=RGB Video Output.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -147,7 +113,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RSKSVWAZ
 
-[Document7]
+[Document5]
 DocumentPath=SNES TST Main.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -164,7 +130,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RWRKEWNG
 
-[Document8]
+[Document6]
 DocumentPath=SNES TST Main.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -181,7 +147,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document7]
 DocumentPath=SNES TST Main Assembly.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -198,7 +164,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document8]
 DocumentPath=SNES TST Main Documentation.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -215,7 +181,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document9]
 DocumentPath=SNES TST Main Fabrication.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -232,7 +198,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document10]
 DocumentPath=SNES TST Main.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -249,8 +215,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document11]
 DocumentPath=SNES TST Main.BomDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document12]
+DocumentPath=SNES TST Main.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -271,7 +254,7 @@ UniqueID=B299EE89-3270-4BC2-B1D4-559FA1E1D8CF
 Description=NTSC System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=25
+VariationCount=26
 Variation1=Designator=IC2|UniqueId=\KUMMCJAU|Kind=0|AlternatePart=17.734475 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=17.734475 MHz
 ParamDesignator1=IC2
@@ -280,91 +263,96 @@ ParamDesignator2=IC2
 ParamVariation3=ParameterName=Manufacturer_Part_Number|VariantValue=LFSPXO020648Bulk
 ParamDesignator3=IC2
 Variation2=Designator=R5|UniqueId=\DVINDIQL|Kind=1|AlternatePart= 
-Variation3=Designator=IC18|UniqueId=\ZBMFKAWT|Kind=1|AlternatePart= 
-Variation4=Designator=R68|UniqueId=\ZUPAGMQW|Kind=0|AlternatePart= 
+Variation3=Designator=IC20|UniqueId=\ZBMFKAWT|Kind=1|AlternatePart= 
+Variation4=Designator=R55|UniqueId=\ZUPAGMQW|Kind=0|AlternatePart= 
 ParamVariation4=ParameterName=Tolerance|VariantValue= 
-ParamDesignator4=R68
+ParamDesignator4=R55
 ParamVariation5=ParameterName=Value|VariantValue=0R
-ParamDesignator5=R68
-Variation5=Designator=R69|UniqueId=\GXLPHWKW|Kind=0|AlternatePart= 
+ParamDesignator5=R55
+Variation5=Designator=R56|UniqueId=\GXLPHWKW|Kind=0|AlternatePart= 
 ParamVariation6=ParameterName=Value|VariantValue=10k
-ParamDesignator6=R69
+ParamDesignator6=R56
 ParamVariation7=ParameterName=Tolerance|VariantValue=±1%
-ParamDesignator7=R69
-Variation6=Designator=R70|UniqueId=\VDQZKXSR|Kind=0|AlternatePart= 
+ParamDesignator7=R56
+Variation6=Designator=R57|UniqueId=\VDQZKXSR|Kind=0|AlternatePart= 
 ParamVariation8=ParameterName=Tolerance|VariantValue= 
-ParamDesignator8=R70
+ParamDesignator8=R57
 ParamVariation9=ParameterName=Value|VariantValue=0R
-ParamDesignator9=R70
-Variation7=Designator=R79|UniqueId=\SUCAENGW|Kind=1|AlternatePart= 
-Variation8=Designator=R80|UniqueId=\ESAKOQFW|Kind=1|AlternatePart= 
-Variation9=Designator=R81|UniqueId=\WTARQKYM|Kind=1|AlternatePart= 
-Variation10=Designator=R71|UniqueId=\VBIUQRLL|Kind=1|AlternatePart= 
-Variation11=Designator=R73|UniqueId=\QCYQQFRM|Kind=1|AlternatePart= 
-Variation12=Designator=R75|UniqueId=\MUTIJWNA|Kind=1|AlternatePart= 
-Variation13=Designator=R72|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator9=R57
+Variation7=Designator=R66|UniqueId=\SUCAENGW|Kind=1|AlternatePart= 
+Variation8=Designator=R67|UniqueId=\ESAKOQFW|Kind=1|AlternatePart= 
+Variation9=Designator=R68|UniqueId=\WTARQKYM|Kind=1|AlternatePart= 
+Variation10=Designator=R58|UniqueId=\VBIUQRLL|Kind=1|AlternatePart= 
+Variation11=Designator=R60|UniqueId=\QCYQQFRM|Kind=1|AlternatePart= 
+Variation12=Designator=R62|UniqueId=\MUTIJWNA|Kind=1|AlternatePart= 
+Variation13=Designator=R59|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation10=ParameterName=Tolerance|VariantValue= 
-ParamDesignator10=R72
+ParamDesignator10=R59
 ParamVariation11=ParameterName=Value|VariantValue=0R
-ParamDesignator11=R72
+ParamDesignator11=R59
 ParamVariation12=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator12=R72
-Variation14=Designator=R74|UniqueId=\HQCWANRX|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator12=R59
+Variation14=Designator=R61|UniqueId=\HQCWANRX|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation13=ParameterName=Tolerance|VariantValue= 
-ParamDesignator13=R74
+ParamDesignator13=R61
 ParamVariation14=ParameterName=Value|VariantValue=0R
-ParamDesignator14=R74
+ParamDesignator14=R61
 ParamVariation15=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator15=R74
-Variation15=Designator=R83|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator15=R61
+Variation15=Designator=R70|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation16=ParameterName=Tolerance|VariantValue= 
-ParamDesignator16=R83
+ParamDesignator16=R70
 ParamVariation17=ParameterName=Value|VariantValue=0R
-ParamDesignator17=R83
+ParamDesignator17=R70
 ParamVariation18=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator18=R83
-Variation16=Designator=C37|UniqueId=\ETLRSXYA|Kind=1|AlternatePart= 
-Variation17=Designator=C38|UniqueId=\MZPEIOYP|Kind=1|AlternatePart= 
-Variation18=Designator=R82|UniqueId=\DNJTMFKX|Kind=1|AlternatePart= 
-Variation19=Designator=R46|UniqueId=\OMUAKADJ|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator18=R70
+Variation16=Designator=C44|UniqueId=\ETLRSXYA|Kind=1|AlternatePart= 
+Variation17=Designator=C45|UniqueId=\MZPEIOYP|Kind=1|AlternatePart= 
+Variation18=Designator=R69|UniqueId=\DNJTMFKX|Kind=1|AlternatePart= 
+Variation19=Designator=R33|UniqueId=\OMUAKADJ|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation19=ParameterName=Value|VariantValue=49.9k
-ParamDesignator19=R46
+ParamDesignator19=R33
 ParamVariation20=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator20=R46
-Variation20=Designator=R54|UniqueId=\AWSKRJXX|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator20=R33
+Variation20=Designator=R41|UniqueId=\AWSKRJXX|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation21=ParameterName=Value|VariantValue=49.9k
-ParamDesignator21=R54
+ParamDesignator21=R41
 ParamVariation22=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator22=R54
-Variation21=Designator=R59|UniqueId=\IXIOSQEI|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator22=R41
+Variation21=Designator=R46|UniqueId=\IXIOSQEI|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation23=ParameterName=Value|VariantValue=49.9k
-ParamDesignator23=R59
+ParamDesignator23=R46
 ParamVariation24=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator24=R59
-Variation22=Designator=R63|UniqueId=\WSDUSMBI|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator24=R46
+Variation22=Designator=R50|UniqueId=\WSDUSMBI|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation25=ParameterName=Value|VariantValue=768R
-ParamDesignator25=R63
+ParamDesignator25=R50
 ParamVariation26=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator26=R63
-Variation23=Designator=R57|UniqueId=\NCRFUWKG|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator26=R50
+Variation23=Designator=R44|UniqueId=\NCRFUWKG|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation27=ParameterName=Value|VariantValue=768R
-ParamDesignator27=R57
+ParamDesignator27=R44
 ParamVariation28=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator28=R57
-Variation24=Designator=R52|UniqueId=\RHTGXJLD|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator28=R44
+Variation24=Designator=R39|UniqueId=\RHTGXJLD|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation29=ParameterName=Value|VariantValue=768R
-ParamDesignator29=R52
+ParamDesignator29=R39
 ParamVariation30=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator30=R52
-Variation25=Designator=R17|UniqueId=\ENGVLWJU|Kind=1|AlternatePart= 
-ParamVariationCount=30
+ParamDesignator30=R39
+Variation25=Designator=R27|UniqueId=\ENGVLWJU|Kind=1|AlternatePart= 
+Variation26=Designator=R26|UniqueId=\YSRQWIGR|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation31=ParameterName=Tolerance|VariantValue= 
+ParamDesignator31=R26
+ParamVariation32=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator32=R26
+ParamVariationCount=32
 
 [ProjectVariant2]
 UniqueID=6E92B0DB-A3B6-43EE-A7B9-E82C659B15D8
 Description=PAL System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=16
+VariationCount=17
 Variation1=Designator=IC2|UniqueId=\KUMMCJAU|Kind=0|AlternatePart=14.318180 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=14.318180 MHz
 ParamDesignator1=IC2
@@ -373,35 +361,40 @@ ParamDesignator2=IC2
 ParamVariation3=ParameterName=Comment|VariantValue=14.318180 MHz
 ParamDesignator3=IC2
 Variation2=Designator=R4|UniqueId=\GCACQYCH|Kind=1|AlternatePart= 
-Variation3=Designator=R69|UniqueId=\GXLPHWKW|Kind=0|AlternatePart= 
+Variation3=Designator=R56|UniqueId=\GXLPHWKW|Kind=0|AlternatePart= 
 ParamVariation4=ParameterName=Value|VariantValue=10k
-ParamDesignator4=R69
-Variation4=Designator=R71|UniqueId=\VBIUQRLL|Kind=1|AlternatePart= 
-Variation5=Designator=R73|UniqueId=\QCYQQFRM|Kind=1|AlternatePart= 
-Variation6=Designator=R75|UniqueId=\MUTIJWNA|Kind=1|AlternatePart= 
-Variation7=Designator=R72|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamVariation5=ParameterName=Value|VariantValue=37.4R
-ParamDesignator5=R72
+ParamDesignator4=R56
+Variation4=Designator=R58|UniqueId=\VBIUQRLL|Kind=1|AlternatePart= 
+Variation5=Designator=R60|UniqueId=\QCYQQFRM|Kind=1|AlternatePart= 
+Variation6=Designator=R62|UniqueId=\MUTIJWNA|Kind=1|AlternatePart= 
+Variation7=Designator=R59|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation5=ParameterName=Value|VariantValue=37R4
+ParamDesignator5=R59
 ParamVariation6=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator6=R72
-Variation8=Designator=R74|UniqueId=\HQCWANRX|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamVariation7=ParameterName=Value|VariantValue=37.4R
-ParamDesignator7=R74
+ParamDesignator6=R59
+Variation8=Designator=R61|UniqueId=\HQCWANRX|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation7=ParameterName=Value|VariantValue=37R4
+ParamDesignator7=R61
 ParamVariation8=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator8=R74
-Variation9=Designator=R83|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamVariation9=ParameterName=Value|VariantValue=37.4R
-ParamDesignator9=R83
+ParamDesignator8=R61
+Variation9=Designator=R70|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation9=ParameterName=Value|VariantValue=37R4
+ParamDesignator9=R70
 ParamVariation10=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamDesignator10=R83
-Variation10=Designator=R84|UniqueId=\BJEZKQML|Kind=1|AlternatePart= 
-Variation11=Designator=R67|UniqueId=\ERIGCERN|Kind=1|AlternatePart= 
-Variation12=Designator=R68|UniqueId=\ZUPAGMQW|Kind=1|AlternatePart= 
-Variation13=Designator=R70|UniqueId=\VDQZKXSR|Kind=1|AlternatePart= 
-Variation14=Designator=IC101|UniqueId=\USHNTQLQ|Kind=1|AlternatePart= 
-Variation15=Designator=R16|UniqueId=\YSRQWIGR|Kind=1|AlternatePart= 
-Variation16=Designator=R17|UniqueId=\ENGVLWJU|Kind=1|AlternatePart= 
-ParamVariationCount=10
+ParamDesignator10=R70
+Variation10=Designator=R71|UniqueId=\BJEZKQML|Kind=1|AlternatePart= 
+Variation11=Designator=R54|UniqueId=\ERIGCERN|Kind=1|AlternatePart= 
+Variation12=Designator=R55|UniqueId=\ZUPAGMQW|Kind=1|AlternatePart= 
+Variation13=Designator=R57|UniqueId=\VDQZKXSR|Kind=1|AlternatePart= 
+Variation14=Designator=IC9|UniqueId=\USHNTQLQ|Kind=1|AlternatePart= 
+Variation15=Designator=R26|UniqueId=\YSRQWIGR|Kind=1|AlternatePart= 
+Variation16=Designator=R27|UniqueId=\ENGVLWJU|Kind=1|AlternatePart= 
+Variation17=Designator=R7|UniqueId=\NRHWQDRV|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation11=ParameterName=Value|VariantValue=300R
+ParamDesignator11=R7
+ParamVariation12=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamDesignator12=R7
+ParamVariationCount=12
 
 [GeneratedDocument1]
 DocumentPath=..\Outputs\SNES_TST_Main\Design Rule Check - SNES TST Main.html
@@ -740,7 +733,7 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP7740A3 (HP OfficeJet Pro 7740 series)
+TargetPrinter=Canon MG4200 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
