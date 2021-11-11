@@ -352,7 +352,7 @@ UniqueID=6E92B0DB-A3B6-43EE-A7B9-E82C659B15D8
 Description=PAL System
 AllowFabrication=0
 ParameterCount=0
-VariationCount=17
+VariationCount=14
 Variation1=Designator=IC2|UniqueId=\KUMMCJAU|Kind=0|AlternatePart=14.318180 MHz
 ParamVariation1=ParameterName=Frequency|VariantValue=14.318180 MHz
 ParamDesignator1=IC2
@@ -364,32 +364,29 @@ Variation2=Designator=R4|UniqueId=\GCACQYCH|Kind=1|AlternatePart=
 Variation3=Designator=R56|UniqueId=\GXLPHWKW|Kind=0|AlternatePart= 
 ParamVariation4=ParameterName=Value|VariantValue=10k
 ParamDesignator4=R56
-Variation4=Designator=R58|UniqueId=\VBIUQRLL|Kind=1|AlternatePart= 
-Variation5=Designator=R60|UniqueId=\QCYQQFRM|Kind=1|AlternatePart= 
-Variation6=Designator=R62|UniqueId=\MUTIJWNA|Kind=1|AlternatePart= 
-Variation7=Designator=R59|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamVariation5=ParameterName=Value|VariantValue=37R4
+Variation4=Designator=R59|UniqueId=\BNSEAMOE|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation5=ParameterName=Value|VariantValue=75R
 ParamDesignator5=R59
 ParamVariation6=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamDesignator6=R59
-Variation8=Designator=R61|UniqueId=\HQCWANRX|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamVariation7=ParameterName=Value|VariantValue=37R4
+Variation5=Designator=R61|UniqueId=\HQCWANRX|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation7=ParameterName=Value|VariantValue=75R
 ParamDesignator7=R61
 ParamVariation8=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamDesignator8=R61
-Variation9=Designator=R70|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
-ParamVariation9=ParameterName=Value|VariantValue=37R4
+Variation6=Designator=R70|UniqueId=\XPKFWQRU|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+ParamVariation9=ParameterName=Value|VariantValue=75R
 ParamDesignator9=R70
 ParamVariation10=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamDesignator10=R70
-Variation10=Designator=R71|UniqueId=\BJEZKQML|Kind=1|AlternatePart= 
-Variation11=Designator=R54|UniqueId=\ERIGCERN|Kind=1|AlternatePart= 
-Variation12=Designator=R55|UniqueId=\ZUPAGMQW|Kind=1|AlternatePart= 
-Variation13=Designator=R57|UniqueId=\VDQZKXSR|Kind=1|AlternatePart= 
-Variation14=Designator=IC9|UniqueId=\USHNTQLQ|Kind=1|AlternatePart= 
-Variation15=Designator=R26|UniqueId=\YSRQWIGR|Kind=1|AlternatePart= 
-Variation16=Designator=R27|UniqueId=\ENGVLWJU|Kind=1|AlternatePart= 
-Variation17=Designator=R7|UniqueId=\NRHWQDRV|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
+Variation7=Designator=R71|UniqueId=\BJEZKQML|Kind=1|AlternatePart= 
+Variation8=Designator=R54|UniqueId=\ERIGCERN|Kind=1|AlternatePart= 
+Variation9=Designator=R55|UniqueId=\ZUPAGMQW|Kind=1|AlternatePart= 
+Variation10=Designator=R57|UniqueId=\VDQZKXSR|Kind=1|AlternatePart= 
+Variation11=Designator=IC9|UniqueId=\USHNTQLQ|Kind=1|AlternatePart= 
+Variation12=Designator=R26|UniqueId=\YSRQWIGR|Kind=1|AlternatePart= 
+Variation13=Designator=R27|UniqueId=\ENGVLWJU|Kind=1|AlternatePart= 
+Variation14=Designator=R7|UniqueId=\NRHWQDRV|Kind=0|AlternatePart==PartType+' '+Value+' '+ChipSize+' '+Tolerance
 ParamVariation11=ParameterName=Value|VariantValue=300R
 ParamDesignator11=R7
 ParamVariation12=ParameterName=Comment|VariantValue==PartType+' '+Value+' '+ChipSize+' '+Tolerance
@@ -733,7 +730,7 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Canon MG4200 series Printer
+TargetPrinter=HP7740A3 (HP OfficeJet Pro 7740 series)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
