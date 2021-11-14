@@ -74,8 +74,8 @@ assign TST15 = (VBLANK) ? 1'b0 : 1'b1;
 assign RGBSEL = 1'b1;
 //assign RGBSEL = testoutput[5];
 assign AMPFILT = 1'b1;
-//assign DACCLK = daclock;
-assign DACCLK = MCLKO;
+assign DACCLK = daclock;
+//assign DACCLK = MCLKO;
 assign CSYNCDAC = 1'b0;
 //assign BLANKDAC = 1'b1;
 assign BLANKDAC = CSYNCO;
@@ -305,7 +305,7 @@ font_rom	font_rom_inst (
 
 
 //always @(negedge daclock) begin
-always @(posedge MCLKO) begin
+always @(negedge MCLKO) begin
 	if(VBLANK)begin
 		font_address[10:0] <= 0;
 		font_x_counter <= 0;
@@ -340,6 +340,15 @@ always @(posedge MCLKO) begin
 		if(font_y_counter < 4'd11) font_y_counter <= font_y_counter + 1'b1;
 		else font_y_counter <= 0;
 	end
+	
+	RDIG[9:1] <= TST_R[4:0] *(* multstyle = "dsp" *) 4'b1111;
+	GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) 4'b1111;
+	BDIG[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) 4'b1111;
+	
+	//RDIG[9:1] <= TST_R[4:0] *(* multstyle = "dsp" *) brightness;
+	//GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) brightness;
+	//BDIG[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) brightness;
+	
 	/*if(font_bit) begin
 		RDIG[9:1] <= 465;
 		GDIG[9:1] <= 465;
@@ -351,7 +360,7 @@ always @(posedge MCLKO) begin
 		BDIG[9:1] <= (TST_B[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 	end*/
 	//GDIG[9:1] <= (font_x_counter[3:0] ) *(* multstyle = "dsp" *) brightness;
-	RDIG[9:1] <= font_bit ? 465 : (TST_R[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+	//RDIG[9:1] <= font_bit ? 465 : (TST_R[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 	//RDIG[9:1] <= rgb[8:0];
 	/*if (VBLANK || HBLANK) begin
 		red = 0;
@@ -359,8 +368,8 @@ always @(posedge MCLKO) begin
 	else begin
 		red[9:1] <= 300;//rgb[8:0];
 	end*/
-	GDIG[9:1] <= font_bit ? 465 : (TST_G[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
-	BDIG[9:1] <= font_bit ? 465 : (TST_B[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+	//GDIG[9:1] <= font_bit ? 465 : (TST_G[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+	//BDIG[9:1] <= font_bit ? 465 : (TST_B[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 end
 
 always @(posedge MCLKO) begin
