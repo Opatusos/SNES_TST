@@ -80,7 +80,7 @@ GenerateClassCluster=0
 DocumentUniqueId=HEFTUPSM
 
 [Document3]
-DocumentPath=Power And Voltage Shifters.SchDoc
+DocumentPath=Voltage Shifters.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -114,6 +114,23 @@ GenerateClassCluster=0
 DocumentUniqueId=RSKSVWAZ
 
 [Document5]
+DocumentPath=Power.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AQQQLJNS
+
+[Document6]
 DocumentPath=SNES TST Main.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -130,7 +147,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RWRKEWNG
 
-[Document6]
+[Document7]
 DocumentPath=SNES TST Main.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -147,7 +164,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document8]
 DocumentPath=SNES TST Main Assembly.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -164,7 +181,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document9]
 DocumentPath=SNES TST Main Documentation.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -181,7 +198,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document10]
 DocumentPath=SNES TST Main Fabrication.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -198,7 +215,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document11]
 DocumentPath=SNES TST Main.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -215,7 +232,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document12]
 DocumentPath=SNES TST Main.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -232,7 +249,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document13]
 DocumentPath=SNES TST Main.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
