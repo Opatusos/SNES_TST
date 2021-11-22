@@ -341,13 +341,13 @@ always @(negedge MCLKO) begin
 		else font_y_counter <= 0;
 	end
 	
-	RDIG[9:1] <= TST_R[4:0] *(* multstyle = "dsp" *) 4'b1111;
-	GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) 4'b1111;
-	BDIG[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) 4'b1111;
+	//RDIG[9:1] <= TST_R[4:0] *(* multstyle = "dsp" *) 4'b1111;
+	//GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) 4'b1111;
+	//BDIG[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) 4'b1111;
 	
-	//RDIG[9:1] <= TST_R[4:0] *(* multstyle = "dsp" *) brightness;
-	//GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) brightness;
-	//BDIG[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) brightness;
+	RDIG[9:1] <= TST_R[4:0] *(* multstyle = "dsp" *) brightness;
+	GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) brightness;
+	BDIG[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) brightness;
 	
 	/*if(font_bit) begin
 		RDIG[9:1] <= 465;
