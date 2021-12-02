@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=..\Outputs\SNES_TST_Adapter
+OutputPath=..\Outputs
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -247,6 +247,14 @@ DocumentPath=..\Outputs\SNES_TST_Adapter\Design Rule Check - SNES TST Adapter Ty
 DItemRevisionGUID=
 
 [Parameter1]
+Name=DrawnBy
+Value=Opatus
+
+[Parameter2]
+Name=Title
+Value=SNES TST Adapter
+
+[Parameter3]
 Name=Revision
 Value=Rev 0
 
@@ -297,7 +305,7 @@ ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
 ConfigurationType=Custom
 
 [Generic_EDE]
-OutputDir=..\Outputs\SNES_TST_Adapter
+OutputDir=..\Outputs
 
 [OutputGroup1]
 Name=Netlist Outputs
