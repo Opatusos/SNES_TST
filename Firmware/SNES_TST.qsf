@@ -53,9 +53,9 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_64 -to VBLANK
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VBLANK
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to VBLANK
 set_location_assignment PIN_60 -to HBLANK
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HBLANK
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to HBLANK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AMPFILT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[9]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[8]
@@ -67,26 +67,24 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[3]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BLANKDAC
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BURST
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIC[3]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIC[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIC[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIC[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CONTC
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CONTD
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CONTL
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to CONTC
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to CONTL
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CSYNCDAC
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CSYNCI
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CSYNCO
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DACCLK
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DATA[7]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DATA[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DATA[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DATA[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DATA[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DATA[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DATA[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DATA[0]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[7]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[6]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[5]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[4]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[3]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[2]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[1]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[9]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[8]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[7]
@@ -99,22 +97,21 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MCLKO
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MCLKOSC
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MCLKSYS
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to MCLKOSC
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to MCLKSYS
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MD7PAT
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OVER1
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to OVER1
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OVERPAT
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PADDRESS[7]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PADDRESS[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PADDRESS[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PADDRESS[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PADDRESS[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PADDRESS[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PADDRESS[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PADDRESS[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PARD
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PAWR
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PED
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PADDRESS[7]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PADDRESS[6]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PADDRESS[5]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PADDRESS[4]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PADDRESS[3]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PADDRESS[2]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PADDRESS[1]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PADDRESS[0]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PARD
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PAWR
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[9]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[8]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[7]
@@ -126,27 +123,27 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to REGION
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to REGPSEL
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RESETI
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to RESETI
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RESETO
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RGBSEL
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SUBCAR
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SYSREG
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to SYSREG
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST15
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_B[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_B[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_B[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_B[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_B[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_G[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_G[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_G[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_G[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_G[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_R[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_R[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_R[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_R[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST_R[0]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_B[4]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_B[3]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_B[2]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_B[1]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_B[0]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_G[4]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_G[3]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_G[2]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_G[1]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_G[0]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_R[4]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_R[3]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_R[2]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_R[1]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_R[0]
 set_location_assignment PIN_96 -to PAWR
 set_location_assignment PIN_93 -to PARD
 set_location_assignment PIN_11 -to AMPFILT
@@ -160,13 +157,12 @@ set_location_assignment PIN_24 -to BDIG[3]
 set_location_assignment PIN_25 -to BDIG[2]
 set_location_assignment PIN_26 -to BDIG[1]
 set_location_assignment PIN_30 -to BLANKDAC
-set_location_assignment PIN_98 -to BURST
 set_location_assignment PIN_56 -to CIC[3]
 set_location_assignment PIN_55 -to CIC[2]
 set_location_assignment PIN_54 -to CIC[1]
 set_location_assignment PIN_52 -to CIC[0]
 set_location_assignment PIN_50 -to CONTC
-set_location_assignment PIN_48 -to CONTD
+set_location_assignment PIN_129 -to CONTD
 set_location_assignment PIN_47 -to CONTL
 set_location_assignment PIN_27 -to CSYNCDAC
 set_location_assignment PIN_100 -to CSYNCI
@@ -189,7 +185,7 @@ set_location_assignment PIN_43 -to GDIG[4]
 set_location_assignment PIN_44 -to GDIG[3]
 set_location_assignment PIN_45 -to GDIG[2]
 set_location_assignment PIN_46 -to GDIG[1]
-set_location_assignment PIN_138 -to LED[3]
+set_location_assignment PIN_126 -to LED[3]
 set_location_assignment PIN_70 -to LED[2]
 set_location_assignment PIN_69 -to LED[1]
 set_location_assignment PIN_74 -to MCLKO
@@ -206,7 +202,6 @@ set_location_assignment PIN_78 -to PADDRESS[3]
 set_location_assignment PIN_77 -to PADDRESS[2]
 set_location_assignment PIN_76 -to PADDRESS[1]
 set_location_assignment PIN_75 -to PADDRESS[0]
-set_location_assignment PIN_97 -to PED
 set_location_assignment PIN_110 -to RDIG[9]
 set_location_assignment PIN_111 -to RDIG[8]
 set_location_assignment PIN_112 -to RDIG[7]
@@ -227,7 +222,7 @@ set_location_assignment PIN_59 -to RESETI
 set_location_assignment PIN_65 -to RESETO
 set_location_assignment PIN_101 -to RGBSEL
 set_location_assignment PIN_62 -to SYSREG
-set_location_assignment PIN_126 -to TST15
+set_location_assignment PIN_138 -to TST15
 set_location_assignment PIN_10 -to TST_R[0]
 set_location_assignment PIN_8 -to TST_R[1]
 set_location_assignment PIN_7 -to TST_R[2]
@@ -255,17 +250,9 @@ set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
-set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE 12.5%
 set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
 set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE WITH ERAM"
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to CIC[3]
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to CIC[0]
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to CIC[1]
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to CIC[2]
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to CIC
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to CONTL
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to CONTD
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to CONTC
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
 set_global_assignment -name VERILOG_INCLUDE_FILE rtl/include/osd.vh
@@ -282,4 +269,118 @@ set_global_assignment -name QIP_FILE ip/pll.qip
 set_global_assignment -name QSYS_FILE ip/snes_tst_cpu.qsys
 set_global_assignment -name QIP_FILE ip/ram2port.qip
 set_global_assignment -name QIP_FILE ip/font_rom.qip
+set_location_assignment PIN_136 -to PPURESET
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PPURESET
+set_location_assignment PIN_98 -to FIELD
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FIELD
+set_location_assignment PIN_97 -to TOUMEI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TOUMEI
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CONTDOUT
+set_location_assignment PIN_48 -to CONTDOUT
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AMPFILT
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[9]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[8]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BLANKDAC
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to MCLKO
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to MCLKOSC
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to MCLKSYS
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to MD7PAT
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to OVER1
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to OVERPAT
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PPURESET
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[9]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[8]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to REGION
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to REGPAT
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to REGPSEL
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RESETI
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RESETO
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RGBSEL
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SUBCAR
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SYSREG
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to TOUMEI
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to CSYNCDAC
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to CSYNCI
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to CSYNCO
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to DACCLK
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to FIELD
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[9]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[8]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to LED[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to LED[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to LED[1]
+set_instance_assignment -name SLEW_RATE 2 -to AMPFILT
+set_instance_assignment -name SLEW_RATE 2 -to BDIG[9]
+set_instance_assignment -name SLEW_RATE 2 -to BDIG[8]
+set_instance_assignment -name SLEW_RATE 2 -to BDIG[7]
+set_instance_assignment -name SLEW_RATE 2 -to BDIG[6]
+set_instance_assignment -name SLEW_RATE 2 -to BDIG[5]
+set_instance_assignment -name SLEW_RATE 2 -to BDIG[4]
+set_instance_assignment -name SLEW_RATE 2 -to BDIG[3]
+set_instance_assignment -name SLEW_RATE 2 -to BDIG[2]
+set_instance_assignment -name SLEW_RATE 2 -to BDIG[1]
+set_instance_assignment -name SLEW_RATE 2 -to BLANKDAC
+set_instance_assignment -name SLEW_RATE 2 -to CIC[3]
+set_instance_assignment -name SLEW_RATE 2 -to CIC[2]
+set_instance_assignment -name SLEW_RATE 2 -to CIC[1]
+set_instance_assignment -name SLEW_RATE 2 -to CIC[0]
+set_instance_assignment -name SLEW_RATE 2 -to CONTDOUT
+set_instance_assignment -name SLEW_RATE 2 -to CSYNCDAC
+set_instance_assignment -name SLEW_RATE 2 -to CSYNCO
+set_instance_assignment -name SLEW_RATE 2 -to DACCLK
+set_instance_assignment -name SLEW_RATE 2 -to GDIG[9]
+set_instance_assignment -name SLEW_RATE 2 -to GDIG[8]
+set_instance_assignment -name SLEW_RATE 2 -to GDIG[7]
+set_instance_assignment -name SLEW_RATE 2 -to GDIG[6]
+set_instance_assignment -name SLEW_RATE 2 -to GDIG[5]
+set_instance_assignment -name SLEW_RATE 2 -to GDIG[4]
+set_instance_assignment -name SLEW_RATE 2 -to GDIG[3]
+set_instance_assignment -name SLEW_RATE 2 -to GDIG[2]
+set_instance_assignment -name SLEW_RATE 2 -to GDIG[1]
+set_instance_assignment -name SLEW_RATE 2 -to LED[3]
+set_instance_assignment -name SLEW_RATE 2 -to LED[2]
+set_instance_assignment -name SLEW_RATE 2 -to LED[1]
+set_instance_assignment -name SLEW_RATE 2 -to MCLKO
+set_instance_assignment -name SLEW_RATE 2 -to MD7PAT
+set_instance_assignment -name SLEW_RATE 2 -to OVERPAT
+set_instance_assignment -name SLEW_RATE 2 -to PPURESET
+set_instance_assignment -name SLEW_RATE 2 -to RDIG[9]
+set_instance_assignment -name SLEW_RATE 2 -to RDIG[8]
+set_instance_assignment -name SLEW_RATE 2 -to RDIG[7]
+set_instance_assignment -name SLEW_RATE 2 -to RDIG[6]
+set_instance_assignment -name SLEW_RATE 2 -to RDIG[5]
+set_instance_assignment -name SLEW_RATE 2 -to RDIG[4]
+set_instance_assignment -name SLEW_RATE 2 -to RDIG[3]
+set_instance_assignment -name SLEW_RATE 2 -to RDIG[2]
+set_instance_assignment -name SLEW_RATE 2 -to RDIG[1]
+set_instance_assignment -name SLEW_RATE 2 -to REGION
+set_instance_assignment -name SLEW_RATE 2 -to REGPAT
+set_instance_assignment -name SLEW_RATE 2 -to REGPSEL
+set_instance_assignment -name SLEW_RATE 2 -to RESETO
+set_instance_assignment -name SLEW_RATE 2 -to RGBSEL
+set_instance_assignment -name SLEW_RATE 2 -to TST15
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to CONTD
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

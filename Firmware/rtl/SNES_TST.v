@@ -1,44 +1,46 @@
 `define EDGE_SENSITIVE_CLKEN
 
 module SNES_TST(
-	input VBLANK,
-	input HBLANK,
-	input PAWR,
-	input PARD,
-	input BURST,
-	input PED,
-	input CSYNCI,
-	output CSYNCO,
-	input [7:0] PADDRESS,
-	input [7:0] DATA,
-	input MCLKSYS,
-	input MCLKOSC,
-	output REGPSEL,
-	output REGPAT,
-	input SYSREG,
-	output MD7PAT,
-	input OVER1,
-	output OVERPAT,
-	output MCLKO,
-	input SUBCAR,
-	input RESETI,
-	output RESETO,
-	output REGION,
-	inout [3:0] CIC,
-	input CONTL,
-	input CONTD,
-	input CONTC,
+	input VBLANK,				//0: not vblank; 1: vblank
+	input HBLANK,				//0: not hblank; 1: hblank
+	input PAWR,					//PPU data write enable
+	input PARD,					//PPU data read enable
+	input FIELD,				//shows if the actual field is even or odd
+	input TOUMEI,				//???shows if the screen is all black or not???
+	input CSYNCI,				//csync from PPU2
+	output CSYNCO,				//csync to system; can be dejittered
+	input [7:0] PADDRESS,	//PPU Address
+	input [7:0] DATA,			//PPU Data
+	input MCLKSYS,				//Master Clock from system
+	input MCLKOSC,				//Master Clock from oscillator
+	output REGPSEL,			//D4 region patch control; 0: patch not applied; 1: patch applied (this signal could be dropped, if a new signal is needed)
+	output REGPAT,				//D4 region patch value; 0: PAL; 1: NTSC
+	input SYSREG,	 			//identifies the system region; 0: NTSC; 1: PAL
+	output MD7PAT,				//applies the patch for mode 7
+	input OVER1,				//from PPU1; shows if the actual pixel is inside or outside of Mode7 memory
+	output OVERPAT,			//goes to PPU2; same as the OVER1 signal, only differs if the mode 7 patch is applied
+	output MCLKO,				//Master Clock to system
+	input SUBCAR,				//subcarrier output for NTSC systems; this will not get dejittered
+	input RESETI,				//reset signal from Reset Button; 0: run; 1: reset
+	output RESETO,				//reset signal to PPU2; 0: run; 1: reset
+	output REGION,	 			//sets the region; 0: NTSC; 1: PAL
+	inout [3:0] CIC,			//Cic signals
+	input CONTL,	 			//input controller latch
+	input CONTD,	 			//input controller data
+	output CONTDOUT,			//output controller data; input for system can be disabled
+	input CONTC,	 			//input controller clock
 	output [3:1] LED,
-	output RGBSEL,
-	output AMPFILT,
+	output RGBSEL,	 			//0: PPU RGB; 1: FPGA RGB
+	output AMPFILT, 			//0: THS7374 filter is on; 1: filter is off
 	output DACCLK,
-	output CSYNCDAC,
-	output BLANKDAC,
+	output CSYNCDAC,			//0: sync on green off
+	output BLANKDAC,			//0: drives ADV7123 to blanking
+	output PPURESET,			//0: PPU2 is off; 1: PPU2 is on
 	
 	input [4:0] TST_R,
 	input [4:0] TST_G,
 	input [4:0] TST_B,
-	output TST15,
+	output TST15,	 			//0: PPU2 Test Mode off; 1: PPU2 Test Mode On
 
 	//output reg[9:1] RDIG,
 	output reg[9:1] RDIG,
@@ -72,8 +74,8 @@ assign TST15 = (VBLANK) ? 1'b0 : 1'b1;
 assign RGBSEL = 1'b1;
 //assign RGBSEL = testoutput[5];
 assign AMPFILT = 1'b1;
-//assign DACCLK = daclock;
-assign DACCLK = MCLKO;
+assign DACCLK = daclock;
+//assign DACCLK = MCLKO;
 assign CSYNCDAC = 1'b0;
 //assign BLANKDAC = 1'b1;
 assign BLANKDAC = CSYNCO;
@@ -303,7 +305,7 @@ font_rom	font_rom_inst (
 
 
 //always @(negedge daclock) begin
-always @(posedge MCLKO) begin
+always @(negedge MCLKO) begin
 	if(VBLANK)begin
 		font_address[10:0] <= 0;
 		font_x_counter <= 0;
@@ -338,6 +340,15 @@ always @(posedge MCLKO) begin
 		if(font_y_counter < 4'd11) font_y_counter <= font_y_counter + 1'b1;
 		else font_y_counter <= 0;
 	end
+	
+	//RDIG[9:1] <= TST_R[4:0] *(* multstyle = "dsp" *) 4'b1111;
+	//GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) 4'b1111;
+	//BDIG[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) 4'b1111;
+	
+	RDIG[9:1] <= TST_R[4:0] *(* multstyle = "dsp" *) brightness;
+	GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) brightness;
+	BDIG[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) brightness;
+	
 	/*if(font_bit) begin
 		RDIG[9:1] <= 465;
 		GDIG[9:1] <= 465;
@@ -349,7 +360,7 @@ always @(posedge MCLKO) begin
 		BDIG[9:1] <= (TST_B[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 	end*/
 	//GDIG[9:1] <= (font_x_counter[3:0] ) *(* multstyle = "dsp" *) brightness;
-	RDIG[9:1] <= font_bit ? 465 : (TST_R[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+	//RDIG[9:1] <= font_bit ? 465 : (TST_R[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 	//RDIG[9:1] <= rgb[8:0];
 	/*if (VBLANK || HBLANK) begin
 		red = 0;
@@ -357,8 +368,8 @@ always @(posedge MCLKO) begin
 	else begin
 		red[9:1] <= 300;//rgb[8:0];
 	end*/
-	GDIG[9:1] <= font_bit ? 465 : (TST_G[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
-	BDIG[9:1] <= font_bit ? 465 : (TST_B[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+	//GDIG[9:1] <= font_bit ? 465 : (TST_G[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
+	//BDIG[9:1] <= font_bit ? 465 : (TST_B[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 end
 
 always @(posedge MCLKO) begin

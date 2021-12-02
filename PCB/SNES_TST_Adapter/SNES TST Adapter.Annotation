@@ -1,0 +1,10 @@
+[DesignatorManager]
+
+[SheetNumberManager]
+SheetNumberOrder=Display Order
+SheetNumberMethod=Increasing
+DocumentName0=SNES TST Adapter Sheet1.SchDoc
+UniqueIDPath0=
+SheetNumber0=1
+
+
