@@ -238,25 +238,17 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[GeneratedDocument1]
-DocumentPath=..\Outputs\SNES_TST_Adapter\Design Rule Check - SNES TST Adapter Type A.html
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=..\Outputs\SNES_TST_Adapter\Design Rule Check - SNES TST Adapter Type B.html
-DItemRevisionGUID=
-
 [Parameter1]
 Name=DrawnBy
 Value=Opatus
 
 [Parameter2]
-Name=Title
-Value=SNES TST Adapter
-
-[Parameter3]
 Name=Revision
 Value=Rev 0
+
+[Parameter3]
+Name=Title
+Value=SNES TST Adapter
 
 [Configuration1]
 Name=Sources
@@ -431,7 +423,7 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Canon MG4200 series Printer
+TargetPrinter=HP7740A3 (HP OfficeJet Pro 7740 series)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
@@ -1271,8 +1263,8 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=PCB.SchLib
-ComponentDesignItemID0=PPU2100Pin
-ComponentSymbolReference0=PPU2100Pin
+ComponentDesignItemID0=Conn 80P
+ComponentSymbolReference0=Conn 80P
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 FullReplace=0
@@ -1296,17 +1288,20 @@ ParameterName2=Description
 ParameterUpdate2=1
 ParameterName3=Library Reference
 ParameterUpdate3=1
+ParameterName4=Manufacturer
+ParameterUpdate4=1
+ParameterName5=Manufacturer_Part_Number
+ParameterUpdate5=1
+ParameterName6=System
+ParameterUpdate6=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=PPU100Pin
+ModelName0=DF40C-80DP
 ModelUpdate0=1
 ModelType1=PCBLIB
-ModelName1=PPU100Pin_Bottom_TOP_View
+ModelName1=DF40C-80DS
 ModelUpdate1=1
-ModelType2=PCBLIB
-ModelName2=PPU100Pin_Double
-ModelUpdate2=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
