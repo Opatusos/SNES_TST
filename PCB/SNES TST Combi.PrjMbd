@@ -30,7 +30,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=Project Outputs for SNES TST Combi
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -77,7 +77,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=52e28a69-a907-44ae-b7c2-3914382bbdee
+DocumentUniqueId=8e1745e8-5b75-4c78-b51d-6c0c39771be6
 
 [Document3]
 DocumentPath=SNES_TST_Main\SNES TST Main.PrjPcb
@@ -114,7 +114,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Generic_EDE]
-OutputDir=Project Outputs for SNES TST Combi
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -240,7 +240,7 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Canon MG4200 series Printer
+TargetPrinter=HP7740A3 (HP OfficeJet Pro 7740 series)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
