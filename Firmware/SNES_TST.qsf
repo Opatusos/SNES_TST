@@ -127,7 +127,6 @@ set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to RESETI
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RESETO
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RGBSEL
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SUBCAR
-set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to SYSREG
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TST15
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_B[4]
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_B[3]
@@ -146,7 +145,7 @@ set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_R[1]
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to TST_R[0]
 set_location_assignment PIN_96 -to PAWR
 set_location_assignment PIN_93 -to PARD
-set_location_assignment PIN_11 -to AMPFILT
+set_location_assignment PIN_6 -to AMPFILT
 set_location_assignment PIN_13 -to BDIG[9]
 set_location_assignment PIN_14 -to BDIG[8]
 set_location_assignment PIN_15 -to BDIG[7]
@@ -167,15 +166,15 @@ set_location_assignment PIN_47 -to CONTL
 set_location_assignment PIN_27 -to CSYNCDAC
 set_location_assignment PIN_100 -to CSYNCI
 set_location_assignment PIN_106 -to CSYNCO
-set_location_assignment PIN_12 -to DACCLK
+set_location_assignment PIN_138 -to DACCLK
 set_location_assignment PIN_92 -to DATA[7]
 set_location_assignment PIN_91 -to DATA[6]
 set_location_assignment PIN_90 -to DATA[5]
 set_location_assignment PIN_89 -to DATA[4]
-set_location_assignment PIN_88 -to DATA[3]
-set_location_assignment PIN_87 -to DATA[2]
-set_location_assignment PIN_86 -to DATA[1]
-set_location_assignment PIN_85 -to DATA[0]
+set_location_assignment PIN_87 -to DATA[3]
+set_location_assignment PIN_86 -to DATA[2]
+set_location_assignment PIN_85 -to DATA[1]
+set_location_assignment PIN_84 -to DATA[0]
 set_location_assignment PIN_32 -to GDIG[9]
 set_location_assignment PIN_33 -to GDIG[8]
 set_location_assignment PIN_38 -to GDIG[7]
@@ -188,20 +187,20 @@ set_location_assignment PIN_46 -to GDIG[1]
 set_location_assignment PIN_126 -to LED[3]
 set_location_assignment PIN_70 -to LED[2]
 set_location_assignment PIN_69 -to LED[1]
-set_location_assignment PIN_74 -to MCLKO
+set_location_assignment PIN_88 -to MCLKO
 set_location_assignment PIN_29 -to MCLKOSC
 set_location_assignment PIN_28 -to MCLKSYS
 set_location_assignment PIN_58 -to MD7PAT
 set_location_assignment PIN_57 -to OVER1
 set_location_assignment PIN_61 -to OVERPAT
-set_location_assignment PIN_84 -to PADDRESS[7]
-set_location_assignment PIN_81 -to PADDRESS[6]
-set_location_assignment PIN_80 -to PADDRESS[5]
-set_location_assignment PIN_79 -to PADDRESS[4]
-set_location_assignment PIN_78 -to PADDRESS[3]
-set_location_assignment PIN_77 -to PADDRESS[2]
-set_location_assignment PIN_76 -to PADDRESS[1]
-set_location_assignment PIN_75 -to PADDRESS[0]
+set_location_assignment PIN_81 -to PADDRESS[7]
+set_location_assignment PIN_80 -to PADDRESS[6]
+set_location_assignment PIN_79 -to PADDRESS[5]
+set_location_assignment PIN_78 -to PADDRESS[4]
+set_location_assignment PIN_77 -to PADDRESS[3]
+set_location_assignment PIN_76 -to PADDRESS[2]
+set_location_assignment PIN_75 -to PADDRESS[1]
+set_location_assignment PIN_74 -to PADDRESS[0]
 set_location_assignment PIN_110 -to RDIG[9]
 set_location_assignment PIN_111 -to RDIG[8]
 set_location_assignment PIN_112 -to RDIG[7]
@@ -221,12 +220,11 @@ set_location_assignment PIN_99 -to REGPAT
 set_location_assignment PIN_59 -to RESETI
 set_location_assignment PIN_65 -to RESETO
 set_location_assignment PIN_101 -to RGBSEL
-set_location_assignment PIN_62 -to SYSREG
-set_location_assignment PIN_138 -to TST15
-set_location_assignment PIN_10 -to TST_R[0]
-set_location_assignment PIN_8 -to TST_R[1]
-set_location_assignment PIN_7 -to TST_R[2]
-set_location_assignment PIN_6 -to TST_R[3]
+set_location_assignment PIN_12 -to TST15
+set_location_assignment PIN_11 -to TST_R[0]
+set_location_assignment PIN_10 -to TST_R[1]
+set_location_assignment PIN_8 -to TST_R[2]
+set_location_assignment PIN_7 -to TST_R[3]
 set_location_assignment PIN_141 -to TST_R[4]
 set_location_assignment PIN_140 -to TST_G[0]
 set_location_assignment PIN_135 -to TST_G[1]
@@ -273,8 +271,6 @@ set_location_assignment PIN_136 -to PPURESET
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PPURESET
 set_location_assignment PIN_98 -to FIELD
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FIELD
-set_location_assignment PIN_97 -to TOUMEI
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TOUMEI
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CONTDOUT
 set_location_assignment PIN_48 -to CONTDOUT
@@ -313,8 +309,6 @@ set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RESETI
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RESETO
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RGBSEL
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SUBCAR
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SYSREG
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to TOUMEI
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to CSYNCDAC
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to CSYNCI
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to CSYNCO
@@ -383,4 +377,11 @@ set_instance_assignment -name SLEW_RATE 2 -to RESETO
 set_instance_assignment -name SLEW_RATE 2 -to RGBSEL
 set_instance_assignment -name SLEW_RATE 2 -to TST15
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to CONTD
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CICDIR[0]
+set_location_assignment PIN_62 -to CICDIR[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to CICDIR[0]
+set_location_assignment PIN_97 -to CICDIR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CICDIR[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to CICDIR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CICDIR
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

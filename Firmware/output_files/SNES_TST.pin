@@ -75,13 +75,13 @@ VCCA6                        : 2         : power  :                   : 3.0V/3.3
 ANAIN1                       : 3         :        :                   :         :           :                
 REFGND                       : 4         :        :                   :         :           :                
 ADC_VREF                     : 5         :        :                   :         :           :                
-TST_R[3]                     : 6         : input  : 3.3 V Schmitt Trigger :         : 1A        : Y              
-TST_R[2]                     : 7         : input  : 3.3 V Schmitt Trigger :         : 1A        : Y              
-TST_R[1]                     : 8         : input  : 3.3 V Schmitt Trigger :         : 1A        : Y              
+AMPFILT                      : 6         : output : 3.3-V LVTTL       :         : 1A        : Y              
+TST_R[3]                     : 7         : input  : 3.3 V Schmitt Trigger :         : 1A        : Y              
+TST_R[2]                     : 8         : input  : 3.3 V Schmitt Trigger :         : 1A        : Y              
 VCCIO1A                      : 9         : power  :                   : 3.3V    : 1A        :                
-TST_R[0]                     : 10        : input  : 3.3 V Schmitt Trigger :         : 1A        : Y              
-AMPFILT                      : 11        : output : 3.3-V LVTTL       :         : 1A        : Y              
-DACCLK                       : 12        : output : 3.3-V LVTTL       :         : 1A        : Y              
+TST_R[1]                     : 10        : input  : 3.3 V Schmitt Trigger :         : 1A        : Y              
+TST_R[0]                     : 11        : input  : 3.3 V Schmitt Trigger :         : 1A        : Y              
+TST15                        : 12        : output : 3.3-V LVTTL       :         : 1A        : Y              
 BDIG[9]                      : 13        : output : 3.3-V LVTTL       :         : 1A        : Y              
 BDIG[8]                      : 14        : output : 3.3-V LVTTL       :         : 1A        : Y              
 BDIG[7]                      : 15        : output : 3.3-V LVTTL       :         : 1B        : Y              
@@ -131,7 +131,7 @@ MD7PAT                       : 58        : output : 3.3-V LVTTL       :         
 RESETI                       : 59        : input  : 3.3 V Schmitt Trigger :         : 3         : Y              
 HBLANK                       : 60        : input  : 3.3 V Schmitt Trigger :         : 3         : Y              
 OVERPAT                      : 61        : output : 3.3-V LVTTL       :         : 4         : Y              
-SYSREG                       : 62        : input  : 3.3 V Schmitt Trigger :         : 4         : Y              
+CICDIR[0]                    : 62        : output : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 63        : gnd    :                   :         :           :                
 VBLANK                       : 64        : input  : 3.3 V Schmitt Trigger :         : 4         : Y              
 RESETO                       : 65        : output : 3.3-V LVTTL       :         : 4         : Y              
@@ -143,21 +143,21 @@ LED[2]                       : 70        : output : 3.3-V LVTTL       :         
 VCCA5                        : 71        : power  :                   : 3.0V/3.3V :           :                
 VCC_ONE                      : 72        : power  :                   : 3.0V/3.3V :           :                
 VCC_ONE                      : 73        : power  :                   : 3.0V/3.3V :           :                
-MCLKO                        : 74        : output : 3.3-V LVTTL       :         : 5         : Y              
-PADDRESS[0]                  : 75        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
-PADDRESS[1]                  : 76        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
-PADDRESS[2]                  : 77        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
-PADDRESS[3]                  : 78        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
-PADDRESS[4]                  : 79        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
-PADDRESS[5]                  : 80        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
-PADDRESS[6]                  : 81        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+PADDRESS[0]                  : 74        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+PADDRESS[1]                  : 75        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+PADDRESS[2]                  : 76        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+PADDRESS[3]                  : 77        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+PADDRESS[4]                  : 78        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+PADDRESS[5]                  : 79        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+PADDRESS[6]                  : 80        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+PADDRESS[7]                  : 81        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
 VCCIO5                       : 82        : power  :                   : 3.3V    : 5         :                
 GND                          : 83        : gnd    :                   :         :           :                
-PADDRESS[7]                  : 84        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
-DATA[0]                      : 85        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
-DATA[1]                      : 86        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
-DATA[2]                      : 87        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
-DATA[3]                      : 88        : input  : 3.3 V Schmitt Trigger :         : 6         : Y              
+DATA[0]                      : 84        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+DATA[1]                      : 85        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+DATA[2]                      : 86        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+DATA[3]                      : 87        : input  : 3.3 V Schmitt Trigger :         : 5         : Y              
+MCLKO                        : 88        : output : 3.3-V LVTTL       :         : 6         : Y              
 DATA[4]                      : 89        : input  : 3.3 V Schmitt Trigger :         : 6         : Y              
 DATA[5]                      : 90        : input  : 3.3 V Schmitt Trigger :         : 6         : Y              
 DATA[6]                      : 91        : input  : 3.3 V Schmitt Trigger :         : 6         : Y              
@@ -166,7 +166,7 @@ PARD                         : 93        : input  : 3.3 V Schmitt Trigger :     
 VCCIO6                       : 94        : power  :                   : 3.3V    : 6         :                
 GND                          : 95        : gnd    :                   :         :           :                
 PAWR                         : 96        : input  : 3.3 V Schmitt Trigger :         : 6         : Y              
-TOUMEI                       : 97        : input  : 3.3-V LVTTL       :         : 6         : Y              
+CICDIR[1]                    : 97        : output : 3.3-V LVTTL       :         : 6         : Y              
 FIELD                        : 98        : input  : 3.3-V LVTTL       :         : 6         : Y              
 REGPAT                       : 99        : output : 3.3-V LVTTL       :         : 6         : Y              
 CSYNCI                       : 100       : input  : 3.3-V LVTTL       :         : 6         : Y              
@@ -207,7 +207,7 @@ TST_G[2]                     : 134       : input  : 3.3 V Schmitt Trigger :     
 TST_G[1]                     : 135       : input  : 3.3 V Schmitt Trigger :         : 8         : Y              
 PPURESET                     : 136       : output : 3.3-V LVTTL       :         : 8         : Y              
 GND                          : 137       : gnd    :                   :         :           :                
-TST15                        : 138       : output : 3.3-V LVTTL       :         : 8         : Y              
+DACCLK                       : 138       : output : 3.3-V LVTTL       :         : 8         : Y              
 VCCIO8                       : 139       : power  :                   : 3.3V    : 8         :                
 TST_G[0]                     : 140       : input  : 3.3 V Schmitt Trigger :         : 8         : Y              
 TST_R[4]                     : 141       : input  : 3.3 V Schmitt Trigger :         : 8         : Y              

@@ -6,7 +6,7 @@ module SNES_TST(
 	input PAWR,					//PPU data write enable
 	input PARD,					//PPU data read enable
 	input FIELD,				//shows if the actual field is even or odd
-	input TOUMEI,				//???shows if the screen is all black or not???
+//	input TOUMEI,				//???shows if the screen is all black or not???/
 	input CSYNCI,				//csync from PPU2
 	output CSYNCO,				//csync to system; can be dejittered
 	input [7:0] PADDRESS,	//PPU Address
@@ -15,7 +15,7 @@ module SNES_TST(
 	input MCLKOSC,				//Master Clock from oscillator
 	output REGPSEL,			//D4 region patch control; 0: patch not applied; 1: patch applied (this signal could be dropped, if a new signal is needed)
 	output REGPAT,				//D4 region patch value; 0: PAL; 1: NTSC
-	input SYSREG,	 			//identifies the system region; 0: NTSC; 1: PAL
+// input SYSREG,	 			//identifies the system region; 0: NTSC; 1: PAL
 	output MD7PAT,				//applies the patch for mode 7
 	input OVER1,				//from PPU1; shows if the actual pixel is inside or outside of Mode7 memory
 	output OVERPAT,			//goes to PPU2; same as the OVER1 signal, only differs if the mode 7 patch is applied
@@ -25,6 +25,7 @@ module SNES_TST(
 	output RESETO,				//reset signal to PPU2; 0: run; 1: reset
 	output REGION,	 			//sets the region; 0: NTSC; 1: PAL
 	inout [3:0] CIC,			//Cic signals
+	output reg[1:0] CICDIR,		//direction control for CIC[0] and CIC[1]
 	input CONTL,	 			//input controller latch
 	input CONTD,	 			//input controller data
 	output CONTDOUT,			//output controller data; input for system can be disabled
