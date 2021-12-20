@@ -57,15 +57,21 @@ wire screen_over_data = DATA[7] & !DATA[6];
 wire mode_data = DATA[0] & DATA[1] & DATA[2];
 wire over;
 
-wire dacclock;
-wire mclock;
+wire mclockntsc;
+wire mclocknpal;
 wire locked;
+
+wire dacclock240p = dacclockdivider[1];
+wire dacclock480i = dacclockdivider[0];
+wire dacclock = dacclock240p;
+
+reg [1:0] dacclockdivider;
 
 //assign GCLK_o = SYSREG ? mclk_pal : mclk_ntsc_dejitter;
 //assign CSYNCO = SYSREG ? CSYNCI : csync_dejitter;
 
 
-assign MCLKO = locked ? mclock : 1'b0;
+assign MCLKO = locked ? mclockntsc : 1'b0;
 //assign MCLKO =mclk_ntsc;
 assign CSYNCO = CSYNCI;
 //assign TST15 = 1'b1;
@@ -74,7 +80,7 @@ assign TST15 = (VBLANK) ? 1'b0 : 1'b1;
 assign RGBSEL = 1'b1;
 //assign RGBSEL = testoutput[5];
 assign AMPFILT = 1'b1;
-assign DACCLK = daclock;
+assign DACCLK = dacclock;
 //assign DACCLK = MCLKO;
 assign CSYNCDAC = 1'b0;
 //assign BLANKDAC = 1'b1;
@@ -166,8 +172,8 @@ snes_tst_cpu snes_tst_logic_controller (
 */
 pll	snes_tst_pll (
 	.inclk0 ( MCLKOSC ),
-	.c0 ( mclock ),
-	.c1 ( daclock ),
+	.c0 ( mclockntsc ),
+	.c1 ( mclockpal ),
 	.locked ( locked )
 	);
 
@@ -304,7 +310,7 @@ font_rom	font_rom_inst (
 	);
 
 
-//always @(negedge daclock) begin
+//always @(negedge dacclock) begin
 always @(negedge MCLKO) begin
 	if(VBLANK)begin
 		font_address[10:0] <= 0;
@@ -398,7 +404,7 @@ end
 
 
 /*
-always @(negedge daclock) begin
+always @(negedge dacclock) begin
 	RDIG[9:1] <= rgb[8:0];
 	//GDIG[9:1] <= rgb[17:9];
 	GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) brightness;
@@ -496,6 +502,14 @@ always @(*) begin
         gclk_en <= (g_cyc == 0);
 end
 `endif
+
+
+always @(posedge MCLKO) begin
+	if(RESETO) dacclockdivider <= 2'b00;
+	else begin
+		dacclockdivider <= dacclockdivider + 1'b1;
+	end
+end
 
 //cic control
 always @(negedge MCLKO) begin
