@@ -53,25 +53,44 @@ module SNES_TST(
 wire mclk_ntsc = MCLKOSC;
 wire mclk_ntsc_dejitter = mclk_ntsc & gclk_en;
 wire mclk_pal = MCLKSYS;
-wire screen_over_data = DATA[7] & !DATA[6];
-wire mode_data = DATA[0] & DATA[1] & DATA[2];
+
+
+wire [7:0] data = DATA;
+wire [7:0] address = PADDRESS;
+wire pawr = PAWR;
+
+//wire screen_over_data = data[7] & !data[6];
+reg mode01234;
+reg mode7;
+reg mode56;
+reg pseudohires;
+reg screen_over;
+//assign mode7 = (mode == 7) ? 1'b1 : 1'b0; 
 wire over;
 
-wire mclockntsc;
-wire mclocknpal;
-wire locked;
 
-wire dacclock240p = dacclockdivider[1];
-wire dacclock480i = dacclockdivider[0];
-wire dacclock = dacclock240p;
+wire mclock;
+wire dacclock256h;
+wire dacclock512h;
+wire dacclock;
+assign dacclock = (mode56 | (pseudohires & mode01234)) ? dacclock512h : dacclock256h;
+wire clockosc = MCLKOSC;
+wire clocksys = MCLKSYS;
 
-reg [1:0] dacclockdivider;
+wire resetin = RESETI;
+wire resetout;
+wire region = ciccontrol[0];
+wire sysregion = SYSREG;
+
+wire [3:0] cic;
+assign CIC = cic;
+
 
 //assign GCLK_o = SYSREG ? mclk_pal : mclk_ntsc_dejitter;
 //assign CSYNCO = SYSREG ? CSYNCI : csync_dejitter;
 
 
-assign MCLKO = locked ? mclockntsc : 1'b0;
+assign MCLKO = mclock;
 //assign MCLKO =mclk_ntsc;
 assign CSYNCO = CSYNCI;
 //assign TST15 = 1'b1;
@@ -87,7 +106,7 @@ assign CSYNCDAC = 1'b0;
 assign BLANKDAC = CSYNCO;
 //assign REGION = SYSREG;
 //assign REGION = !SYSREG;
-assign REGION = ciccontrol[0];
+assign REGION = region;
 //assign REGION = regio;
 
 assign REGPSEL = 1'b0;
@@ -97,12 +116,14 @@ assign OVERPAT = 1'b1;
 //output MCLKO,
 
 //assign RESETO = RESETI;
-assign RESETO = LED[2];
+assign RESETO = resetout;
 
 //assign LED[1] = 1'b1;
 //assign LED[1] = test1;
 assign LED[1] = cicfail;
 //assign RDIG[9] = 1'b1;
+
+assign PPURESET = 1'b1;
 
 wire regio;
 reg [10:0] h_cnt;
@@ -112,20 +133,19 @@ reg csync_dejitter;
 reg gclk_en;
 //reg [1:0] sc_ctr;
 reg [2:0] address_edge;
-reg mode;
-reg screen_over;
+//reg [2:0] mode;
 //reg mode_edge;
 //reg screen_over_edge;
-reg [3:0]brightness;
+reg [3:0] brightness;
 reg blanking;
 
-reg [26:0]Y;
+reg [26:0] Y;
 reg Pb;
 reg Pr;
 
-reg [15:0]cictest;
+reg [15:0] cictest;
 
-reg [1:0]ciccontrol;
+reg [1:0] ciccontrol;
 reg cicfail;
 
 reg [1:0] vclk_counter;
@@ -135,7 +155,7 @@ reg [1:0] vclk_counter;
 
 
 
-assign over = mode & screen_over;
+assign over = mode7 & screen_over;
 //assign OVERPAT = over ? over : OVER1;
 //assign OVERPAT = over ? over : OVER1;
 //assign TST = 4'b1000;
@@ -164,19 +184,12 @@ assign sync[2] = CSYNCI;
 //assign BDIG[8:0] = rgb[26:18];
 /*
 snes_tst_cpu snes_tst_logic_controller (
-	.reset_reset_n ( RESETO ),
-	.clk_clk ( MCLKO ),
+	.reset_reset_n ( resetout ),
+	.clk_clk ( mclock ),
 	.config_output_export (testoutput),
 	.cont_data_export (contdata)
 	);
 */
-pll	snes_tst_pll (
-	.inclk0 ( MCLKOSC ),
-	.c0 ( mclockntsc ),
-	.c1 ( mclockpal ),
-	.locked ( locked )
-	);
-
 
 //wire [9:1] GDIG = digitalgreen[9:1];
 
@@ -235,25 +248,37 @@ wire test1;
 wire test2;
 wire test3;
 
+clock snes_tst_clock(
+	.clockosc (clockosc),
+	.clocksys (clocksys),
+	.region (region),
+	.sysregion (sysregion),
+	.reset (resetout),
+	
+	.mclock (mclock),
+	.dacclock256h (dacclock256h),
+	.dacclock512h (dacclock512h)
+);
+
 cic_lock_top snes_tst_cic (
 		
-		.cic_clk (CIC[3]),
+		.cic_clk (cic[3]),
 		.pll_locked (resetcic),
 		
-		.port0_INOUT (CIC[1:0]),
+		.port0_INOUT (cic[1:0]),
 		
 		.pal_ntsc (ciccontrol[0]),
 		.cic_fail (cicfail),
 		
-		.cart_cic_reset (CIC[2]),
-		.sys_reset (LED[2])
+		.cart_cic_reset (cic[2]),
+		.sys_reset (resetout)
 	);
 
 wire [15:0] contdata;
 	
 snes_igr snes_tst_igr(
-	.CLK_i (MCLKO),
-   .NRST_i (RESETO),
+	.CLK_i (mclock),
+   .NRST_i (resetout),
 
    .CTRL_CLK_i (CONTC),
    .CTRL_LATCH_i (CONTL),
@@ -305,13 +330,13 @@ reg y_helper;
 
 font_rom	font_rom_inst (
 	.address ( font_address ),
-	.clock ( MCLKO ),
+	.clock ( mclock ),
 	.q ( font_data )
 	);
 
 
 //always @(negedge dacclock) begin
-always @(negedge MCLKO) begin
+always @(negedge mclock) begin
 	if(VBLANK)begin
 		font_address[10:0] <= 0;
 		font_x_counter <= 0;
@@ -378,7 +403,7 @@ always @(negedge MCLKO) begin
 	//BDIG[9:1] <= font_bit ? 465 : (TST_B[4:0] >> osd_brightness) *(* multstyle = "dsp" *) brightness;
 end
 
-always @(posedge MCLKO) begin
+always @(posedge mclock) begin
 	vclk_counter <= vclk_counter + 1;
 	if(VBLANK) begin
 		v_count <= 0;
@@ -413,27 +438,58 @@ end
 	*/
 `ifdef EDGE_SENSITIVE_CLKEN
 //Update clock gate enable signal on negative edge
-always @(negedge MCLKO) begin
+always @(negedge mclock) begin
    gclk_en <= (g_cyc == 0);
 	/*if(!PAWR && !address_edge[0]) BRIGHTNESS [3:0] <= DATA [3:0];
 	if(!PAWR && !address_edge[1]) mode <= mode_data;
 	if(!PAWR && !address_edge[2]) screen_over <= screen_over_data;*/
-	if(RESETO) begin
+	if(resetout) begin
 		//brightness [3:0] <= 4'b1111;
-		if(!PAWR && (PADDRESS [7:0] == 8'b00000000)) 
+		if(!pawr && (address [7:0] == 8'b00000000)) 
 			begin
-				brightness [3:0] <= DATA [3:0];
-				blanking <= DATA[7];
+				brightness [3:0] <= data [3:0];
+				blanking <= data[7];
 			end
-		if(!PAWR && (PADDRESS [7:0] == 8'b00000101)) mode <= mode_data;
-		if(!PAWR && (PADDRESS [7:0] == 8'b00011010)) screen_over <= screen_over_data;
 		
+		if(!pawr && (address [7:0] == 8'h05)) begin
+			if(data[2:0] == 7) begin
+				mode7 <= 1'b1;
+				mode56 <= 1'b0;
+				mode01234 <= 1'b0;
+			end
+			if(data[2:0] == 5 || data[2:0] == 6) begin
+				mode7 <= 1'b0;
+				mode56 <= 1'b1;
+				mode01234 <= 1'b0;
+			end
+			else begin
+				mode7 <= 1'b0;
+				mode56 <= 1'b0;
+				mode01234 <= 1'b1;
+			end
+		end
+		
+		else if(!pawr && (address [7:0] == 8'h1A)) begin
+			if(data[7:6] == 2'b10)
+				screen_over <= 1'b1; 
+			else screen_over <= 1'b0;
+		end
+		
+		else if(!pawr && (address [7:0] == 8'h33)) begin
+			if(data[3] == 1'b1) pseudohires <= 1'b1;
+			else pseudohires <= 1'b0;
+		end
+		//register 2133 D3 -> pseudo 512, most likely 10 MHz video clock is needed
+		//true 512 mode on mode 5 and 6
 		
 		
 	end
 	else begin
 		brightness [3:0] <= 4'b1111;
-		mode <= 1'b0;
+		mode7 <= 1'b0;
+		mode56 <= 1'b0;
+		mode01234 <= 1'b0;
+		pseudohires <= 1'b0;
 		screen_over <= 1'b0;
 		//rgbout <= 3'b000;
 		//vbl <= 1;
@@ -504,16 +560,11 @@ end
 `endif
 
 
-always @(posedge MCLKO) begin
-	if(RESETO) dacclockdivider <= 2'b00;
-	else begin
-		dacclockdivider <= dacclockdivider + 1'b1;
-	end
-end
+
 
 //cic control
-always @(negedge MCLKO) begin
-	if(RESETI) begin
+always @(negedge mclock) begin
+	if(resetin) begin
 		ciccontrol[1:0] <= 2'b00;
 		cictest <= 0;
 		resetcic<= 1'b0;

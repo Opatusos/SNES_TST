@@ -383,4 +383,5 @@ set_instance_assignment -name SLEW_RATE 2 -to RESETO
 set_instance_assignment -name SLEW_RATE 2 -to RGBSEL
 set_instance_assignment -name SLEW_RATE 2 -to TST15
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to CONTD
+set_global_assignment -name VERILOG_FILE rtl/clock.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
