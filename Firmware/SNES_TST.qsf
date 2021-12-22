@@ -57,15 +57,15 @@ set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to VBLANK
 set_location_assignment PIN_60 -to HBLANK
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to HBLANK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AMPFILT
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[9]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[8]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[7]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BDIG[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BDIG[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BDIG[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BDIG[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BDIG[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BDIG[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BDIG[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BDIG[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BDIG[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BDIG[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BLANKDAC
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIC[3]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIC[2]
@@ -85,19 +85,19 @@ set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[3]
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[2]
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[1]
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to DATA[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[9]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[8]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[7]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GDIG[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GDIG[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GDIG[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GDIG[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GDIG[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GDIG[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GDIG[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GDIG[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GDIG[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GDIG[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MCLKO
-set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to MCLKOSC
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MCLKOSC
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to MCLKSYS
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MD7PAT
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to OVER1
@@ -112,15 +112,15 @@ set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PADDRESS[1
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PADDRESS[0]
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PARD
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PAWR
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[9]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[8]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[7]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RDIG[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RDIG[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RDIG[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RDIG[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RDIG[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RDIG[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RDIG[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RDIG[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RDIG[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RDIG[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to REGION
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to REGPSEL
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to RESETI
@@ -279,16 +279,6 @@ set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CONTDOUT
 set_location_assignment PIN_48 -to CONTDOUT
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AMPFILT
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[9]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[8]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[7]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[6]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[5]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[4]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[3]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[2]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG[1]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BDIG
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to BLANKDAC
 set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to MCLKO
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to MCLKOSC
@@ -297,15 +287,6 @@ set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to MD7PAT
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to OVER1
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to OVERPAT
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PPURESET
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[9]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[8]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[7]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[6]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[5]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[4]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[3]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[2]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RDIG[1]
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to REGION
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to REGPAT
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to REGPSEL
@@ -320,15 +301,6 @@ set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to CSYNCI
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to CSYNCO
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to DACCLK
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to FIELD
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[9]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[8]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[7]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[6]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[5]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[4]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[3]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[2]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GDIG[1]
 set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to LED[3]
 set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to LED[2]
 set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to LED[1]

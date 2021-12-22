@@ -43,9 +43,9 @@ module SNES_TST(
 	output TST15,	 			//0: PPU2 Test Mode off; 1: PPU2 Test Mode On
 
 	//output reg[9:1] RDIG,
-	output reg[9:1] RDIG,
-	output reg[9:1] GDIG,
-	output reg[9:1] BDIG
+	output [9:1] RDIG,
+	output [9:1] GDIG,
+	output [9:1] BDIG
 );
 
 `include "include/osd.vh"
@@ -82,12 +82,20 @@ wire resetout;
 wire region = ciccontrol[0];
 wire sysregion = SYSREG;
 
-wire [3:0] cic;
-assign CIC = cic;
+//wire [3:0] cic;
+//assign CIC = cic;
 
 
 //assign GCLK_o = SYSREG ? mclk_pal : mclk_ntsc_dejitter;
 //assign CSYNCO = SYSREG ? CSYNCI : csync_dejitter;
+
+reg[9:1] rdig;
+reg[9:1] gdig;
+reg[9:1] bdig;
+
+assign RDIG = rdig;
+assign GDIG = gdig;
+assign BDIG = bdig;
 
 
 assign MCLKO = mclock;
@@ -121,6 +129,7 @@ assign RESETO = resetout;
 //assign LED[1] = 1'b1;
 //assign LED[1] = test1;
 assign LED[1] = cicfail;
+assign LED[3] = dacclock512h;
 //assign RDIG[9] = 1'b1;
 
 assign PPURESET = 1'b1;
@@ -262,15 +271,15 @@ clock snes_tst_clock(
 
 cic_lock_top snes_tst_cic (
 		
-		.cic_clk (cic[3]),
+		.cic_clk (CIC[3]),
 		.pll_locked (resetcic),
 		
-		.port0_INOUT (cic[1:0]),
+		.port0_INOUT (CIC[1:0]),
 		
 		.pal_ntsc (ciccontrol[0]),
 		.cic_fail (cicfail),
 		
-		.cart_cic_reset (cic[2]),
+		.cart_cic_reset (CIC[2]),
 		.sys_reset (resetout)
 	);
 
@@ -376,9 +385,10 @@ always @(negedge mclock) begin
 	//GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) 4'b1111;
 	//BDIG[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) 4'b1111;
 	
-	RDIG[9:1] <= TST_R[4:0] *(* multstyle = "dsp" *) brightness;
-	GDIG[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) brightness;
-	BDIG[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) brightness;
+	rdig[9:1] <= TST_R[4:0] *(* multstyle = "dsp" *) brightness;
+	gdig[9:1] <= TST_G[4:0] *(* multstyle = "dsp" *) brightness;
+	bdig[9:1] <= TST_B[4:0] *(* multstyle = "dsp" *) brightness;
+
 	
 	/*if(font_bit) begin
 		RDIG[9:1] <= 465;

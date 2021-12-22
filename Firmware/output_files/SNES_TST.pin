@@ -82,40 +82,40 @@ VCCIO1A                      : 9         : power  :                   : 3.3V    
 TST_R[0]                     : 10        : input  : 3.3 V Schmitt Trigger :         : 1A        : Y              
 AMPFILT                      : 11        : output : 3.3-V LVTTL       :         : 1A        : Y              
 DACCLK                       : 12        : output : 3.3-V LVTTL       :         : 1A        : Y              
-BDIG[9]                      : 13        : output : 3.3-V LVTTL       :         : 1A        : Y              
-BDIG[8]                      : 14        : output : 3.3-V LVTTL       :         : 1A        : Y              
-BDIG[7]                      : 15        : output : 3.3-V LVTTL       :         : 1B        : Y              
+BDIG[9]                      : 13        : output : 3.3-V LVCMOS      :         : 1A        : Y              
+BDIG[8]                      : 14        : output : 3.3-V LVCMOS      :         : 1A        : Y              
+BDIG[7]                      : 15        : output : 3.3-V LVCMOS      :         : 1B        : Y              
 ~ALTERA_TMS~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 16        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
-BDIG[6]                      : 17        : output : 3.3-V LVTTL       :         : 1B        : Y              
+BDIG[6]                      : 17        : output : 3.3-V LVCMOS      :         : 1B        : Y              
 ~ALTERA_TCK~ / RESERVED_INPUT : 18        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
 ~ALTERA_TDI~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 19        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
 ~ALTERA_TDO~                 : 20        : output : 3.3-V LVTTL       :         : 1B        : N              
-BDIG[5]                      : 21        : output : 3.3-V LVTTL       :         : 1B        : Y              
-BDIG[4]                      : 22        : output : 3.3-V LVTTL       :         : 1B        : Y              
+BDIG[5]                      : 21        : output : 3.3-V LVCMOS      :         : 1B        : Y              
+BDIG[4]                      : 22        : output : 3.3-V LVCMOS      :         : 1B        : Y              
 VCCIO1B                      : 23        : power  :                   : 3.3V    : 1B        :                
-BDIG[3]                      : 24        : output : 3.3-V LVTTL       :         : 1B        : Y              
-BDIG[2]                      : 25        : output : 3.3-V LVTTL       :         : 1B        : Y              
-BDIG[1]                      : 26        : output : 3.3-V LVTTL       :         : 2         : Y              
+BDIG[3]                      : 24        : output : 3.3-V LVCMOS      :         : 1B        : Y              
+BDIG[2]                      : 25        : output : 3.3-V LVCMOS      :         : 1B        : Y              
+BDIG[1]                      : 26        : output : 3.3-V LVCMOS      :         : 2         : Y              
 CSYNCDAC                     : 27        : output : 3.3-V LVTTL       :         : 2         : Y              
 MCLKSYS                      : 28        : input  : 3.3 V Schmitt Trigger :         : 2         : Y              
-MCLKOSC                      : 29        : input  : 3.3 V Schmitt Trigger :         : 2         : Y              
+MCLKOSC                      : 29        : input  : 3.3-V LVTTL       :         : 2         : Y              
 BLANKDAC                     : 30        : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 31        : power  :                   : 3.3V    : 2         :                
-GDIG[9]                      : 32        : output : 3.3-V LVTTL       :         : 2         : Y              
-GDIG[8]                      : 33        : output : 3.3-V LVTTL       :         : 2         : Y              
+GDIG[9]                      : 32        : output : 3.3-V LVCMOS      :         : 2         : Y              
+GDIG[8]                      : 33        : output : 3.3-V LVCMOS      :         : 2         : Y              
 VCCA2                        : 34        : power  :                   : 3.0V/3.3V :           :                
 VCCA1                        : 35        : power  :                   : 3.0V/3.3V :           :                
 VCC_ONE                      : 36        : power  :                   : 3.0V/3.3V :           :                
 VCC_ONE                      : 37        : power  :                   : 3.0V/3.3V :           :                
-GDIG[7]                      : 38        : output : 3.3-V LVTTL       :         : 3         : Y              
-GDIG[6]                      : 39        : output : 3.3-V LVTTL       :         : 3         : Y              
+GDIG[7]                      : 38        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GDIG[6]                      : 39        : output : 3.3-V LVCMOS      :         : 3         : Y              
 VCCIO3                       : 40        : power  :                   : 3.3V    : 3         :                
-GDIG[5]                      : 41        : output : 3.3-V LVTTL       :         : 3         : Y              
+GDIG[5]                      : 41        : output : 3.3-V LVCMOS      :         : 3         : Y              
 GND                          : 42        : gnd    :                   :         :           :                
-GDIG[4]                      : 43        : output : 3.3-V LVTTL       :         : 3         : Y              
-GDIG[3]                      : 44        : output : 3.3-V LVTTL       :         : 3         : Y              
-GDIG[2]                      : 45        : output : 3.3-V LVTTL       :         : 3         : Y              
-GDIG[1]                      : 46        : output : 3.3-V LVTTL       :         : 3         : Y              
+GDIG[4]                      : 43        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GDIG[3]                      : 44        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GDIG[2]                      : 45        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GDIG[1]                      : 46        : output : 3.3-V LVCMOS      :         : 3         : Y              
 CONTL                        : 47        : input  : 3.3 V Schmitt Trigger :         : 3         : Y              
 CONTDOUT                     : 48        : output : 3.3-V LVTTL       :         : 3         : Y              
 VCCIO3                       : 49        : power  :                   : 3.3V    : 3         :                
@@ -179,18 +179,18 @@ CSYNCO                       : 106       : output : 3.3-V LVTTL       :         
 VCCA3                        : 107       : power  :                   : 3.0V/3.3V :           :                
 VCC_ONE                      : 108       : power  :                   : 3.0V/3.3V :           :                
 VCC_ONE                      : 109       : power  :                   : 3.0V/3.3V :           :                
-RDIG[9]                      : 110       : output : 3.3-V LVTTL       :         : 7         : Y              
-RDIG[8]                      : 111       : output : 3.3-V LVTTL       :         : 7         : Y              
-RDIG[7]                      : 112       : output : 3.3-V LVTTL       :         : 7         : Y              
-RDIG[6]                      : 113       : output : 3.3-V LVTTL       :         : 7         : Y              
-RDIG[5]                      : 114       : output : 3.3-V LVTTL       :         : 7         : Y              
+RDIG[9]                      : 110       : output : 3.3-V LVCMOS      :         : 7         : Y              
+RDIG[8]                      : 111       : output : 3.3-V LVCMOS      :         : 7         : Y              
+RDIG[7]                      : 112       : output : 3.3-V LVCMOS      :         : 7         : Y              
+RDIG[6]                      : 113       : output : 3.3-V LVCMOS      :         : 7         : Y              
+RDIG[5]                      : 114       : output : 3.3-V LVCMOS      :         : 7         : Y              
 VCC_ONE                      : 115       : power  :                   : 3.0V/3.3V :           :                
 GND                          : 116       : gnd    :                   :         :           :                
 VCCIO7                       : 117       : power  :                   : 3.3V    : 7         :                
-RDIG[4]                      : 118       : output : 3.3-V LVTTL       :         : 7         : Y              
-RDIG[3]                      : 119       : output : 3.3-V LVTTL       :         : 7         : Y              
-RDIG[2]                      : 120       : output : 3.3-V LVTTL       :         : 8         : Y              
-RDIG[1]                      : 121       : output : 3.3-V LVTTL       :         : 8         : Y              
+RDIG[4]                      : 118       : output : 3.3-V LVCMOS      :         : 7         : Y              
+RDIG[3]                      : 119       : output : 3.3-V LVCMOS      :         : 7         : Y              
+RDIG[2]                      : 120       : output : 3.3-V LVCMOS      :         : 8         : Y              
+RDIG[1]                      : 121       : output : 3.3-V LVCMOS      :         : 8         : Y              
 TST_B[2]                     : 122       : input  : 3.3 V Schmitt Trigger :         : 8         : Y              
 TST_B[3]                     : 123       : input  : 3.3 V Schmitt Trigger :         : 8         : Y              
 TST_B[4]                     : 124       : input  : 3.3 V Schmitt Trigger :         : 8         : Y              

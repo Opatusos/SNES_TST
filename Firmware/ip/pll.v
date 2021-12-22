@@ -98,7 +98,7 @@ module pll (
 				.vcooverrange (),
 				.vcounderrange ());
 	defparam
-		altpll_component.bandwidth_type = "LOW",
+		altpll_component.bandwidth_type = "AUTO",
 		altpll_component.clk0_divide_by = 2,
 		altpll_component.clk0_duty_cycle = 50,
 		altpll_component.clk0_multiply_by = 3,
@@ -169,8 +169,8 @@ endmodule
 // Retrieval info: PRIVATE: BANDWIDTH_FEATURE_ENABLED STRING "1"
 // Retrieval info: PRIVATE: BANDWIDTH_FREQ_UNIT STRING "MHz"
 // Retrieval info: PRIVATE: BANDWIDTH_PRESET STRING "Low"
-// Retrieval info: PRIVATE: BANDWIDTH_USE_AUTO STRING "0"
-// Retrieval info: PRIVATE: BANDWIDTH_USE_PRESET STRING "1"
+// Retrieval info: PRIVATE: BANDWIDTH_USE_AUTO STRING "1"
+// Retrieval info: PRIVATE: BANDWIDTH_USE_PRESET STRING "0"
 // Retrieval info: PRIVATE: CLKBAD_SWITCHOVER_CHECK STRING "0"
 // Retrieval info: PRIVATE: CLKLOSS_CHECK STRING "0"
 // Retrieval info: PRIVATE: CLKSWITCH_CHECK STRING "0"
@@ -262,7 +262,7 @@ endmodule
 // Retrieval info: PRIVATE: USE_MIL_SPEED_GRADE NUMERIC "0"
 // Retrieval info: PRIVATE: ZERO_DELAY_RADIO STRING "0"
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
-// Retrieval info: CONSTANT: BANDWIDTH_TYPE STRING "LOW"
+// Retrieval info: CONSTANT: BANDWIDTH_TYPE STRING "AUTO"
 // Retrieval info: CONSTANT: CLK0_DIVIDE_BY NUMERIC "2"
 // Retrieval info: CONSTANT: CLK0_DUTY_CYCLE NUMERIC "50"
 // Retrieval info: CONSTANT: CLK0_MULTIPLY_BY NUMERIC "3"
