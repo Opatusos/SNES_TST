@@ -120,7 +120,7 @@ assign REGION = region;
 assign REGPSEL = 1'b0;
 assign REGPAT = 1'b1;
 assign MD7PAT = over & !OVER1;
-assign OVERPAT = 1'b1;
+assign OVERPAT = over ? 1'b1 : OVER1;
 //output MCLKO,
 
 //assign RESETO = RESETI;
@@ -129,7 +129,7 @@ assign RESETO = resetout;
 //assign LED[1] = 1'b1;
 //assign LED[1] = test1;
 assign LED[1] = cicfail;
-assign LED[3] = dacclock512h;
+assign LED[3] = over;
 //assign RDIG[9] = 1'b1;
 
 assign PPURESET = 1'b1;
@@ -455,19 +455,19 @@ always @(negedge mclock) begin
 	if(!PAWR && !address_edge[2]) screen_over <= screen_over_data;*/
 	if(resetout) begin
 		//brightness [3:0] <= 4'b1111;
-		if(!pawr && (address [7:0] == 8'b00000000)) 
-			begin
-				brightness [3:0] <= data [3:0];
-				blanking <= data[7];
-			end
+		if(!pawr && (address [7:0] == 8'b00000000))begin
+			brightness [3:0] <= data [3:0];
+			blanking <= data[7];
+		end
 		
 		if(!pawr && (address [7:0] == 8'h05)) begin
-			if(data[2:0] == 7) begin
+			
+			if(data[2:0] == 3'b111) begin
 				mode7 <= 1'b1;
 				mode56 <= 1'b0;
 				mode01234 <= 1'b0;
 			end
-			if(data[2:0] == 5 || data[2:0] == 6) begin
+			else if(data[2:0] == 3'b101 || data[2:0] == 3'b110) begin
 				mode7 <= 1'b0;
 				mode56 <= 1'b1;
 				mode01234 <= 1'b0;
